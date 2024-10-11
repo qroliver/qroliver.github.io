@@ -24,7 +24,7 @@
     padding: 10px;
 }
 
-a :link{
+a{
     color: inherit;
     text-decoration: none;
 }
@@ -33,7 +33,7 @@ a :link{
     display: flex;
     color: white;
     text-decoration: none;
-    font-size: 30pt;
+    font-size: 2.5rem;
     font-weight: bolder;
     padding: 20px;
 }
@@ -54,7 +54,7 @@ a :link{
 .nav-list a{
     text-decoration: none;
     color: white;
-    font-size: 20pt;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -65,14 +65,13 @@ a :link{
 .main-body-section{
     display: grid;
     grid-template-columns: 30% 70%;
-    border-bottom: 1px solid rgb(12, 102, 117);
 }
 
 .main-left-column{
     background-color: white;
     font-family: 'Roboto';
     color: rgb(12, 102, 117);
-    font-size: 24pt;
+    font-size: 2.25rem;
     font-weight: bold;
     padding-left: 30px;
     padding-top: 40px;
@@ -88,9 +87,25 @@ a :link{
 
 .main-header-entry{
     font-family: 'Roboto';
-    font-size: 22pt;
+    font-size: 2rem;
     color: rgb(6, 71, 81);
     font-weight: bold;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-pic{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .footer{
