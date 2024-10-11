@@ -157,3 +157,31 @@ h3{
     padding: 30px;
     padding-top: 20px;
 }
+
+
+@media (max-width: 768px){
+    .main-left-column {
+        padding-left: 15px;
+        padding-top: 20px;
+        font-size: 1.75rem;       /* Scale down the font size */
+    }
+
+    .author-pic {
+        width: 70%;               /* Make the image smaller on mobile */
+        margin-bottom: 20px;      /* Increase spacing below the image */
+    }
+
+    .logo-list {
+        flex-direction: column;   /* Stack logos vertically on smaller screens */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-list li {
+        margin: 10px 0;           /* Add vertical spacing between logos */
+    }
+
+    h2 {
+        font-size: 1.5rem;        /* Scale down the heading font size */
+    }
+}
