@@ -112,6 +112,20 @@ p{
     border-radius: 50%;
 }
 
+.logo-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0px;
+    margin-top: 7.5px;
+    margin-left: 105px;
+}
+
+.logo-list li{
+    margin: 0px;
+}
+
 .footer{
     font-family: 'Roboto';
     color: grey;
