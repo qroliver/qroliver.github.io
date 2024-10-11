@@ -24,6 +24,11 @@
     padding: 10px;
 }
 
+a :link{
+    color: inherit;
+    text-decoration: none;
+}
+
 .logo-name{
     display: flex;
     font-size: 30pt;
