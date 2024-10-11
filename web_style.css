@@ -159,7 +159,7 @@ h3{
 }
 
 
-@media (max-width: 768px){
+@media screen and (max-width: 600px){
     .main-left-column {
         padding-left: 15px;
         padding-top: 20px;
