@@ -31,6 +31,8 @@ a :link{
 
 .logo-name{
     display: flex;
+    color: white;
+    text-decoration: none;
     font-size: 30pt;
     font-weight: bolder;
     padding: 20px;
