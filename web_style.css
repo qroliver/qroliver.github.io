@@ -98,6 +98,7 @@ h2{
 
 p{
     font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 .author-info{
@@ -124,6 +125,28 @@ p{
 
 .logo-list li{
     margin: 0px;
+}
+
+.interests_education{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: rgb(12, 102, 117);
+}
+
+.inted-header{
+    margin-bottom: 7px;
+}
+
+.intered-list{
+    font-size: 1.25rem;
+    font-family: 'Roboto';
+    margin-top: 0;
 }
 
 .footer{
