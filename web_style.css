@@ -92,6 +92,10 @@ a{
     font-weight: bold;
 }
 
+h2{
+    font-size: 1.75rem;
+}
+
 p{
     font-size: 1.25rem;
 }
