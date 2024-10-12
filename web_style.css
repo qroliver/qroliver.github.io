@@ -23,6 +23,13 @@ h3{
     color: rgb(12, 102, 117);
 }
 
+footer{
+    text-align: center;
+    color: grey;
+    padding: 30px;
+    padding-top: 20px;
+}
+
 .logo-name{
     display: flex;
     align-items: center;
