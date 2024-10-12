@@ -6,6 +6,7 @@ body{
 
 header{
     background-color: rgb(12, 102, 117);
+    border-radius: 10px;
     color: white;
     display: flex;
     align-items: center;
@@ -32,6 +33,7 @@ h3{
     max-width: 20%;
     height: auto;
     padding: 15px;
+    border-radius: 10px;
 }
 
 .main-name{
