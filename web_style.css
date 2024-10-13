@@ -30,6 +30,10 @@ footer{
     padding-top: 20px;
 }
 
+.header-mobile{
+    display: none;
+}
+
 .logo-name{
     display: flex;
     align-items: center;
@@ -172,66 +176,59 @@ footer{
 
 @media only screen and (max-device-width: 800px) {
 
-    .logo-name{
-        margin-left: 0;
+    .header-desktop{
+        display: none;
     }
     
-    .logo-img{
-        max-width: 25%;
+    .header-mobile{
+        display: grid;
+        grid-template-rows: 70% 30%;
+        background-color: rgb(12, 102, 117);
+        color: white;
     }
 
-    .main-name{
-        font-size: 7vw;
-        margin-left: 1px;
+    .logo-name-mobile{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+    }
+    
+    .logo-img-mobile{
+        border: 10px;
+        padding: 25px;
+        max-width: 70%;
+    }
+
+    .main-name-header{
+        margin-left: 0;
+    }
+
+    .main-name-mobile{
+        color: white;
+        font-size: 9vw;
+        font-weight: bolder;
+        margin-left: 0;
     }
 
     .header-nav-list{
         display: none;
     }
 
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-
-    .menu-icon-img{
-        max-width: 100%;
-        padding-right: 10px;
-    }
-
-    .dropdown-menu{
-        display: none;
-        position: absolute;
-        top: 10px;
-        right: 8px;
-        background-color: rgb(12, 102, 117);
-        border-radius: 4px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 9999;
-    }
-
-    .dropdown-menu ul{
-        font-size: 4vw;
-        font-weight: bold;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .dropdown-menu li{
+    .menu-list-mobile{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
+        justify-content: space-around;
     }
 
-    .dropdown-menu a{
+    .menu-list-mobile a{
         text-decoration: none;
         color: white;
-        display: block;
-        text-align: center;
+        font-weight: bold;
+        font-size: 6vw;
+        padding: 5px;
+        margin: 5px;
+        z-index: 20;
     }
+
 
     .first-section{
         display: contents;
