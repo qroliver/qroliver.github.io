@@ -6,6 +6,7 @@ body{
 
 header{
     background-color: rgb(12, 102, 117);
+    border-radius: 10px;
     color: white;
     display: flex;
     align-items: center;
@@ -13,6 +14,24 @@ header{
 
 a{
     text-decoration: none;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: rgb(12, 102, 117);
+}
+
+footer{
+    text-align: center;
+    color: grey;
+    padding: 30px;
+    padding-top: 20px;
+}
+
+.header-mobile{
+    display: none;
 }
 
 .logo-name{
@@ -25,6 +44,12 @@ a{
     max-width: 20%;
     height: auto;
     padding: 15px;
+    border-radius: 10px;
+}
+
+.main-name-header{
+    margin-left: 15px;
+    text-align: center;
 }
 
 .main-name{
@@ -32,8 +57,6 @@ a{
     color: white;
     font-size: 3rem;
     font-weight: bolder;
-    margin-left: 15px;
-    padding: 10px;
 }
 
 .header-nav-list{
@@ -64,6 +87,39 @@ a{
 .menu-icon, .dropdown-menu{
     display: none;
 }
+
+.blog-main{
+    margin-top: 50px;
+    text-align: justify;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.blog-entry-title{
+    color: rgb(12, 102, 117);
+    font-size: 2.75rem;
+    font-weight: bolder;
+}
+
+.blog-paragraph{
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.continue-reading a{
+    color: rgb(12, 102, 117);
+    font-size: 1.25rem;
+}
+
+.post-date{
+    color: grey;
+    font-size: 1rem;
+}
+
+
+
+
+
 
 .first-section{
     display: grid;
