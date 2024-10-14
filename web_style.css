@@ -137,6 +137,37 @@ footer{
     border-radius: 1%;
 }
 
+.full-screen-container{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(12, 102, 117, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.full-screen-image{
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
+    border: 2px solid rgb(12, 102, 117);
+    border-radius: 2%;
+}
+
 .third-section{
     display: grid;
     grid-template-columns: 30% 70%;

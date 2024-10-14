@@ -72,12 +72,17 @@
             <h2>Graph gallery</h2>
         </div>
         <div class="graph-slideshow">
-            <img class="slideshow-pic" src="img/Annual precipitation.png" alt="annual precipitation graph">
-            <img class="slideshow-pic" src="img/Annual temperature.png" alt="annual temperature graph">
-            <img class="slideshow-pic" src="img/Daily mean temp 2024.png" alt="2024 daily mean temperature graph">
-            <img class="slideshow-pic" src="img/Temp2023_day_by_day.png" alt="2023 daily mean temperature graph">
+            <img class="slideshow-pic" src="img/Annual precipitation.png" alt="annual precipitation graph" onclick="expandImage(this)">
+            <img class="slideshow-pic" src="img/Annual temperature.png" alt="annual temperature graph" onclick="expandImage(this)">
+            <img class="slideshow-pic" src="img/Daily mean temp 2024.png" alt="2024 daily mean temperature graph" onclick="expandImage(this)">
+            <img class="slideshow-pic" src="img/Temp2023_day_by_day.png" alt="2023 daily mean temperature graph" onclick="expandImage(this)">
             <button class="slideshow-button-left" onclick="plusDivs(-1)">&#10094;</button></button>
             <button class="slideshow-button-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        <!-- Full screen image upon clicking -->
+        <div id="full-screen-image-container" class="full-screen-container" onclick="closeExpandedImage()">
+            <span class="close-button">&times;</span>
+            <img id="full-screen-image" class="full-screen-image">
         </div>
     </div>
     <div class="third-section" id="Me">
