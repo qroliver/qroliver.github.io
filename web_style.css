@@ -131,6 +131,12 @@ footer{
     padding-top: 0;
 }
 
+.slideshow-pic{
+    width: 100%;
+    border: 1px solid rgb(12, 102, 117);
+    border-radius: 1%;
+}
+
 .third-section{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -147,7 +153,7 @@ footer{
 .author-pic{
     max-width: 50%;
     border-radius: 50%;
-    border: 1px solid teal;
+    border: 1px solid rgb(12, 102, 117);
     vertical-align: top;
 }
 
