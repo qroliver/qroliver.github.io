@@ -16,20 +16,6 @@ a{
     text-decoration: none;
 }
 
-h3{
-    font-size: 1.5rem;
-    font-family: 'Roboto';
-    font-weight: bold;
-    color: rgb(12, 102, 117);
-}
-
-footer{
-    text-align: center;
-    color: grey;
-    padding: 30px;
-    padding-top: 20px;
-}
-
 .header-mobile{
     display: none;
 }
@@ -84,10 +70,6 @@ footer{
     font-weight: bold;
 }
 
-.menu-icon, .dropdown-menu{
-    display: none;
-}
-
 .first-section{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -129,6 +111,10 @@ footer{
     background-color: rgba(12, 102, 117, 0.04);
     margin-top: 30px;
     padding-top: 0;
+}
+
+.graph-slideshow{
+    padding: 20px;
 }
 
 .slideshow-pic{
@@ -206,7 +192,6 @@ footer{
     width: auto;
 }
 
-
 .interests_education{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -214,6 +199,7 @@ footer{
 
 .inted-header{
     margin-bottom: 7px;
+    color: rgb(6, 71, 81);
 }
 
 .intered-list{
@@ -223,61 +209,59 @@ footer{
 }
 
 
-@media only screen and (max-device-width: 800px) {
-
-    .header-desktop{
+@media only screen and (max-width: 800px){
+    .logo-name{
         display: none;
     }
-    
+
+    .nav-desktop{
+        display: none;
+    }
+
     .header-mobile{
-        display: grid;
-        grid-template-rows: 70% 30%;
+        display: block;
         background-color: rgb(12, 102, 117);
+        border-radius: 5%;
         color: white;
+        font-weight: bold;
     }
 
     .logo-name-mobile{
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 60%;
         align-items: center;
+        justify-content: space-between;
     }
-    
+
     .logo-img-mobile{
-        border: 10px;
-        padding: 25px;
         max-width: 70%;
+        padding: 20px;
     }
 
-    .main-name-header{
-        margin-left: 0;
-    }
-
-    .main-name-mobile{
-        color: white;
-        font-size: 9vw;
-        font-weight: bolder;
-        margin-left: 0;
-    }
-
-    .header-nav-list{
-        display: none;
-    }
-
-    .menu-list-mobile{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .menu-list-mobile a{
+    .logo-name-header a{
         text-decoration: none;
         color: white;
-        font-weight: bold;
-        font-size: 6vw;
-        padding: 5px;
-        margin: 5px;
-        z-index: 20;
+        font-size: 9vw;
     }
 
+    .logo-name-header{
+        text-align: center;
+    }
+
+    .header-nav-mobile{
+        display: flex;
+        list-style-type: none;
+        margin: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        justify-content: space-between;
+    }
+
+    .header-nav-mobile a{
+        color: white;
+        text-decoration: none;
+        font-size: 6vw;
+    }
 
     .first-section{
         display: contents;
@@ -313,5 +297,4 @@ footer{
     .interests_education{
         display: contents;
     }
-
 }
