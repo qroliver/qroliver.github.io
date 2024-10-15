@@ -192,6 +192,17 @@ a{
     border-right: 150px;
 }
 
+.publ-entry{
+    color: rgb(6, 71, 81);
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.languages{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
 
 @media only screen and (max-width: 800px){
     .logo-name{
