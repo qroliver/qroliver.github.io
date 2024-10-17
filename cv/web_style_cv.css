@@ -408,6 +408,7 @@ a{
         background-color: rgb(12, 102, 117);
         border: 1px solid white;
         padding: 10px;
+        z-index: 1000;
     }
 
     .section{
