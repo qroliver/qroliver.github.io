@@ -91,14 +91,20 @@ footer{
 .blog-main{
     margin-top: 50px;
     text-align: justify;
-    padding-left: 150px;
-    padding-right: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 25px;
+    border: 2px solid rgb(6, 71, 81);
+    border-radius: 5px;
 }
 
 .blog-entry-title{
-    color: rgb(12, 102, 117);
+    color: rgb(6, 71, 81);
     font-size: 2.75rem;
-    font-weight: bolder;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .blog-paragraph{
@@ -107,6 +113,7 @@ footer{
 }
 
 .continue-reading a{
+    text-decoration: none;
     color: rgb(12, 102, 117);
     font-size: 1.25rem;
 }
