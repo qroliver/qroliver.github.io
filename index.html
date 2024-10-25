@@ -12,7 +12,7 @@
         <div class="logo-name">
             <img src="img/Icon_1b.jpg" alt="logo image" class="logo-img">
             <h1 class="main-name-header">
-                <a href="#" class="main-name">Oliver Q.R.</a>
+                <a href="https://qroliver.github.io" class="main-name">Oliver Q.R.</a>
             </h1>
         </div>
         <nav class="nav-desktop">
@@ -47,22 +47,17 @@
             <h2>Posts</h2>
         </div>
         <div class="right-column">
-            <h2 class="section-right-title">Lorem ipsum</h2>
+            <a href="https://qroliver.github.io/posts/ace_weather"><h3 class="section-right-title">A look at the last 50 years of temperature and precipitation data in Lanzarote.</h3></a>
             <p class="section-right-paragraph">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                Lanzarote is the northernmost and easternmost of the Canary Islands. Located 125 km off the coast of 
+                continental Africa (figure 1), its subtropical climate is characterised by mild temperatures all year-round and 
+                little precipitation. Sometimes referred to as the <i>island of eternal Spring</i>, Lanzarote's climate 
+                is classified as hot dessert climate according to the Köppen climate classification.
             </p>
             <p class="section-right-paragraph">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                Using <a href="https://opendata.aemet.es/centrodedescargas/inicio" target="_blank">Aemet's Open Data</a>, 
+                I downloaded temperature and precipitation data from the last 50 years recorded 
+                at the station located at Lanzarote airport, with the aim of analysing possible trends over this period.
             </p>
             <p class="continue-reading">
                 <a href="#"><i>Continue reading...</i></a>
@@ -76,8 +71,10 @@
         <div class="graph-slideshow">
             <img class="slideshow-pic" src="img/Annual precipitation.png" alt="annual precipitation graph" onclick="expandImage(this)">
             <img class="slideshow-pic" src="img/Annual temperature.png" alt="annual temperature graph" onclick="expandImage(this)">
-            <img class="slideshow-pic" src="img/Daily mean temp 2024.png" alt="2024 daily mean temperature graph" onclick="expandImage(this)">
+            <img class="slideshow-pic" src="posts/ace_weather_img/fig01_Geographic_location_Lanzarote.png" alt="Geographic location of Lanzarote" onclick="expandImage(this)">
             <img class="slideshow-pic" src="img/Temp2023_day_by_day.png" alt="2023 daily mean temperature graph" onclick="expandImage(this)">
+            <img class="slideshow-pic" src="posts/ace_weather_img/fig03_temp anomalies.png" alt="Annual mean temperatures anomalies" onclick="expandImage(this)">
+            <img class="slideshow-pic" src="posts/ace_weather_img/fig08_prec temp anomalies.png" alt="Temperature and precipitation anomalies" onclick="expandImage(this)">
             <button class="slideshow-button-left" onclick="plusDivs(-1)">&#10094;</button></button>
             <button class="slideshow-button-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
@@ -148,7 +145,8 @@
         </div>
     </div>
     <footer>
-        <p><i>Web under construction...</i></p>
+        <p><i>This web is under construction. There might be some elements not working as expected (especially on mobile 
+            devices). I apologise in advance for that. I'll do my best to fix any issue asap.</i></p>
     </footer>
     <script src="slideshow_script.js"></script>
 </body>

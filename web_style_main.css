@@ -91,7 +91,7 @@ a{
 }
 
 .section-right-title{
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: rgb(6, 71, 81);
     font-weight: bold;
 }
@@ -101,8 +101,14 @@ a{
     line-height: 1.5;
 }
 
+.section-right-paragraph a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
 .continue-reading a{
     color: rgb(12, 102, 117);
+    text-decoration: none;
 }
 
 .second-section{
