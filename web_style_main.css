@@ -85,6 +85,11 @@ a{
     padding-left: 30px;
 }
 
+.left-column a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
 .right-column{
     padding: 30px;
     text-align: justify;
