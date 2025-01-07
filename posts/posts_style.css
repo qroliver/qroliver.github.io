@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+header{
+    display: flex;
+    background-color: rgb(12, 102, 117);
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo-img{
+    max-width: 20%;
+    height: auto;
+    border-radius: 6%;
+    padding: 15px;
+}
+
+.header-name{
+    margin-left: 15px;
+}
+
+.header-main-name{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header-nav{
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-nav-list{
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-nav-list a{
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.main-body{
+    margin-top: 45px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 45px;
+}
+
+.blog-main{
+    margin-top: 50px;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 25px;
+    border: 2px solid rgb(6, 71, 81);
+    border-radius: 5px;
+}
+
+.blog-entry-title{
+    color: rgb(6, 71, 81);
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.blog-paragraph{
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.blog-paragraph a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
+.continue-reading a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+    font-size: 1.25rem;
+}
+
+.entry-date{
+    color: grey;
+    font-size: 1rem;
+}

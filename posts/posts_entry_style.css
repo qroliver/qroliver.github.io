@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+header{
+    display: flex;
+    background-color: rgb(12, 102, 117);
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo-img{
+    max-width: 20%;
+    height: auto;
+    border-radius: 6%;
+    padding: 15px;
+}
+
+.header-name{
+    margin-left: 15px;
+}
+
+.header-main-name{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header-nav{
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-nav-list{
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-nav-list a{
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto';
+    color: black;
+}
+
+.main-body{
+    display: flex;
+    gap: 10%;
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.outline{
+    position: sticky;
+    height: max-content;
+    width: max-content;
+    top: 5%;
+    margin-top: 200px;
+    background-color: rgba(12, 102, 117, 0.01);
+    color: rgb(12, 102, 117);
+    font-weight: bold;
+    border: 1px solid rgb(12, 102, 117);
+    border-radius: 5px;
+}
+
+.outline ul{
+    line-height: 1.75;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.outline a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
+.post-entry{
+    justify-content: center;
+}
+
+.entry-title{
+    color: rgb(6, 71, 81);
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.entry-date{
+    color: grey;
+    font-size: 1rem;
+}
+
+.entry-paragraph{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.entry-paragraph a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
+.entry-figure{
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.entry-graph-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.figure-caption{
+    position: absolute;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgb(6, 71, 81);
+}
+
+.R-code-button{
+    color: rgb(6, 71, 81);
+}
+
+.R-code{
+    max-width: 80%;
+    height: auto;
+    border: 1px solid rgb(6, 71, 81);
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 2rem;
+    color: rgb(6, 71, 81);
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+footer{
+    display: inline-flex;
+    gap: 2%;
+    margin-left: 22%;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
