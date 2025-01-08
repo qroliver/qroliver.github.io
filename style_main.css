@@ -80,6 +80,11 @@ a{
     font-weight: bolder;
 }
 
+.main-left-column a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
 .main-left-column h2{
     margin: 0;
     margin-left: 20px;
@@ -87,6 +92,11 @@ a{
 
 .main-right-column{
     text-align: justify;
+}
+
+.main-right-column a{
+    text-decoration: none;
+    color: rgb(6, 71, 82);
 }
 
 .main-right-title{
