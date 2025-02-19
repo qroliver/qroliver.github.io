@@ -32,29 +32,54 @@
                 <a href="https://www.oliverqr.com/posts"><h2>Posts</h2></a>
             </div>
             <div class="main-right-column">
-                <a href="https://www.oliverqr.com/posts/ace_weather">
-                    <h2 class="main-right-title">A look at the last 50 years of temperature and precipitation data
-                        in Lanzarote.
-                    </h2>
-                </a>
-                <span class="main-right-subtitle">
-                    <i>Posted on <time datetime="2024-10-24">24 October 2024</time></i>
-                </span>
-                <p class="main-right-paragraph">
-                    Lanzarote is the northernmost and easternmost of the Canary Islands. Located 125 km off the 
-                    coast of continental Africa (figure 1), its subtropical climate is characterised by mild 
-                    temperatures all year-round and little precipitation. Sometimes referred to as the island 
-                    of eternal Spring, Lanzarote's climate is classified as hot dessert climate according to the 
-                    Köppen climate classification.
-                </p>
-                <p class="main-right-paragraph">
-                    Using Aemet's Open Data, I downloaded temperature and precipitation data from the last 50 
-                    years recorded at the station located at Lanzarote airport, with the aim of analysing 
-                    possible trends over this period.
-                </p>
-                <span class="continue-reading">
-                    <a href="https://oliverqr.com/posts/ace_weather#figure01"><i>Continue reading...</i></a>
-                </span>
+                <div style="margin-bottom: 50px;">
+                    <a href="https://www.oliverqr.com/posts/liga_sim">
+                        <h2 class="main-right-title">A (very) simple simulation of the Spanish La Liga.
+                        </h2>
+                    </a>
+                    <span class="main-right-subtitle">
+                        <i>Posted on <time datetime="2025-02-19">19 February 2025</time></i>
+                    </span>
+                    <h3>Introduction</h3>
+                    <p class="main-right-paragraph">
+                        The beautiful game, the most popular sport in the world. Football. Drama, joy, tension, passion, 
+                        unpredictability... A roller coaster of emotions played out over 90 minutes (or 120!), 
+                        for 9 months a year, shaping the fate of each club in every league / cup competition across the globe.
+                    </p>
+                    <p class="main-right-paragraph">
+                        Will my club win the league? Qualify for a European competition? Avoid relegation? 
+                        Or is it finally the year we go up? Many questions, no certain answers. Unpredictability... 
+                        but is there a way to get a hint of what's to come, to predict the future?
+                    </p>
+                    <span class="continue-reading">
+                        <a href="https://oliverqr.com/posts/liga_sim#keep-reading"><i>Continue reading...</i></a>
+                    </span>
+                </div>
+                <div>
+                    <a href="https://www.oliverqr.com/posts/ace_weather">
+                        <h2 class="main-right-title">A look at the last 50 years of temperature and precipitation data
+                            in Lanzarote.
+                        </h2>
+                    </a>
+                    <span class="main-right-subtitle">
+                        <i>Posted on <time datetime="2024-10-24">24 October 2024</time></i>
+                    </span>
+                    <p class="main-right-paragraph">
+                        Lanzarote is the northernmost and easternmost of the Canary Islands. Located 125 km off the 
+                        coast of continental Africa (figure 1), its subtropical climate is characterised by mild 
+                        temperatures all year-round and little precipitation. Sometimes referred to as the island 
+                        of eternal Spring, Lanzarote's climate is classified as hot dessert climate according to the 
+                        Köppen climate classification.
+                    </p>
+                    <p class="main-right-paragraph">
+                        Using Aemet's Open Data, I downloaded temperature and precipitation data from the last 50 
+                        years recorded at the station located at Lanzarote airport, with the aim of analysing 
+                        possible trends over this period.
+                    </p>
+                    <span class="continue-reading">
+                        <a href="https://oliverqr.com/posts/ace_weather#figure01"><i>Continue reading...</i></a>
+                    </span>
+                </div>
             </div>
         </div>
         <div class="main-section" id="graphs">
@@ -65,7 +90,8 @@
                 <img class="slideshow-pic" src="img/Temp2023_day_by_day.png" alt="2023 daily mean temperature and deviation from the reference" onclick="expandImage(this)">
                 <img class="slideshow-pic" src="img/Annual temperature.png" alt="annual temperature graph" onclick="expandImage(this)" style="display: none;">
                 <img class="slideshow-pic" src="img/Annual precipitation.png" alt="annual precipitation graph" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="img/Daily mean temp 2024.png" alt="2024 daily mean temperature and deviation from the reference" onclick="expandImage(this)" style="display: none;">
+                <img class="slideshow-pic" src="/posts/liga_sim_img/fig03_UDLP-FCB outcomes.png" alt="outcome probabilities for the game UD Las Palmas vs. FC Barcelona" onclick="expandImage(this)" style="display: none;">
+                <img class="slideshow-pic" src="/posts/liga_sim_img/fig09.png" alt="predicted point distributions for each club in La Liga" onclick="expandImage(this)" style="display: none;">
                 <button class="slideshow-button" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="slideshow-button" onclick="plusDivs(+1)">&#10095;</button>
             </div>

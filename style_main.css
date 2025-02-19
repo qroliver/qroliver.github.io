@@ -257,6 +257,13 @@ a{
     margin-top: 20px;
 }
 
+h3{
+    font-size: 1.75rem;
+    color: rgb(6, 71, 81);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
 
 @media (max-width: 767px){
     header{
