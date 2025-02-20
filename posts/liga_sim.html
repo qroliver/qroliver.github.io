@@ -65,7 +65,7 @@
             </p>
             <h3 id="data">Data.</h3>
             <p class="entry-paragraph">
-                For this small project, I will use R and the following packages: <code class="code-text"><i>tidyverse</i></code>, 
+                For this small project, done in R, I used the following packages: <code class="code-text"><i>tidyverse</i></code>, 
                 <code class="code-text"><i>rvest</i></code>, <code class="code-text"><i>httr</i></code>, 
                 <code class="code-text"><i>janitor</i></code>, <code class="code-text"><i>worldfootballR</i></code>,
                 <code class="code-text"><i>progress</i></code>, <code class="code-text"><i>scales</i></code>,
@@ -73,14 +73,14 @@
                 <code class="code-text"><i>gt</i></code>.
             </p>
             <p class="entry-paragraph">
-                Let's kick off this project by fetching the full La Liga schedule, including all fixtures for the current season, 
+                Let's kick off the project by fetching the full La Liga schedule, including all fixtures for the current season, 
                 the current table, and each club's Elo points. First, let's get the schedule and the table. 
                 These data are available on many websites, but I have used <a href="https://fbref.com/en/" target="_blank">FBref</a>'s, 
                 which provides xG data calculated by <a href="https://www.statsperform.com/opta/" target="_blank">Opta</a>.
             </p>
             <p class="entry-paragraph">
                 After fetching the La Liga schedule, I have a tibble called <code class="code-text"><i>la_liga_fixtures</i></code> 
-                has 380 rows (one row per fixture) and 7 columns (figure 1): week (<i>wk</i>), <i>date</i>, home team (<i>home</i>), 
+                that has 380 rows (one row per fixture) and 7 columns (figure 1): week (<i>wk</i>), <i>date</i>, home team (<i>home</i>), 
                 expected goals for the home team (<i>xg</i>), <i>score</i>, expected goals for the visiting team (<i>xga</i>) 
                 and visiting team (<i>away</i>).
             </p>
@@ -101,8 +101,9 @@
             </details>
             <p class="entry-paragraph">
                 The model consists of two parts: one estimates probabilities using current game statistics (goals and expected 
-                goals), while the other uses Elo points. The first part uses summary statistics for each club, 
-                distinguishing between home and away games. More specifically, the statistics needed for each club are:
+                goals), while the other uses <a href="https://en.wikipedia.org/wiki/Elo_rating_system" target="_blank">Elo points</a>. 
+                The first part uses summary statistics for each club, distinguishing between home and away games. More 
+                specifically, the statistics needed for each club are:
                 <ul style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 20px; margin-top: 0;">
                     <li>mean xG (expected goals for).</li>
                     <li>mean GF (goals for) - xG difference.</li>
@@ -114,16 +115,15 @@
             </p>
             <p class="entry-paragraph">
                 I calculated these statistics using the <code class="code-text"><i>la_liga_results</i></code> tibble,
-                resulting in a new tibble called <code class="code-text"><i>la_liga_sum_stats</i></code>, distinguishing
-                between home and away games for each club.
+                resulting in a new tibble called <code class="code-text"><i>la_liga_sum_stats</i></code>.
             </p>
             <details>
                 <summary class="R-code-button">R code.</summary>
                 <img src="liga_sim_img/R_chunk02.png" alt="R code" class="R-code">
             </details>
             <p class="entry-paragraph">
-                I also need the current table. I used the package <code class="code-text"><i>worldfootballR</i></code> to 
-                download it, separating home and away general stats (this will come in handy when estimating probabilities in 
+                I also need the current table. To download it, I used the package <code class="code-text"><i>worldfootballR</i></code>, 
+                separating home and away general stats (this will come in handy when estimating probabilities in 
                 the Elo-based part of the model).
             </p>
             <details>
@@ -131,8 +131,8 @@
                 <img src="liga_sim_img/R_chunk03.png" alt="R code" class="R-code">
             </details>
             <p class="entry-paragraph">
-                After this, let's download Elo points that will be used in the second part of this model. For this, 
-                I'll use the <a href="http://clubelo.com" target="_blank">clubelo.com</a>'s API, and will create a new tibble
+                After this, I downloaded Elo points that will be used in the second part of this model. For this, 
+                I used the <a href="http://clubelo.com" target="_blank">clubelo.com</a>'s API, and created a new tibble
                 called <code class="code-text"><i>elo_liga</i></code> (figure 2).
             </p>
             <details>
@@ -151,7 +151,8 @@
             <h3 id="model">Model.</h3>
             <h4>Part 1: goal-based.</h4>
             <p class="entry-paragraph">
-                This first part of the model simulates the score of each fixture using key stats. For a given fixture, 
+                This first part of the model simulates each fixture's score using key stats from the 
+                <code class="code-text"><i>liga_sum_stats</i></code> tibble. For a given fixture, 
                 the model uses a function (<code class="code-text"><i>simulate_fixture</i></code>) that retrieves the xG and xGA 
                 for each team, and then adds a some randomness (we all know that football, and sports in general, are not 
                 predictable... luckily!). Then, the model combines both a team's estimated goals scored with their opponent's 
@@ -159,7 +160,7 @@
             </p>
             <p class="entry-paragraph">
                 Let's walk through an example fixture: UD Las Palmas vs. FC Barcelona. The <code class="code-text"><i>simulate_fixture</i></code> 
-                function begings by gathering the following stats:
+                function begins by gathering the following stats:
                 <ul style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 20px; margin-top: 0;">
                     <li>mean xG for UD Las Palmas' home games.</li>
                     <li>mean GF - xG difference for UD Las Palmas' home games.</li>
@@ -171,7 +172,7 @@
             </p>
             <p class="entry-paragraph">
                 Next, the function uses the Poisson distribution to simulate goals scored and conceded by each team, using mean 
-                xG (or mean xGA) as lambda (average occurrence of an event within a given interval of time, in this case goals 
+                xG (or mean xGA) as <i>&lambda;</i> (average occurrence of an event within a given interval of time, in this case goals 
                 over 90 minutes). After this, the function will add some randomness by adding a residual GF - xG difference 
                 using a normal distribution (since in the long run the difference between goals scored and expected tends to 
                 follow a Gaussian curve).
@@ -198,11 +199,12 @@
                 <img src="liga_sim_img/R_chunk06.png" alt="R code" class="R-code">
             </details>
             <p class="entry-paragraph">
-                After running the chunk above, I now have a list with all the outcomes for each fixture and each simulation, as 
-                well as another list with the results. The latter is not needed for the model, but it's more of a curiosity. 
-                Let's say I want to challenge some friends to guess the score of the next fixture our team will play. For 
-                example, let's look at that UD Las Palmas vs. FC Barcelona. What are the most likely scores, according to the 
-                simulation above? In how many simulations UD Las Palmas win? Or sneak at least a point?
+                After running the chunk above, I now have a list with all the outcomes for each fixture and each simulation 
+                (<code class="code-text"><i>outcomes_list</i></code>), as well as another list with the results 
+                (<code class="code-text"><i>results_list</i></code>). The latter is not needed for the model, but it's more of a curiosity. 
+                For example, let's say I want to challenge some friends to guess the score of the next fixture our team will play. Since 
+                I am a UD Las Palmas fan, let's look at the upcoming UD Las Palmas vs. FC Barcelona. What are the most likely scores, 
+                according to the simulation above? In how many simulations UD Las Palmas win? Or sneak at least a point?
             </p>
             <p class="entry-paragraph">
                 To find out, we have to join the simulated outcomes and scores with the league schedule 
@@ -210,8 +212,8 @@
                 respectively). 
                 Then, we can calculate the frequency of each outcome for each fixture (which gives us probabilities; 
                 <code class="code-text"><i>gb_probs</i></code>). And, after this, we could 
-                look at the most frequent scores for any given fixture by simply filtering by home and away teams. For example, 
-                let's take a look at the already mentioned UD Las Palmas vs. FC Barcelona fixture (table 1 & figure 3).
+                look at the most frequent scores for any given fixture by simply filtering by home and away teams. Continuing with our example, 
+                let's take a look at the previously mentioned UD Las Palmas vs. FC Barcelona fixture (table 1 & figure 3).
             </p>
             <details>
                 <summary class="R-code-button">R code (<code class="code-text2"><i>sim_outcomes</i></code>).</summary>
@@ -225,11 +227,15 @@
                 <summary class="R-code-button">R code (<code class="code-text2"><i>sim_results</i></code>).</summary>
                 <img src="liga_sim_img/R_chunk09.png" alt="R code" class="R-code">
             </details>
-            <figure style="display: grid; grid-template-columns: 30% 70%; gap: 30px; place-items: center;" id="table01-figure03">
+            <figure class="table01-fig03" id="table01-figure03">
                 <img src="liga_sim_img/table01.png" style="max-width: 100%; height: auto;">
                 <img src="liga_sim_img/fig03_UDLP-FCB outcomes.png" style="max-width: 90%; height: auto;">
-                <figcaption style="grid-column: span 2; transform: translateX(-40%); font-size: 1rem; margin-top: 5px; color: rgb(6, 71, 81);">
-                    <b>Table 1</b>. Predicted scores (left). <b>Figure 3</b>. Outcome probabilities (right).</figcaption>
+                <figcaption class="table01">
+                    <b>Table 1</b>. Predicted scores.
+                </figcaption>
+                <figcaption class="fig03">
+                    <b>Figure 3</b>. Outcome probabilities.
+                </figcaption>
             </figure>
             <details>
                 <summary class="R-code-button">R code (table).</summary>
@@ -246,8 +252,8 @@
             </p>
             <p class="entry-paragraph">
                 If we look at the outcomes, FC Barcelona win in 58.21% of all simulations, UD Las Palmas win in 20.1% and there 
-                is a draw in the remaining 21.69%. Thus, for this fixture, the probabilities are: home win, 20.1%; draw: 21.69%; 
-                and away win, 58.21%.
+                is a draw in the remaining 21.69%. Thus, for this fixture, the probabilities (calculated using key stats) are: 
+                home win, 20.1%; draw: 21.69%; and away win, 58.21%.
             </p>
             <p class="entry-paragraph">
                 Now that we have the outcome probabilities for each fixture in hand (figure 4), we can move on to the second part of the model.
@@ -255,8 +261,7 @@
             <figure class="entry-figure" id="figure04">
                 <img class="entry-graph-img" src="liga_sim_img/fig04.png" alt="probabilities tibble">
                 <figcaption class="figure-caption">
-                    <b>Figure 4.</b> View of the first rows of the <code class="code-text"><i>gb_probs</i></code> tibble (that contains
-                    outcome probabilities calculated using actual goals for all the remaining fixtures of the league).
+                    <b>Figure 4.</b> View of the first rows of the <code class="code-text"><i>gb_probs</i></code> tibble.
                 </figcaption>
             </figure>
             <h4>Part 2: Elo-based.</h4>
@@ -296,7 +301,8 @@
                 <i>P<sub>d</sub></i> is the draw probability, <i>B<sub>d</sub></i> the baseline draw probability (calculated 
                 from current statistics in the current league table), <i>P<sub>h</sub></i> is the home win probability, and 
                 <i>P<sub>a</sub></i> is the away win probability. To calculate the baseline draw probability, I take the 
-                average of the home team's draw frequency in home games and the visiting team's draw frequency in away games.
+                average of the home team's draw frequency in home games and the visiting team's draw frequency in away games
+                (from the <code class="code-text"><i>liga_table</i></code> tibble).
             </p>
             <details>
                 <summary class="R-code-button">R code.</summary>
@@ -320,11 +326,11 @@
             </p>
             <h4>Combining parts 1 & 2.</h4>
             <p class="entry-paragraph">
-                Now it's time to combine both parts and calculate the final probabilities (figure 6) as well as run a simulation to predict 
+                Now it's time to combine both parts and calculate the final probabilities (figure 6) as well as run simulations to predict 
                 the final table. To calculate the final probabilities, I'll use a weighting factor (<i>&alpha;</i>) to give more weight to 
-                the probabilities derived from Elo points. Arbitrarily, I will choose an <i>&alpha;</i> = 0.75, to keep things simple. 
+                the probabilities derived from Elo points. To keep thing simple, I will choose an <i>&alpha;</i> = 0.75. 
                 This value is entirely arbitrary, since I have decided to give more importance to each club's current strengths 
-                (estimated by Elo points) than to the past performances (I'll discuss more about alpha at the end of this post).
+                (estimated by Elo points) than to the past performances (I'll discuss more about <i>&alpha;</i> at the end of this post).
             </p>
             <details>
                 <summary class="R-code-button">R code.</summary>
@@ -339,7 +345,8 @@
             <p class="entry-paragraph">
                 Once this step is completed, it's time to run the simulations. To do this, I'll first define a new function 
                 (<code class="code-text"><i>sim_fixture2</i></code>) to simulate the outcome of each fixture using the 
-                calculated probabilities. Then I'll use this function to run the simulations.
+                calculated probabilities. Then I'll use this function to run the simulations (and store them in the
+                <code class="code-text"><i>final_sim_results</i></code> tibble).
             </p>
             <details>
                 <summary class="R-code-button">R code.</summary>
@@ -408,14 +415,14 @@
                 <img src="liga_sim_img/R_chunk19.png" alt="R code" class="R-code">
             </details>
             <p class="entry-paragraph">
-                The model predicts a really tight title race between Real Madrid and Barcelona, with Real Madrid having a very 
+                The model predicts a very tight title race between Real Madrid and Barcelona, with Real Madrid having a 
                 slight advantage (48.47% vs. 45.32% probability to win the league; figure 7). Atlético are in third, though not far 
                 behind, with less than 5 points separating them from Real Madrid or Barcelona in terms of average points 
                 earned (figure 8). In fact, looking at the projected points distributions (figure 9), I would say it looks like 
                 a 3-horse race for the title.
             </p>
             <p class="entry-paragraph">
-                What's clear is that one of these 3 teams will be crowned champions. Which club will join them in next season's 
+                What's clear is that one of these three teams will presumably be crowned champions. Which club will join them in next season's 
                 UEFA Champions League? According to the model, Athletic Club will finish fourth (67.38% probability, 68 points 
                 expected on average; figures 7 & 8), followed by Villarreal in the distance (20.39% probabilities of finishing 4<sup>th</sup>; 
                 62 points expected on average). The model predicts Villarreal will finish 5<sup>th</sup>, thus earning them a 
@@ -441,9 +448,9 @@
             <p class="entry-paragraph">
                 The same is true for the fight to avoid relegation, except for Valladolid, who seem very unlikely to escape the 
                 drop (85.09% probabilities to finish last, 97.55% probabilities to finish in the bottom 3; figure 7 & table 2). 
-                The other two relegation spots will be decided in a very dramatic race between 5 clubs: Valencia, Leganés, 
+                The other two relegation spots will presumably be decided in a very dramatic race between 5 clubs: Valencia, Leganés, 
                 Espanyol, and Las Palmas. Even though the model gives Las Palmas a 43.4% relegation probability and Valencia 
-                only 25.14% (the clubs with the highest and lowest relegation probability, after Valladolid; table 2), 
+                a 25.14% (the clubs with the highest and lowest relegation probability, after Valladolid; table 2), 
                 the 5 clubs are predicted to finish the league with a point difference of just 2 points between them. 
                 It looks very very exciting and dramatic as well!
             </p>
@@ -465,9 +472,9 @@
                 clubs (such as European competitions or the Spanish Copa del Rey), which also affects Elo points.
             </p>
             <p class="entry-paragraph">
-                Finally, another factor to consider is alpha, which I arbitrarily decided to set to 0.75, giving the 
+                Finally, another factor to consider is <i>&alpha;</i>, which I arbitrarily decided to set to 0.75, giving the 
                 probabilities calculated using Elo points a much higher weight in the calculation of the final probabilities for 
-                each fixture. A better way to calculate alpha could be by gathering historical results and try to estimate the 
+                each fixture. A better way to calculate <i>&alpha;</i> could be by gathering historical results and try to estimate the 
                 best value using machine learning algorithms.
             </p>
             <p class="entry-paragraph">

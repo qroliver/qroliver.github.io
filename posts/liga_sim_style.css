@@ -217,6 +217,25 @@ footer img{
     height: auto;
 }
 
+.table01-fig03{
+    display: grid; 
+    grid-template-columns: 30% 70%; 
+    gap: 30px; 
+    place-items: center;
+}
+
+.table01{
+    transform: translateX(-10%); 
+    font-size: 1rem; 
+    color: rgb(6, 71, 81);
+}
+
+.fig03{
+    transform: translateX(-40%); 
+    font-size: 1rem; 
+    color: rgb(6, 71, 81);
+}
+
 
 @media (max-width: 767px){
     header{
