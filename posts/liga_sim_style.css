@@ -224,15 +224,43 @@ footer img{
     place-items: center;
 }
 
-.table01{
+.table01-img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.table01-figcaption{
     transform: translateX(-10%); 
     font-size: 1rem; 
     color: rgb(6, 71, 81);
 }
 
-.fig03{
+.fig03-img{
+    max-width: 90%; 
+    height: auto;
+}
+
+.fig03-figcaption{
     transform: translateX(-40%); 
     font-size: 1rem; 
+    color: rgb(6, 71, 81);
+}
+
+.table02-container {
+    display: block; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.table02-img {
+    max-width: 50%; 
+    height: auto;
+}
+
+.table02-figcaption {
+    transform: translateX(-3%); 
+    font-size: 1rem; 
+    margin-top: 5px; 
     color: rgb(6, 71, 81);
 }
 
@@ -331,22 +359,40 @@ footer img{
         display: block; 
         place-items: center;
     }
+
+    .table01-img{
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .fig03-img{
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
     
-    .table01{
+    .table01-figcaption{
         transform: translateX(-10%); 
         font-size: 1rem; 
         color: rgb(6, 71, 81);
     }
     
-    .fig03{
+    .fig03-figcaption{
         transform: translateX(-10%); 
         font-size: 1rem; 
         color: rgb(6, 71, 81);
     }
 
+    .table02-img {
+        max-width: 100%; 
+        height: auto;
+    }
+
     footer img{
         max-width: 10%;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
