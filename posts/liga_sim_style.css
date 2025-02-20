@@ -313,15 +313,35 @@ footer img{
     }
 
     .figure-caption{
+        position: relative;
+        display: block;
+        text-align: justify;
         font-size: 0.85rem;
     }
 
     details{
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .R-code{
         max-width: 100%;
+    }
+
+    .table01-fig03{
+        display: block; 
+        place-items: center;
+    }
+    
+    .table01{
+        transform: translateX(-10%); 
+        font-size: 1rem; 
+        color: rgb(6, 71, 81);
+    }
+    
+    .fig03{
+        transform: translateX(-10%); 
+        font-size: 1rem; 
+        color: rgb(6, 71, 81);
     }
 
     footer img{
