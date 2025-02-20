@@ -124,6 +124,12 @@ a{
     color: rgb(12, 102, 117);
 }
 
+.separator{
+    height: 2px; 
+    background-color: rgba(12, 102, 117, 0.1); 
+    margin: 35px 0;
+}
+
 .graph-slideshow{
     padding: 20px;
     padding-left: 0;
