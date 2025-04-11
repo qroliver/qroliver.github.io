@@ -28,8 +28,15 @@ a{
 .logo-img{
     max-width: 20%;
     height: auto;
-    border-radius: 6%;
+    margin-left: 20px;
     padding: 15px;
+}
+
+.logo{
+    max-width: 25%;
+    height: auto;
+    margin-left: 25px;
+    padding: 0;
 }
 
 .header-name{
@@ -44,14 +51,14 @@ a{
 
 .header-nav{
     display: flex;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .header-nav-list{
     display: inline-flex;
     list-style-type: none;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .header-nav-list a{
@@ -109,8 +116,8 @@ a{
 
 .section{
     margin-top: 40px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 200px;
+    margin-right: 100px;
 }
 
 .section-header{
@@ -238,7 +245,7 @@ a{
     font-weight: bold;
 }
 
-.experience-entry-content span{
+.experience-entry-content-company{
     font-size: 1.4rem;
     color: grey;
 }
@@ -251,6 +258,12 @@ a{
     line-height: 1.5;
     margin-left: 5px;
     margin-top: 2px;
+}
+
+.experience-entry-content-skills{
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .pub-teaching{
@@ -322,6 +335,11 @@ a{
         padding: 0;
         max-width: 25%;
         border-radius: 2px;
+    }
+
+    .logo{
+        max-width: 50%;
+        margin: auto 20%;
     }
 
     .header-name{

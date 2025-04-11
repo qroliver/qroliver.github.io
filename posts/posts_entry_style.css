@@ -28,8 +28,15 @@ a{
 .logo-img{
     max-width: 20%;
     height: auto;
-    border-radius: 6%;
+    margin-left: 20px;
     padding: 15px;
+}
+
+.logo{
+    max-width: 25%;
+    height: auto;
+    margin-left: 25px;
+    padding: 0;
 }
 
 .header-name{
@@ -44,14 +51,14 @@ a{
 
 .header-nav{
     display: flex;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .header-nav-list{
     display: inline-flex;
     list-style-type: none;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .header-nav-list a{
@@ -228,6 +235,11 @@ footer img{
         padding: 0;
         max-width: 25%;
         border-radius: 2px;
+    }
+
+    .logo{
+        max-width: 50%;
+        margin: auto 20%;
     }
 
     .header-name{
