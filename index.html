@@ -1,206 +1,220 @@
 <!DOCTYPE html>
-<head lang="eng">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Oliver Q.R.">
-    <title>Oliver Q.R.</title>
-    <link rel="icon" type="image/x-icon" href="img/small_icon.ico">
-    <link rel="stylesheet" href="style_main.css">
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-</head>
-<body>
-    <header>
-        <div class="logo-name">
-            <img src="img/Icon_1b.jpg" class="logo-img">
-            <a href="https://www.oliverqr.com"><img src="img/logo_white.png" alt="logo" class="logo"></a>
-        </div>
-        <div class="header-nav">
-            <ul class="header-nav-list">
-                <li><a href="https://www.oliverqr.com">Home</a></li>
-                <li><a href="https://www.oliverqr.com/posts">Posts</a></li>
-                <li><a href="#graphs">Graphs</a></li>
-                <li><a href="#me">Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="main-body">
-        <div class="main-section" id="posts">
-            <div class="main-left-column">
-                <a href="https://www.oliverqr.com/posts"><h2>Posts</h2></a>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Oliver Q.R.">
+        <title>Oliver Q.R.</title>
+        <link rel="icon" type="image/x-icon" href="img/small_icon.ico">
+        <link rel="stylesheet" href="style_main.css">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=poppins:400,600|roboto:400,700" rel="stylesheet" />
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-name">
+                <img src="img/Icon_1b.jpg" class="logo-img">
+                <a href="https://www.oliverqr.com"><img src="img/logo_white.png" alt="logo" class="logo"></a>
             </div>
-            <div class="main-right-column">
-                <div>
-                    <a href="https://www.oliverqr.com/posts/global_energy_trends">
-                        <h2 class="main-right-title">Energy trends and a peek at CO<sub>2</sub> emissions: a global snapshot.</h2>
-                    </a>
-                    <span class="main-right-subtitle">
-                        <i>Posted on <time datetime="2025-03-15">15 March 2025</time></i>
-                    </span>
-                    <p class="main-right-paragraph">
-                        Energy production and consumption are at the core of technological development, economic growth, and, in 
-                        general, human well-being. Already from the very beginning of our civilisation, when early humans figured 
-                        out how to control fire, allowing them to better resist cold temperatures or to cook their food, energy has 
-                        been central to our development. The Industrial Revolution, healthcare advancements, food production and 
-                        storage, transport systems, etc. would never have been possible without increasing production and consumption 
-                        of energy.
-                    </p>
-                    <span class="continue-reading">
-                        <a href="https://www.oliverqr.com/posts/global_energy_trends#keep-reading"><i>Continue reading...</i></a>
-                    </span>
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li><a href="https://www.oliverqr.com">Home</a></li>
+                    <li><a href="https://www.oliverqr.com/posts">Posts</a></li>
+                    <li><a href="#graphs">Graphs</a></li>
+                    <li><a href="#me">Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="posts">
+                <div class="section-title">
+                    <a href="https://www.oliverqr.com/posts"><h2>Posts</h2></a>
                 </div>
-                <div class="separator"></div>
-                <div>
-                    <a href="https://www.oliverqr.com/posts/liga_sim">
-                        <h2 class="main-right-title">A (very) simple simulation of the Spanish La Liga.
-                        </h2>
-                    </a>
-                    <span class="main-right-subtitle">
-                        <i>Posted on <time datetime="2025-02-19">19 February 2025</time></i>
-                    </span>
-                    <h3>Introduction</h3>
-                    <p class="main-right-paragraph">
-                        The beautiful game, the most popular sport in the world. Football. Drama, joy, tension, passion, 
-                        unpredictability... A roller coaster of emotions played out over 90 minutes (or 120!), 
-                        for 9 months a year, shaping the fate of each club in every league / cup competition across the globe.
-                    </p>
-                    <p class="main-right-paragraph">
-                        Will my club win the league? Qualify for a European competition? Avoid relegation? 
-                        Or is it finally the year we go up? Many questions, no certain answers. Unpredictability... 
-                        but is there a way to get a hint of what's to come, to predict the future?
-                    </p>
-                    <span class="continue-reading">
-                        <a href="https://www.oliverqr.com/posts/liga_sim#keep-reading"><i>Continue reading...</i></a>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="main-section" id="graphs">
-            <div class="main-left-column">
-                <h2>Graphs</h2>
-            </div>
-            <div class="graph-slideshow">
-                <img class="slideshow-pic" src="img/Temp2023_day_by_day.png" alt="2023 daily mean temperature and deviation from the reference" onclick="expandImage(this)">
-                <img class="slideshow-pic" src="img/Annual temperature.png" alt="annual temperature graph" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="img/Annual precipitation.png" alt="annual precipitation graph" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/ace_weather_img/fig08_prec temp anomalies.png" alt="precipitation and temperature anomalies by year in Lanzarote" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/liga_sim_img/fig09.png" alt="predicted point distributions for each club in La Liga" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig02_Global primary energy consumption per capita.png" alt="Global primary energy consumption per capita" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig06_Global energy mix in 2023.png" alt="Global energy mix in 2023" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig08_Top 20 countries by renewables share in 2023.png" alt="top20 countries by renewables share in 2023" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig09_Renewables share in Europe in 2023.png" alt="renewables share in Europe in 2023" onclick="expandImage(this)" style="display: none;">
-                <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig14_CO2 emissions vs. Primary energy cons in 2023.png" alt="CO2 emissions vs. primary energy consumption per capita by country in 2023" onclick="expandImage(this)" style="display: none;">
-                <button class="slideshow-button" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="slideshow-button" onclick="plusDivs(+1)">&#10095;</button>
-            </div>
-            <!--Full screen image upon clicking-->
-            <div class="full-screen-container" id="full-screen-image-container" onclick="closeExpandedImage()">
-                <span class="close-button">&times;</span>
-                <img class="full-screen-image" id="full-screen-image">
-            </div>
-        </div>
-        <div class="main-section" id="me">
-            <div class="main-left-column" style="align-items: center;">
-                <img src="img/Yo.png" class="me-pic" alt="author picture">
-                <div class="media-icons">
-                    <a href="https://www.linkedin.com/in/oliver-quevedo-rodriguez-b2109439/" target="_blank" class="logo-link">
-                        <img src="img/LinkedIn_logo.png" alt="LinkedIn logo">
-                    </a>
-                    <a href="https://www.github.com/qroliver" target="_blank", class="logo-link">
-                        <img src="img/GitHub_logo.png" alt="GitHub logo">
-                    </a>
-                    <a href="https://bsky.app/profile/qvdoli.bsky.social" target="_blank" class="logo-link">
-                        <img src="img/BlueSky_logo.png" alt="Bluesky logo">
-                    </a>
-                </div>
-            </div>
-            <div class="main-right-column">
-                <h2 class="main-right-title">About me</h2>
-                <p class="main-right-paragraph">
-                    Hello!
-                </p>
-                <p class="main-right-paragraph">
-                    Welcome to my web. This is a personal project I decided to put together during a career break (which also 
-                    gave me the chance to pick up some basic html and css skills along the way). Here, I plan to share small 
-                    data analysis projects I work on during my spare time.
-                </p>
-                <p class="main-right-paragraph">
-                    But let me introduce myself. My name is Oliver and I'm a molecular biologist (Ph.D.) with a passion for 
-                    data analysis/science. I have 18+ years of experience in biotech and biopharma research, during which I've 
-                    built solid expertise in data analysis, genetic engineering and high-throughput screenings.
-                </p>
-                <p class="main-right-paragraph">
-                    I'm a curious person who enjoys learning new things and taking on fresh challenges. If you'd like to know 
-                    more about me and my skills, feel free to check out my <a href="https://www.oliverqr.com/cv">CV</a>, or just drop 
-                    me a message using the <a href="https://www.oliverqr.com#contact">form</a> below.
-                </p>
-                <div class="interests-education">
+                <div class="section-content">
                     <div>
-                        <h3 class="inted-header"><u>Interests</u></h3>
-                        <ul class="intered-list">
-                            <li>R programming</li>
-                            <li>Python</li>
-                            <li>Machine learning</li>
-                            <li>Data science</li>
-                            <li>Biotechnology</li>
-                            <li>Genetic engineering</li>
-                            <li>High-throughput screenings</li>
-                        </ul>
+                        <a href="https://www.oliverqr.com/posts/global_energy_trends">
+                            <h2 class="section-content-title">Energy trends and a peek at CO<sub>2</sub> emissions: a global snapshot.</h2>
+                        </a>
+                        <span class="section-content-subtitle">
+                            <i>Posted on <time datetime="2025-03-15">15 March 2025</time></i>
+                        </span>
+                        <p class="section-content-paragraph">
+                            Energy production and consumption are at the core of technological development, economic growth, and, in 
+                            general, human well-being. Already from the very beginning of our civilisation, when early humans figured 
+                            out how to control fire, allowing them to better resist cold temperatures or to cook their food, energy has 
+                            been central to our development. The Industrial Revolution, healthcare advancements, food production and 
+                            storage, transport systems, etc. would never have been possible without increasing production and consumption 
+                            of energy.
+                        </p>
+                        <span class="continue-reading">
+                            <a href="https://www.oliverqr.com/posts/global_energy_trends#keep-reading"><i>Continue reading...</i></a>
+                        </span>
                     </div>
+                    <div class="separator"></div>
                     <div>
-                        <h3 class="inted-header"><u>Education</u></h3>
-                        <ul class="intered-list">
-                            <li style="margin-top: 2px;">Ph.D. in Biomedical Sciences<br>
-                                <span class="education-list-subtitle">
-                                    <i>University of La Laguna, 2013</i>
-                                </span>
-                            </li>
-                            <li>M.Sc. in Biotechnology<br>
-                                <span class="education-list-subtitle">
-                                    <i>University of La Laguna, 2009</i>
-                                </span>
-                            </li>
-                            <li>M.Sc. in Biomedical Research<br>
-                                <span class="education-list-subtitle">
-                                    <i>University of La Laguna, 2009</i>
-                                </span>
-                            </li>
-                            <li>B.Sc. (<i>Lcdo.</i>) in Biology<br>
-                                <span class="education-list-subtitle">
-                                    <i>University of La Laguna, 2007</i>
-                                </span>
-                            </li>
-                        </ul>
+                        <a href="https://www.oliverqr.com/posts/liga_sim">
+                            <h2 class="section-content-title">A (very) simple simulation of the Spanish La Liga.
+                            </h2>
+                        </a>
+                        <span class="section-content-subtitle">
+                            <i>Posted on <time datetime="2025-02-19">19 February 2025</time></i>
+                        </span>
+                        <h3>Introduction</h3>
+                        <p class="section-content-paragraph">
+                            The beautiful game, the most popular sport in the world. Football. Drama, joy, tension, passion, 
+                            unpredictability... A roller coaster of emotions played out over 90 minutes (or 120!), 
+                            for 9 months a year, shaping the fate of each club in every league / cup competition across the globe.
+                        </p>
+                        <p class="section-content-paragraph">
+                            Will my club win the league? Qualify for a European competition? Avoid relegation? 
+                            Or is it finally the year we go up? Many questions, no certain answers. Unpredictability... 
+                            but is there a way to get a hint of what's to come, to predict the future?
+                        </p>
+                        <span class="continue-reading">
+                            <a href="https://www.oliverqr.com/posts/liga_sim#keep-reading"><i>Continue reading...</i></a>
+                        </span>
                     </div>
                 </div>
-                <span class="continue-reading">
-                    <a href="https://www.oliverqr.com/cv">☞<i>Full CV</i></a>
-                </span>
-            </div>
-        </div>
-        <div class="main-section" id="contact">
-            <div class="main-left-column">
-                <h2>Contact</h2>
-            </div>
-            <div class="main-right-column">
-                <div class="contact-form">
-                    <form action="https://usebasin.com/f/453537d35ae1" method="POST">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit">Send message</button>
-
-                        <input type="text" name="honeypot" style="display: none;">
-                        <div class="h-captcha" data-sitekey="7fe715a1-151f-4c63-b497-bd971974df05"></div>
-                    </form>
+            </section>
+            <section id="graphs">
+                <div class="section-title">
+                    <h2>Graphs</h2>
                 </div>
-            </div>
-        </div>
-    </div>
-    <script src="slideshow_script.js"></script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f4ab677f2e4d462b86f72e7458757d20"}'></script>
-</body>
+                <div class="graph-slideshow">
+                    <img class="slideshow-pic" src="img/Temp2023_day_by_day.png" alt="2023 daily mean temperature and deviation from the reference" onclick="expandImage(this)">
+                    <img class="slideshow-pic" src="img/Annual temperature.png" alt="annual temperature graph" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="img/Annual precipitation.png" alt="annual precipitation graph" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/ace_weather_img/fig08_prec temp anomalies.png" alt="precipitation and temperature anomalies by year in Lanzarote" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/liga_sim_img/fig09.png" alt="predicted point distributions for each club in La Liga" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig02_Global primary energy consumption per capita.png" alt="Global primary energy consumption per capita" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig06_Global energy mix in 2023.png" alt="Global energy mix in 2023" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig08_Top 20 countries by renewables share in 2023.png" alt="top20 countries by renewables share in 2023" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig09_Renewables share in Europe in 2023.png" alt="renewables share in Europe in 2023" onclick="expandImage(this)" style="display: none;">
+                    <img class="slideshow-pic" src="/posts/global_energy_trends_img/Fig14_CO2 emissions vs. Primary energy cons in 2023.png" alt="CO2 emissions vs. primary energy consumption per capita by country in 2023" onclick="expandImage(this)" style="display: none;">
+                    <button class="slideshow-button" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slideshow-button" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+                <!--Full screen image upon clicking-->
+                <div class="full-screen-container" id="full-screen-image-container" onclick="closeExpandedImage()">
+                    <span class="close-button">&times;</span>
+                    <img class="full-screen-image" id="full-screen-image">
+                </div>
+            </section>
+            <section id="me">
+                <div>
+                    <div class="section-title">
+                        <h2>About me</h2>
+                    </div>
+                    <div>
+                        <img src="img/Yo.png" class="me-pic" alt="author picture">
+                        <div class="media-icons">
+                            <a href="https://www.linkedin.com/in/oliver-quevedo-rodriguez-b2109439/" target="_blank" class="logo-link">
+                                <img src="img/LinkedIn_logo.png" alt="LinkedIn logo">
+                            </a>
+                            <a href="https://www.github.com/qroliver" target="_blank", class="logo-link">
+                                <img src="img/GitHub_logo.png" alt="GitHub logo">
+                            </a>
+                            <a href="https://bsky.app/profile/qvdoli.bsky.social" target="_blank" class="logo-link">
+                                <img src="img/BlueSky_logo.png" alt="Bluesky logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div style="margin-top: 30px;">
+                        <p class="section-content-paragraph">
+                            Hello!
+                        </p>
+                        <p class="section-content-paragraph">
+                            Welcome to my web. This is a personal project I decided to put together during a career break (which also 
+                            gave me the chance to pick up some basic html and css skills along the way). Here, I plan to share small 
+                            data analysis projects I work on during my spare time.
+                        </p>
+                        <p class="section-content-paragraph">
+                            But let me introduce myself. My name is Oliver and I'm a molecular biologist (Ph.D.) with a passion for 
+                            data analysis/science. I have 18+ years of experience in biotech and biopharma research, during which I've 
+                            built solid expertise in data analysis, genetic engineering and high-throughput screenings.
+                        </p>
+                        <p class="section-content-paragraph">
+                            I'm a curious person who enjoys learning new things and taking on fresh challenges. If you'd like to know 
+                            more about me and my skills, feel free to check out my <a href="https://www.oliverqr.com/cv">CV</a>, or just drop 
+                            me a message using the <a href="https://www.oliverqr.com#contact">form</a> below.
+                        </p>
+                    </div>
+                    <div class="interests-education">
+                        <div>
+                            <h3 class="inted-header"><u>Interests</u></h3>
+                            <ul class="intered-list">
+                                <li>R programming</li>
+                                <li>Python</li>
+                                <li>Machine learning</li>
+                                <li>Data science</li>
+                                <li>Biotechnology</li>
+                                <li>Genetic engineering</li>
+                                <li>High-throughput screenings</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="inted-header"><u>Education</u></h3>
+                            <ul class="intered-list">
+                                <li style="margin-top: 2px;">Ph.D. in Biomedical Sciences<br>
+                                    <span class="education-list-subtitle">
+                                        <i>University of La Laguna, 2013</i>
+                                    </span>
+                                </li>
+                                <li>M.Sc. in Biotechnology<br>
+                                    <span class="education-list-subtitle">
+                                        <i>University of La Laguna, 2009</i>
+                                    </span>
+                                </li>
+                                <li>M.Sc. in Biomedical Research<br>
+                                    <span class="education-list-subtitle">
+                                        <i>University of La Laguna, 2009</i>
+                                    </span>
+                                </li>
+                                <li>B.Sc. (<i>Lcdo.</i>) in Biology<br>
+                                    <span class="education-list-subtitle">
+                                        <i>University of La Laguna, 2007</i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="continue-reading">
+                        <a href="https://www.oliverqr.com/cv">☞<i>Full CV</i></a>
+                    </span>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="section-content">
+                    <div class="contact-form">
+                        <form action="https://usebasin.com/f/453537d35ae1" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                            <button type="submit">Send message</button>
+    
+                            <input type="text" name="honeypot" style="display: none;">
+                            <div class="h-captcha" data-sitekey="7fe715a1-151f-4c63-b497-bd971974df05"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <p>© <span id="current-year"></span> Oliver Q.R. | Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a></p>
+        </footer>
+        <script src="slideshow_script.js"></script>
+        <script src="footer_year_update.js"></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f4ab677f2e4d462b86f72e7458757d20"}'></script>
+    </body>
+</html>

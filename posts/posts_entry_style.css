@@ -8,7 +8,8 @@ body{
 }
 
 header{
-    display: flex;
+    display: grid;
+    grid-template-areas: "logo-name header-nav";
     background-color: rgb(12, 102, 117);
     border-radius: 10px;
     color: white;
@@ -29,7 +30,7 @@ a{
     max-width: 20%;
     height: auto;
     margin-left: 20px;
-    padding: 15px;
+    border-radius: 2px;
 }
 
 .logo{
@@ -62,23 +63,18 @@ a{
 }
 
 .header-nav-list a{
+    font-family: 'Poppins';
     color: white;
     font-size: 2.25rem;
     font-weight: bold;
 }
 
-body{
-    background-color: white;
-    font-family: 'Roboto';
-    color: black;
-}
-
-.main-body{
+main{
     display: flex;
-    gap: 10%;
-    margin-left: 5%;
-    margin-right: 15%;
-    margin-top: 50px;
+    gap: 100px;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 35px;
     margin-bottom: 15px;
 }
 
@@ -109,12 +105,13 @@ body{
     color: rgb(12, 102, 117);
 }
 
-.post-entry{
+article{
     justify-content: center;
 }
 
 .entry-title{
-    color: rgb(6, 71, 81);
+    color: rgb(6, 71, 82);
+    font-family: 'Poppins';
     font-size: 2.75rem;
     font-weight: bold;
     text-align: justify;
@@ -157,32 +154,26 @@ body{
 }
 
 .figure_1-caption{
-    transform: translateX(32.5%);
+    transform: translateX(20%);
 }
 
 .R-code-button{
-    color: rgb(6, 71, 81);
+    color: rgb(6, 71, 82);
 }
 
 .R-code{
     max-width: 80%;
     height: auto;
-    border: 1px solid rgb(6, 71, 81);
+    border: 1px solid rgb(6, 71, 82);
     border-radius: 5px;
 }
 
 h3{
+    font-family: 'Poppins';
     font-size: 2rem;
     color: rgb(6, 71, 81);
     margin-top: 35px;
     margin-bottom: 20px;
-}
-
-h4{
-    font-size: 1.6rem;
-    color: rgb(6, 71, 81);
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .code-text{
@@ -194,25 +185,84 @@ h4{
     background-color: rgba(12, 102, 117, 0.1);
 }
 
-footer{
+h4{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    color: rgb(6, 71, 81);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.paragraph-table-layout{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    align-items: center;
+}
+
+.paragraph-table-layout-paragraph{
+    flex: 1; 
+    max-width: 65%; 
+    box-sizing: border-box;
+}
+
+.paragraph-table-layout-table{
+    flex: 1; 
+    max-width: 65%; 
+    box-sizing: border-box;
+}
+
+.graph-table-layout{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.graph-table-layout-graph{
+    flex: 1; 
+    max-width: 70%; 
+    box-sizing: border-box;
+}
+
+.graph-table-layout-table{
+    flex: 1; 
+    max-width: 30%; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    text-align: center;
+}
+
+.go-to-footer{
     display: inline-flex;
     gap: 2%;
-    margin-left: 22%;
-    margin-right: 15%;
+    margin-left: 320px;
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 5px;
     vertical-align: middle;
 }
 
-footer a{
+.go-to-footer a{
     text-decoration: none;
     color: rgb(12, 102, 117);
 }
 
-footer img{
+.go-to-footer img{
     max-width: 5%;
     height: auto;
+}
+
+.main-footer{
+    margin: 35px 90px;
+    font-size: 0.75rem;
+    color: rgba(12, 102, 117, 0.6);
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: rgba(12, 102, 117, 0.6);
 }
 
 
@@ -263,10 +313,10 @@ footer img{
     }
 
     .header-nav-list a{
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
-    .main-body{
+    main{
         margin: 20px;
     }
 
@@ -275,48 +325,125 @@ footer img{
     }
 
     .entry-title{
-        margin-top: 5px;
-        font-size: 2rem;
-    }
-
-    .entry-figure{
-        position: relative;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .entry-graph-img{
-        max-width: 100%;
-        height: auto;
+        text-align: left;
     }
 
     .figure_1-caption{
-        transform: none;
-    }
-
-    .figure-caption{
-        font-size: 0.85rem;
+        transform: translateX(0);
     }
 
     details{
-        margin-top: 50px;
+        margin-top: 35px;
     }
 
-    .R-code{
+    .paragraph-table-layout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paragraph-table-layout-paragraph{
         max-width: 100%;
     }
 
-    footer img{
+    .paragraph-table-layout-table{
+        max-width: 100%;
+    }
+
+    .graph-table-layout{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .graph-table-layout-graph{
+        flex: 1; 
+        max-width: 100%; 
+        box-sizing: border-box;
+    }
+    
+    .graph-table-layout-table{
+        flex: 1; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .go-to-footer{
+        margin-left: 15px;
+    }
+
+    .go-to-footer img{
         max-width: 10%;
+    }
+
+    .main-footer{
+        margin: 20px 20px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 899px){
+    main{
+        margin: 35px 30px;
+        gap: 60px;
+    }
+
     .logo-img{
         padding: 0;
+        max-width: 30%;
         border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 55%;
+    }
+
+    .header-main-name{
+        font-size: 2.75rem;
+    }
+
+    .header-nav{
+        margin-right: 25px;
+    }
+
+    .header-nav-list a{
+        font-size: 1.5rem;
+    }
+
+    .main-body{
+        margin: 40px;
+    }
+
+    .section-title h2{
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    details{
+        margin-top: 15px;
+    }
+
+    .go-to-footer{
+        margin-left: 210px;
+    }
+
+    .main-footer{
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px){
+
+    .logo-img{
+        padding: 0;
+        max-width: 30%;
+        border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 60%;
     }
 
     .header-main-name{
@@ -331,12 +458,28 @@ footer img{
         font-size: 2rem;
     }
 
-    .main-body{
+    main{
         margin: 40px;
+        gap: 75px;
     }
 
-    footer{
-        margin: 0;
-        justify-content: right;
+    details{
+        margin-top: 20px;
+    }
+
+    .paragraph-table-layout-paragraph{
+        max-width: 70%;
+    }
+
+    .paragraph-table-layout-table{
+        max-width: 30%;
+    }
+
+    .go-to-footer{
+        margin-left: 235px;
+    }
+
+    .main-footer{
+        margin-left: 45px;
     }
 }

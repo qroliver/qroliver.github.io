@@ -8,7 +8,8 @@ body{
 }
 
 header{
-    display: flex;
+    display: grid;
+    grid-template-areas: "logo-name header-nav";
     background-color: rgb(12, 102, 117);
     border-radius: 10px;
     color: white;
@@ -17,6 +18,7 @@ header{
 
 a{
     text-decoration: none;
+    color: rgb(12, 102, 117);
 }
 
 .logo-name{
@@ -29,7 +31,7 @@ a{
     max-width: 20%;
     height: auto;
     margin-left: 20px;
-    padding: 15px;
+    border-radius: 2px;
 }
 
 .logo{
@@ -62,16 +64,10 @@ a{
 }
 
 .header-nav-list a{
+    font-family: 'Poppins';
     color: white;
     font-size: 2.25rem;
     font-weight: bold;
-}
-
-.main-body{
-    margin-top: 45px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 45px;
 }
 
 .dropdown{
@@ -94,7 +90,7 @@ a{
     position: absolute;
     overflow: auto;
     border: 1px solid rgb(6, 71, 81);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .dropdown:hover .dropdown-content{
@@ -114,10 +110,14 @@ a{
     background-color: rgb(6, 71, 81);
 }
 
-.section{
-    margin-top: 40px;
+section{
+    margin-top: 100px;
     margin-left: 200px;
-    margin-right: 100px;
+    margin-right: 200px;
+}
+
+.first-section{
+    margin-top: 0;
 }
 
 .section-header{
@@ -126,20 +126,21 @@ a{
     margin-bottom: 15px;
 }
 
-.section-img{
+.section-header-icon{
     max-width: 75px;
     height: auto;
 }
 
 .section-title{
     color: rgb(6, 71, 81);
+    font-family: 'Poppins';
     font-size: 2.75rem;
     font-weight: bold;
     margin: 0;
     margin-left: 30px;
 }
 
-.section-body-box{
+.section-content{
     border: 2px solid rgb(12, 102, 117); 
     border-radius: 5px; 
     box-shadow: 0 0 2px 3px rgba(12, 102, 117, 0.7);
@@ -167,6 +168,7 @@ a{
 }
 
 .core-skills-subsection h3{
+    font-family: 'Poppins';
     font-size: 1.75rem;
     color: rgb(6, 71, 81);
     font-weight: bold;
@@ -195,6 +197,7 @@ a{
 }
 
 .other-skills-subsection h4{
+    font-family: 'Poppins';
     font-size: 1.5rem;
     color: rgb(6, 71, 81);
     font-weight: bold;
@@ -211,12 +214,22 @@ a{
     margin-top: 2px;
 }
 
+.experience-entry-first{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
 .experience-entry{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 20% 80%;
     gap: 20px;
-    padding: 40px;
+    padding: 0;
+    padding-top: 30px;
     margin: 0;
+    margin-top: 30px;
 }
 
 .experience-entry-date{
@@ -226,22 +239,24 @@ a{
 
 .experience-entry-date span{
     display: block;
+    font-family: 'Poppins';
     font-weight: bold;
     font-size: 1.75rem;
-    color: rgb(6, 71, 81);
+    color: rgb(6, 71, 82);
     font-weight: bold;
 }
 
 .experience-entry-content{
     padding: 0 0 0 30px;
-    border-left: 2px dotted rgb(6, 71, 81);
+    border-left: 2px dotted rgb(6, 71, 82);
 }
 
 .experience-entry-content h3{
     margin-top: 0px;
     margin-bottom: 5px;
+    font-family: 'Poppins';
     font-size: 1.75rem;
-    color: rgb(6, 71, 81);
+    color: rgb(6, 71, 82);
     font-weight: bold;
 }
 
@@ -266,9 +281,16 @@ a{
     line-height: 1.5;
 }
 
+.experience-entry-content p{
+    color: grey; 
+    font-size: 1rem; 
+    margin-top: 0; 
+    padding-left: 10px;
+}
+
 .pub-teaching{
     margin: 0;
-    padding: 40px;
+    padding: 0;
 }
 
 .pub-teaching-entry{
@@ -291,6 +313,7 @@ a{
 
 .pub-teaching-entry ul{
     margin: 0;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
@@ -298,13 +321,9 @@ a{
     color: rgb(6, 71, 81);
 }
 
-.pub-teaching-entry-ul{
-    margin-top: 10px;
-}
-
 .section-logos{
-    margin-top: 10px; 
-    margin-right: 150px;
+    margin-top: 30px; 
+    margin-right: 200px;
     display: flex; 
     justify-content: right; 
     gap: 20px;
@@ -313,6 +332,17 @@ a{
 .logos-bottom{
     height: 30px; 
     width: auto;
+}
+
+.main-footer{
+    margin: 35px 200px;
+    font-size: 0.75rem;
+    color: rgba(12, 102, 117, 0.6);
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: rgba(12, 102, 117, 0.6);
 }
 
 
@@ -363,17 +393,21 @@ a{
     }
 
     .header-nav-list a{
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     .dropdown{
         display: none;
     }
 
-    .section{
-        margin: 20px;
+    section{
+        margin: 40px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .first-section{
+        margin-top: 20px;
     }
 
     .section-header{
@@ -385,7 +419,7 @@ a{
         font-size: 2.25rem;
     }
 
-    .section-body-box{
+    .section-content{
         padding: 0;
         border: 1px;
     }
@@ -403,6 +437,11 @@ a{
         display: block;
     }
 
+    .experience-entry-first{
+        padding-top: 10px;
+        margin-right: 5px;
+    }
+
     .experience-entry{
         padding: 15px;
     }
@@ -416,8 +455,12 @@ a{
         padding-right: 15px;
     }
 
-    .experience-entry-content span{
+    .experience-entry-content-company{
         font-size: 1.25rem;
+    }
+
+    .experience-entry-content-skills{
+        font-size: 1rem;
     }
 
     .pub-teaching{
@@ -439,15 +482,89 @@ a{
         gap: 30px;
     }
 
-    .section-body-box ul{
-        padding-bottom: 15px;
+    .main-footer{
+        margin: 20px 10px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+
+@media (min-width: 768px) and (max-width: 899px) {
+    main{
+        margin: 35px 30px;
+    }
+
     .logo-img{
         padding: 0;
+        max-width: 30%;
         border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 55%;
+    }
+
+    .header-main-name{
+        font-size: 2.75rem;
+    }
+
+    .header-nav{
+        margin-right: 25px;
+    }
+
+    .header-nav-list a{
+        font-size: 1.5rem;
+    }
+
+    .first-section{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    section{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .section-title h2{
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .section-content{
+        padding: 15px;
+    }
+
+    .core-skills-subsection h3{
+        text-align: left;
+    }
+
+    .section-logos{
+        margin-right: 0;
+    }
+
+    .main-footer{
+        margin-left: 30px;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    main{
+        margin: 35px 30px;
+    }
+
+    .logo-img{
+        padding: 0;
+        max-width: 30%;
+        border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 60%;
     }
 
     .header-main-name{
@@ -466,28 +583,21 @@ a{
         display: none;
     }
 
-    .section{
-        margin: 20px;
-        margin-left: 30px;
-        margin-right: 30px;
+    .first-section{
+        margin: 0;
+        margin-bottom: 40px;
     }
 
-    .section-body-box{
-        padding: 15px;
-        border: 1px;
-    }
-
-    .experience-entry{
-        padding: 15px;
-    }
-
-    .experience-entry-date span{
-        font-size: 1.5rem;
+    section{
+        margin: 0;
+        margin-bottom: 40px;
     }
 
     .section-logos{
-        margin-right: 50px;
+        margin-right: 0;
+    }
+
+    .main-footer{
+        margin-left: 30px;
     }
 }
-
-

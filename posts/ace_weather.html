@@ -1,404 +1,417 @@
 <!DOCTYPE html>
-<head lang="eng">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Oliver Q.R.">
-    <title>Oliver Q.R.</title>
-    <link rel="icon" type="image/x-icon" href="posts_img/small_icon.ico">
-    <link rel="stylesheet" href="posts_entry_style.css">
-</head>
-<body>
-    <header>
-        <div class="logo-name">
-            <img src="/img/Icon_1b.jpg" class="logo-img">
-            <a href="https://www.oliverqr.com"><img src="/img/logo_white.png" alt="logo" class="logo"></a>
-        </div>
-        <div class="header-nav">
-            <ul class="header-nav-list">
-                <li><a href="https://www.oliverqr.com">Home</a></li>
-                <li><a href="https://www.oliverqr.com/posts">Posts</a></li>
-                <li><a href="#graphs">Graphs</a></li>
-                <li><a href="#me">Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="main-body">
-        <div class="outline">
-            <ul>
-                <li><a href="#intro">Intro.</a></li>
-                <li><a href="#temperature">Temperature.</a></li>
-                <li><a href="#precipitation">Precipitation.</a></li>
-                <li><a href="#year2023">2023.</a></li>
-                <li><a href="#year2024">2024.</a></li>
-                <li><a href="#conclusions">Concluding remarks.</a></li>
-            </ul>
-        </div>
-        <div class="post-entry">
-            <h2 class="entry-title" id="intro">A look at the last 50 years of temperature and precipitation data in Lanzarote.</h2>
-            <span class="entry-date"><i>Posted on <time datetime="2024-10-24">24 October 2024.</time></i></span>
-            <p class="entry-paragraph">
-                Lanzarote is the northernmost and easternmost of the Canary Islands. Located 125 km off the coast of 
-                continental Africa (figure 1), its subtropical climate is characterised by mild temperatures all year-round and 
-                little precipitation. Sometimes referred to as the <i>island of eternal Spring</i>, Lanzarote's climate 
-                is classified as hot dessert climate according to the Köppen climate classification.
-            </p>
-            <p class="entry-paragraph">
-                Using <a href="https://opendata.aemet.es/centrodedescargas/inicio" target="_blank">Aemet's Open Data</a>, 
-                I downloaded temperature and precipitation data from the last 50 years recorded 
-                at the station located at Lanzarote airport, with the aim of analysing possible trends over this period.
-            </p>
-            <figure class="entry-figure" id="figure01">
-                <img class="entry-graph-img" src="ace_weather_img/fig01_Geographic_location_Lanzarote.png" alt="Geographic location of Lanzarote">
-                <figcaption class="figure_1-caption">
-                    <b>Figure 1.</b> Geographic location of Lanzarote and its airport.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Figure R code.</summary>
-                <img src="ace_weather_img/fig01_code.png" alt="R code for figure 1" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                Before continuing, I would like to point out that Lanzarote, like other Canary islands, is characterised by 
-                having more than one microclimate. For example, the northern and north-western areas are more exposed to the 
-                chilly oceanic <i>alisios</i> (trade winds) that blow from the northeast, making these parts of the island a 
-                bit cooler and slightly more humid than areas to the south and southeast. However, due to the relatively low 
-                altitude of Lanzarote, the differences between the microclimates on this island are not as pronounced as on 
-                other islands with higher mountains (like Tenerife or La Palma).
-            </p>
-            <h3 id="temperature">Annual mean temperature.</h3>
-            <p class="entry-paragraph">
-                With that in mind, let's start by having a look at annual mean temperatures over the last 50 years. As seen in 
-                figure 2, there is a long-term warming trend, mirroring what's happening worldwide. The mean annual temperature 
-                has increased above 2°C in the last 50 years, with 2023 marking the warmest year on record (22.71°C).
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig02_annual mean temperature.png" alt="Annual mean temperature">
-                <figcaption class="figure-caption"><b>Figure 2.</b> Annual mean temperature over the last 50 years.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig02_code.png" alt="R code for figure 2" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                To find the coldest year within this period, we have to go back to 1974, which had a mean temperature of 
-                19.65°C. This year, together with 1973 and 1975 are the only years in the last five decades with a mean 
-                temperature below 20°C in the last 50 years. As we move forward in time to more recent years, annual mean 
-                temperatures consistently go above 20, 21 and even 22°C in recent years, like 2022 and 2023. Except the 
-                years 2018 and 2019, most recent years have recorded mean temperatures around or above 21.5°C.
-            </p>
-            <p class="entry-paragraph">
-                When using the period 1981-2010 as a reference, we can see significant positive temperature anomalies in 
-                recent years, with 2023 showing the largest anomaly (+1.58°C; figure 3). By contrast, most negative anomalies 
-                occurred in the 1970s, 1980s and early 1990s.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig03_temp anomalies.png" alt="Yearly temperature anomalies">
-                <figcaption class="figure-caption"><b>Figure 3.</b> Annual mean temperature anomalies.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig03_code.png" alt="R code for figure 3" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                In the last 20 years, only 2005 and 2018 had very mild negative temperature anomalies (-0.04 and -0.26°C, 
-                respectively, which are almost negligible). The other 18 years within this period had positive temperature 
-                anomalies, with 2010, 2022 and 2023 standing out for having anomalies above 1°C.
-            </p>
-            <p class="entry-paragraph">
-                If we look at the mean temperature by decade (figure 4), we can see a significant increase, following almost a 
-                linear path (0.3-0.4°C increase per decade) in the last 30 years. The 1970s (data from 1973 to 1979) were the coldest 
-                period, with an average temperature of 20°C, whereas the 2020s are the warmest period so far, averaging 22.1°C.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig04_mean temperature by decade.png" alt="Mean temperature by decade">
-                <figcaption class="figure-caption"><b>Figure 4.</b> Mean temperature by decade.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig04_code.png" alt="R code for figure 4" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                An interesting observation is that the mean temperature of the period 2020-2023 is already 0.4°C higher than 
-                that of the 2010s. If we look at the trend of annual mean temperatures, it wouldn't be surprising if this 
-                temperature increase becomes even more pronounced by the end of the decade (potentially exceeding the 0.8°C 
-                rise observed between the 1970s and 1980s).
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig05_monthly mean temp by decade.png" alt="Monthly mean temperature by decade">
-                <figcaption class="figure-caption"><b>Figure 5.</b> Monthly mean temperature by decade.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig05_code.png" alt="R code for figure 5" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                If we break this down even further, looking at monthly mean temperature by decade, we can see that every month 
-                of the year has experienced an increase in the last five decades (figure 5 and table 1). The spring and summer 
-                months have seen the greatest temperature rise, with June, May and April having average temperatures over 2.5°C 
-                higher in the 2020s than in the 1970s.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/table01.png" alt="Table with monthly mean temperatures by decade">
-                <figcaption class="figure-caption"><b>Table 1.</b> Monthly mean temperatures (°C) by decade.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/table01_code.png" alt="R code for table 1" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                June is the month that has experienced the highest average temperature rise, with 2.91°C in the last 50 years, 
-                followed by May (2.76°C). Another month that stands out is October, experiencing a 2.64°C increase in the last 
-                five decades.
-            </p>
-            <p class="entry-paragraph">
-                In the 1970s, there were five months a year with an average temperature above 20°C, whereas in the 2020s eight 
-                months have average temperatures above 20°C. The temperature increase is less extreme in winter months, but 
-                still remains above 1°C.
-            </p>
-            <h3 id="precipitation">Precipitation.</h3>
-            <p class="entry-paragraph">
-                Lanzarote is an island with scarce precipitation that falls mainly during winter months. Historically, the 
-                precipitation patterns on the island have been highly irregular, with some years recording relatively high 
-                amount (considering the island's low average rainfall), and others experiencing very dry conditions. And this 
-                variability is something we can clearly see in the last 50 years (figure 6).
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig06_annual precipitation.png" alt="Annual precipitation">
-                <figcaption class="figure-caption"><b>Figure 6.</b> Total precipitation recorded by year.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig06_code.png" alt="R code for figure 6" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                With such an irregular pattern, it is hard to establish a clear trend. However, we can clearly observe the 
-                high variability in figure 6, which shows the total rainfall per year in the last five decades. As mentioned 
-                above, an irregular pattern can easily be spotted. 1989 was the wettest year of the last 50 years, with 298.2 
-                mm rainfall, while 2023 was the driest, with only 39.5 mm rainfall.
-            </p>
-            <p class="entry-paragraph">
-                Using the reference period 1981-2010, we can try to gain extra insights into how annual precipitation has 
-                deviated from the norm. Figure 7 shows the precipitation anomalies expressed as percentage deviation from the 
-                average of the reference period. From these data, we can spot a wetter period in the late 1980s-early 1990s, 
-                with 5 consecutive years having a positive rain anomaly. In this period, 1989 is the year having the largest 
-                positive anomaly (+169.55%), marking the highest positive deviation in the last 50 years.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig07_prec anomalies.png" alt="Annual precipitation anomalies">
-                <figcaption class="figure-caption"><b>Figure 7.</b> Annual total precipitation anomalies.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig07_code.png" alt="R code for figure 7" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                In contrast, recent years have tended to be drier. Four out of the last five years had a negative anomaly, 
-                with 2023 standing out as the driest year in the series (-64.3%). It looks like the current is a dry period, 
-                in contrast to the period 1987-1991, and similar to the period 1997-2003 (and possibly the period before 1979).
-            </p>
-            <h3 id="year2023">2023: the warmest and driest year on record.</h3>
-            <p class="entry-paragraph">
-                When we look at temperature and precipitation anomalies (figure 8), using averages from the period 1981-2010 as 
-                reference, the year 2023 is the warmest and driest year since, at least, 1973 (with a mean temperature 1.58°C 
-                above the reference and precipitation levels dropping by 64.3%). If we look at the rest of the years in this 
-                quadrant (warmer and drier years), we could be tempted to classify 2023 as an extreme event, since the anomalies 
-                for both temperature and precipitation stand apart from other years in the series.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig08_prec temp anomalies.png" alt="Temperature and precipitation anomalies">
-                <figcaption class="figure-caption"><b>Figure 8.</b> Annual mean temperature and total precipitation anomalies.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig08_code.png" alt="R code for figure 8" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                Most of 2023's daily mean temperatures were well above those of the reference period 1981-2010 (figure 9), with 
-                some periods showing significant deviations. The maximum deviation occurred on March 30, with a mean temperature 
-                for that day 10.6°C higher than the reference.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig09_daily mean temp 2023.png" alt="Daily mean temperatures in 2023 compared with the reference.">
-                <figcaption class="figure-caption"><b>Figure 9.</b> Daily mean temperatures in 2023 compared with those of the reference period.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig09_code.png" alt="R code for figure 9" class="R-code">
-            </details>
-            <p class="entry-paragraph" style="margin-bottom: 5px;">
-                Summarising key deviation statistics, 2023 had:
-                <ul style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 20px; margin-top: 0;">
-                    <li>29 days had positive temperature anomalies larger than the reference mean + 3σ,</li>
-                    <li>40 days had a positive temperature anomaly between 2σ and 3σ,</li>
-                    <li>100 days had an anomaly larger than the reference plus 1σ.</li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Oliver Q.R.">
+        <title>Oliver Q.R.</title>
+        <link rel="icon" type="image/x-icon" href="/img/small_icon.ico">
+        <link rel="stylesheet" href="posts_entry_style.css">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=poppins:400,600|roboto:400,700" rel="stylesheet" />
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-name">
+                <img src="/img/Icon_1b.jpg" class="logo-img">
+                <a href="https://www.oliverqr.com"><img src="/img/logo_white.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li><a href="https://www.oliverqr.com">Home</a></li>
+                    <li><a href="https://www.oliverqr.com/posts">Posts</a></li>
+                    <li><a href="#graphs">Graphs</a></li>
+                    <li><a href="#me">Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </p>
-            <p class="entry-paragraph">
-                In contrast, only 8 days had a negative anomaly beyond 1σ, and 188 days had mean temperatures that fell within 
-                ±1σ of the reference. These observations highlight the extreme warmth of the year 2023.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig10_monthly precipitation 2023.png" alt="Monthly precipitation in 2023 compared with the reference.">
-                <figcaption class="figure-caption"><b>Figure 10.</b> Monthly precipitation in 2023 compared to the reference period.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig10_code.png" alt="R code for figure 10" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                In regards to precipitation, 2023 experienced less rainfall than the reference period 1981-2010 in most months 
-                of the year (figure 10). For example, January and March were very dry compared to the reference, like autumn 
-                months (October to December).
-            </p>
-            <p class="entry-paragraph">
-                Overall, and similar to what happened with the mean temperature, the precipitation observations highlight 2023 
-                as an extreme year, with significantly warm and dry conditions.
-            </p>
-            <h3 id="year2024">What about 2024 so far?</h3>
-            <p class="entry-paragraph">
-                Based on the data from the first 9 months, 2024 continues the warming trend seen in the last years. The mean 
-                temperature from January to September in 2024 is 22.48°C, which is only 0.25°C below the mean temperature of 
-                the same period in 2023 (figure 11), and 1.23°C warmer than the reference period (1981-2010).
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig11_annual mean temp 2024.png" alt="Annual mean temperature comparison for 2023, 2024 and the reference period.">
-                <figcaption class="figure-caption"><b>Figure 11.</b> Comparison of the 2023, 2024 and the reference period annual mean temperatures.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig11_code.png" alt="R code for figure 11" class="R-code">
-            </details>
-            <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
-                <div style="flex: 1; max-width: 65%; box-sizing: border-box;">
-                    <p class="entry-paragraph">
-                        Despite being slightly cooler than 2023, 2024 is still the 3<sup>rd</sup> warmest year during the 
-                        first 9 months over the last 50 years, just behind 2023 and 2010 (table 2).
-                    </p>
-                    <p class="entry-paragraph">
-                        Daily mean temperatures in 2024 follow a similar pattern to 2023 (figure 12), particularly in the first 
-                        months of the year, with significant positive anomalies. However, after mid-May, daily mean 
-                        temperatures align more closely with the reference values for the period 1981-2010, although they 
-                        still remain slightly higher (but not as extreme).
-                    </p>
-                    <p class="entry-paragraph">
-                        July and August saw rising temperatures again, with significant positive anomalies, similar to the 
-                        trend observed at the beginning of the year (and in 2023). September, however, stands out as a milder 
-                        month, with temperatures around and even below the reference.
-                    </p>
-                    <p class="entry-paragraph">
-                        Strikingly, despite those months having daily temperatures around or closer to the reference, 2024 
-                        remains on track to be one of the warmest years of the last five decades.
-                    </p>
-                </div>
-                <div style="flex: 1; max-width: 35%; box-sizing: border-box; display: flex; flex-direction: column; text-align: center;">
-                    <figure class="entry-figure">
-                        <img class="entry-graph-img" src="ace_weather_img/table02.png" 
-                        alt="Table with the 10 warmest years on record (January to September)."
-                        style="max-width: 60%;">
-                        <figcaption class="figure-caption" style="text-align: left;">
-                            <b>Table 2.</b> Table with the 10 warmest years on record in the first nine months.
-                        </figcaption>
-                    </figure>
-                </div>
             </div>
-            <details>
-                <summary class="R-code-button">Code for table 2.</summary>
-                <img src="ace_weather_img/table02_code.png" alt="R code for table 2" class="R-code">
-            </details>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig12_daily mean temp 2024.png" alt="Daily mean temperatures for the year 2024 and the reference period.">
-                <figcaption class="figure-caption"><b>Figure 12.</b> Daily mean temperature for the year 2024 and the reference period.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig12_code.png" alt="R code for figure 12" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                While 2024 has been very warm during the last 9 months of the year, it is also being exceptionally dry 
-                (figure 13). The first nine months has seen very little rainfall (18.5 mm), even less than for the same period 
-                in 2023 (30.8 mm). This exacerbates the precipitation deficit already observed in the last years, and is 
-                further aggravated by the rising temperatures.
-            </p>
-            <figure class="entry-figure">
-                <img class="entry-graph-img" src="ace_weather_img/fig13_total precipitation 2024.png" alt="Total precipitation for the years 2023, 2024 and the reference period">
-                <figcaption class="figure-caption"><b>Figure 13.</b> Total precipitation for the first nine months of the years 2023, 2024 and the reference period.</figcaption>
-            </figure>
-            <details>
-                <summary class="R-code-button">Code.</summary>
-                <img src="ace_weather_img/fig13_code.png" alt="R code for figure 13" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                The lack of rainfall in 2024 has been evident since the beginning of the year, with January seeing no rain, 
-                and February and April recording very little rain compared to the reference (figure 14). This continues to 
-                deepen the precipitation deficit as stated above, and above-average rainfall should occur in the autumn months 
-                to prevent 2024 from ranking amongst the driest years of the last five decades.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-                <div style="flex: 1; max-width: 70%; box-sizing: border-box;">
-                    <figure class="entry-figure">
-                        <img class="entry-graph-img" src="ace_weather_img/fig14_montly precipitation 2024.png" 
-                        alt="Monthly precipitation in 2024 compared with the reference period"
-                        style="max-width: 100%";>
-                        <figcaption class="figure-caption"><b>Figure 14.</b> Monthly precipitation in 2024 compared with the reference period.</figcaption>
-                    </figure>
-                </div>
-                <div style="flex: 1; max-width: 30%; box-sizing: border-box; display: flex; flex-direction: column; text-align: center;">
-                    <figure class="entry-figure">
-                        <img class="entry-graph-img" src="ace_weather_img/table03.png" 
-                        alt="List of the 10 driest years on record (January to September)"
-                        style="max-width: 60%;">
-                        <figcaption class="figure-caption" style="text-align: left;">
-                            <b>Table 3.</b> List of the 10 driest years considering the first 9 months of the year.
-                        </figcaption>
-                    </figure>
-                </div>
+        </header>
+        <main>
+            <div class="outline">
+                <ul>
+                    <li><a href="#intro">Intro.</a></li>
+                    <li><a href="#temperature">Temperature.</a></li>
+                    <li><a href="#precipitation">Precipitation.</a></li>
+                    <li><a href="#year2023">2023.</a></li>
+                    <li><a href="#year2024">2024.</a></li>
+                    <li><a href="#conclusions">Concluding remarks.</a></li>
+                </ul>
             </div>
-            <details>
-                <summary class="R-code-button">Code for figure 14.</summary>
-                <img src="ace_weather_img/fig14_code.png" alt="R code for figure 14" class="R-code">
-            </details>
-            <details>
-                <summary class="R-code-button">Code for table 3.</summary>
-                <img src="ace_weather_img/table03_code.png" alt="R code for table 3" class="R-code">
-            </details>
-            <p class="entry-paragraph">
-                In fact, looking at the first nine months of the last 50 years, 2024 already ranks as the 7<sup>th</sup> driest 
-                in the last five decades (table 3). Even considering the very irregular rain patterns in Lanzarote, it looks 
-                likely that the year 2024 could being one of the driest years on record.
-            </p>
-            <h3 id="conclusions">Concluding remarks.</h3>
-            <p class="entry-paragraph">
-                Like the rest of the world, Lanzarote is facing significant climate challenges, with clear evidences of a 
-                significant warming over the last decades (+3°C in 50 years). Combined with an irregular and scarce 
-                precipitation pattern, this trend poses significant challenges for the island, particularly regarding water 
-                resources and the local economy, which mainly relies on tourism.
-            </p>
-            <p class="entry-paragraph">
-                One of the main attractions of Lanzarote is its stable and mild temperatures throughout the year, which makes 
-                the island a perfect destination for those escaping extreme heat or cold elsewhere (mainly in Europe). The 
-                current warming trend threatens this appeal, and could have a profound impact on the island's traditional 
-                touristic seasons: winter months and July-August. With increasingly hotter summers, July and August could 
-                become less attractive for tourists, potentially turning what is now a high season into a low season. This 
-                could have deep implications in the island's economy, where tourism is by far the main driver.
-            </p>
-            <p class="entry-paragraph">
-                More critically, this warming trend poses a great risk for the welfare of the island's inhabitants, and not 
-                only due to an economy affected by a potential shifts in the touristic sector. Rising temperatures, combined 
-                with low and irregular rainfall, could add more pressure on and already highly pressured water supply system, 
-                which relies heavily on energy-demanding desalinisation. This has multiple implications on daily life, one of 
-                them being the local agriculture, with increasing cost of living for residents.
-            </p>
-            <p class="entry-paragraph">
-                This warming trend adds to the challenges the island is already facing, and will continue to face, in regards 
-                to living conditions, economy and environmental sustainability. With very limited resources, immediate action 
-                should be taken by the authorities to ensure adaptation to this new and challenging reality.
-            </p>
-        </div>
-    </div>
-    <footer>
-        <img src="posts_img/GitHub_logo.png">
-        <span><a href="https://github.com/qroliver/ace_weather" target="_blank">Go to repository</a></span>
-    </footer>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f4ab677f2e4d462b86f72e7458757d20"}'></script>
-</body>
+            <article>
+                <h2 class="entry-title" id="intro">A look at the last 50 years of temperature and precipitation data in Lanzarote.</h2>
+                <span class="entry-date">
+                    <i>Posted on <time datetime="2024-10-24">24 October 2024.</time></i>
+                </span>
+                <p class="entry-paragraph">
+                    Lanzarote is the northernmost and easternmost of the Canary Islands. Located 125 km off the coast of 
+                    continental Africa (figure 1), its subtropical climate is characterised by mild temperatures all year-round and 
+                    little precipitation. Sometimes referred to as the <i>island of eternal Spring</i>, Lanzarote's climate 
+                    is classified as hot dessert climate according to the Köppen climate classification.
+                </p>
+                <p class="entry-paragraph">
+                    Using <a href="https://opendata.aemet.es/centrodedescargas/inicio" target="_blank">Aemet's Open Data</a>, 
+                    I downloaded temperature and precipitation data from the last 50 years recorded 
+                    at the station located at Lanzarote airport, with the aim of analysing possible trends over this period.
+                </p>
+                <figure class="entry-figure" id="figure01">
+                    <img class="entry-graph-img" src="ace_weather_img/fig01_Geographic_location_Lanzarote.png" alt="Geographic location of Lanzarote">
+                    <figcaption class="figure_1-caption">
+                        <b>Figure 1.</b> Geographic location of Lanzarote and its airport.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Figure R code.</summary>
+                    <img src="ace_weather_img/fig01_code.png" alt="R code for figure 1" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    Before continuing, I would like to point out that Lanzarote, like other Canary islands, is characterised by 
+                    having more than one microclimate. For example, the northern and north-western areas are more exposed to the 
+                    chilly oceanic <i>alisios</i> (trade winds) that blow from the northeast, making these parts of the island a 
+                    bit cooler and slightly more humid than areas to the south and southeast. However, due to the relatively low 
+                    altitude of Lanzarote, the differences between the microclimates on this island are not as pronounced as on 
+                    other islands with higher mountains (like Tenerife or La Palma).
+                </p>
+                <h3 id="temperature">Annual mean temperature.</h3>
+                <p class="entry-paragraph">
+                    With that in mind, let's start by having a look at annual mean temperatures over the last 50 years. As seen in 
+                    figure 2, there is a long-term warming trend, mirroring what's happening worldwide. The mean annual temperature 
+                    has increased above 2°C in the last 50 years, with 2023 marking the warmest year on record (22.71°C).
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig02_annual mean temperature.png" alt="Annual mean temperature">
+                    <figcaption class="figure-caption"><b>Figure 2.</b> Annual mean temperature over the last 50 years.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig02_code.png" alt="R code for figure 2" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    To find the coldest year within this period, we have to go back to 1974, which had a mean temperature of 
+                    19.65°C. This year, together with 1973 and 1975 are the only years in the last five decades with a mean 
+                    temperature below 20°C in the last 50 years. As we move forward in time to more recent years, annual mean 
+                    temperatures consistently go above 20, 21 and even 22°C in recent years, like 2022 and 2023. Except the 
+                    years 2018 and 2019, most recent years have recorded mean temperatures around or above 21.5°C.
+                </p>
+                <p class="entry-paragraph">
+                    When using the period 1981-2010 as a reference, we can see significant positive temperature anomalies in 
+                    recent years, with 2023 showing the largest anomaly (+1.58°C; figure 3). By contrast, most negative anomalies 
+                    occurred in the 1970s, 1980s and early 1990s.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig03_temp anomalies.png" alt="Yearly temperature anomalies">
+                    <figcaption class="figure-caption"><b>Figure 3.</b> Annual mean temperature anomalies.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig03_code.png" alt="R code for figure 3" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    In the last 20 years, only 2005 and 2018 had very mild negative temperature anomalies (-0.04 and -0.26°C, 
+                    respectively, which are almost negligible). The other 18 years within this period had positive temperature 
+                    anomalies, with 2010, 2022 and 2023 standing out for having anomalies above 1°C.
+                </p>
+                <p class="entry-paragraph">
+                    If we look at the mean temperature by decade (figure 4), we can see a significant increase, following almost a 
+                    linear path (0.3-0.4°C increase per decade) in the last 30 years. The 1970s (data from 1973 to 1979) were the coldest 
+                    period, with an average temperature of 20°C, whereas the 2020s are the warmest period so far, averaging 22.1°C.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig04_mean temperature by decade.png" alt="Mean temperature by decade">
+                    <figcaption class="figure-caption"><b>Figure 4.</b> Mean temperature by decade.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig04_code.png" alt="R code for figure 4" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    An interesting observation is that the mean temperature of the period 2020-2023 is already 0.4°C higher than 
+                    that of the 2010s. If we look at the trend of annual mean temperatures, it wouldn't be surprising if this 
+                    temperature increase becomes even more pronounced by the end of the decade (potentially exceeding the 0.8°C 
+                    rise observed between the 1970s and 1980s).
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig05_monthly mean temp by decade.png" alt="Monthly mean temperature by decade">
+                    <figcaption class="figure-caption"><b>Figure 5.</b> Monthly mean temperature by decade.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig05_code.png" alt="R code for figure 5" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    If we break this down even further, looking at monthly mean temperature by decade, we can see that every month 
+                    of the year has experienced an increase in the last five decades (figure 5 and table 1). The spring and summer 
+                    months have seen the greatest temperature rise, with June, May and April having average temperatures over 2.5°C 
+                    higher in the 2020s than in the 1970s.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/table01.png" alt="Table with monthly mean temperatures by decade">
+                    <figcaption class="figure-caption"><b>Table 1.</b> Monthly mean temperatures (°C) by decade.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/table01_code.png" alt="R code for table 1" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    June is the month that has experienced the highest average temperature rise, with 2.91°C in the last 50 years, 
+                    followed by May (2.76°C). Another month that stands out is October, experiencing a 2.64°C increase in the last 
+                    five decades.
+                </p>
+                <p class="entry-paragraph">
+                    In the 1970s, there were five months a year with an average temperature above 20°C, whereas in the 2020s eight 
+                    months have average temperatures above 20°C. The temperature increase is less extreme in winter months, but 
+                    still remains above 1°C.
+                </p>
+                <h3 id="precipitation">Precipitation.</h3>
+                <p class="entry-paragraph">
+                    Lanzarote is an island with scarce precipitation that falls mainly during winter months. Historically, the 
+                    precipitation patterns on the island have been highly irregular, with some years recording relatively high 
+                    amount (considering the island's low average rainfall), and others experiencing very dry conditions. And this 
+                    variability is something we can clearly see in the last 50 years (figure 6).
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig06_annual precipitation.png" alt="Annual precipitation">
+                    <figcaption class="figure-caption"><b>Figure 6.</b> Total precipitation recorded by year.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig06_code.png" alt="R code for figure 6" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    With such an irregular pattern, it is hard to establish a clear trend. However, we can clearly observe the 
+                    high variability in figure 6, which shows the total rainfall per year in the last five decades. As mentioned 
+                    above, an irregular pattern can easily be spotted. 1989 was the wettest year of the last 50 years, with 298.2 
+                    mm rainfall, while 2023 was the driest, with only 39.5 mm rainfall.
+                </p>
+                <p class="entry-paragraph">
+                    Using the reference period 1981-2010, we can try to gain extra insights into how annual precipitation has 
+                    deviated from the norm. Figure 7 shows the precipitation anomalies expressed as percentage deviation from the 
+                    average of the reference period. From these data, we can spot a wetter period in the late 1980s-early 1990s, 
+                    with 5 consecutive years having a positive rain anomaly. In this period, 1989 is the year having the largest 
+                    positive anomaly (+169.55%), marking the highest positive deviation in the last 50 years.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig07_prec anomalies.png" alt="Annual precipitation anomalies">
+                    <figcaption class="figure-caption"><b>Figure 7.</b> Annual total precipitation anomalies.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig07_code.png" alt="R code for figure 7" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    In contrast, recent years have tended to be drier. Four out of the last five years had a negative anomaly, 
+                    with 2023 standing out as the driest year in the series (-64.3%). It looks like the current is a dry period, 
+                    in contrast to the period 1987-1991, and similar to the period 1997-2003 (and possibly the period before 1979).
+                </p>
+                <h3 id="year2023">2023: the warmest and driest year on record.</h3>
+                <p class="entry-paragraph">
+                    When we look at temperature and precipitation anomalies (figure 8), using averages from the period 1981-2010 as 
+                    reference, the year 2023 is the warmest and driest year since, at least, 1973 (with a mean temperature 1.58°C 
+                    above the reference and precipitation levels dropping by 64.3%). If we look at the rest of the years in this 
+                    quadrant (warmer and drier years), we could be tempted to classify 2023 as an extreme event, since the anomalies 
+                    for both temperature and precipitation stand apart from other years in the series.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig08_prec temp anomalies.png" alt="Temperature and precipitation anomalies">
+                    <figcaption class="figure-caption"><b>Figure 8.</b> Annual mean temperature and total precipitation anomalies.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig08_code.png" alt="R code for figure 8" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    Most of 2023's daily mean temperatures were well above those of the reference period 1981-2010 (figure 9), with 
+                    some periods showing significant deviations. The maximum deviation occurred on March 30, with a mean temperature 
+                    for that day 10.6°C higher than the reference.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig09_daily mean temp 2023.png" alt="Daily mean temperatures in 2023 compared with the reference.">
+                    <figcaption class="figure-caption"><b>Figure 9.</b> Daily mean temperatures in 2023 compared with those of the reference period.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig09_code.png" alt="R code for figure 9" class="R-code">
+                </details>
+                <p class="entry-paragraph" style="margin-bottom: 5px;">
+                    Summarising key deviation statistics, 2023 had:
+                    <ul style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 20px; margin-top: 0;">
+                        <li>29 days had positive temperature anomalies larger than the reference mean + 3σ,</li>
+                        <li>40 days had a positive temperature anomaly between 2σ and 3σ,</li>
+                        <li>100 days had an anomaly larger than the reference plus 1σ.</li>
+                    </ul>
+                </p>
+                <p class="entry-paragraph">
+                    In contrast, only 8 days had a negative anomaly beyond 1σ, and 188 days had mean temperatures that fell within 
+                    ±1σ of the reference. These observations highlight the extreme warmth of the year 2023.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig10_monthly precipitation 2023.png" alt="Monthly precipitation in 2023 compared with the reference.">
+                    <figcaption class="figure-caption"><b>Figure 10.</b> Monthly precipitation in 2023 compared to the reference period.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig10_code.png" alt="R code for figure 10" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    In regards to precipitation, 2023 experienced less rainfall than the reference period 1981-2010 in most months 
+                    of the year (figure 10). For example, January and March were very dry compared to the reference, like autumn 
+                    months (October to December).
+                </p>
+                <p class="entry-paragraph">
+                    Overall, and similar to what happened with the mean temperature, the precipitation observations highlight 2023 
+                    as an extreme year, with significantly warm and dry conditions.
+                </p>
+                <h3 id="year2024">What about 2024 so far?</h3>
+                <p class="entry-paragraph">
+                    Based on the data from the first 9 months, 2024 continues the warming trend seen in the last years. The mean 
+                    temperature from January to September in 2024 is 22.48°C, which is only 0.25°C below the mean temperature of 
+                    the same period in 2023 (figure 11), and 1.23°C warmer than the reference period (1981-2010).
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig11_annual mean temp 2024.png" alt="Annual mean temperature comparison for 2023, 2024 and the reference period.">
+                    <figcaption class="figure-caption"><b>Figure 11.</b> Comparison of the 2023, 2024 and the reference period annual mean temperatures.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig11_code.png" alt="R code for figure 11" class="R-code">
+                </details>
+                <div class="paragraph-table-layout">
+                    <div class="paragraph-table-layout-paragraph">
+                        <p class="entry-paragraph">
+                            Despite being slightly cooler than 2023, 2024 is still the 3<sup>rd</sup> warmest year during the 
+                            first 9 months over the last 50 years, just behind 2023 and 2010 (table 2).
+                        </p>
+                        <p class="entry-paragraph">
+                            Daily mean temperatures in 2024 follow a similar pattern to 2023 (figure 12), particularly in the first 
+                            months of the year, with significant positive anomalies. However, after mid-May, daily mean 
+                            temperatures align more closely with the reference values for the period 1981-2010, although they 
+                            still remain slightly higher (but not as extreme).
+                        </p>
+                        <p class="entry-paragraph">
+                            July and August saw rising temperatures again, with significant positive anomalies, similar to the 
+                            trend observed at the beginning of the year (and in 2023). September, however, stands out as a milder 
+                            month, with temperatures around and even below the reference.
+                        </p>
+                        <p class="entry-paragraph">
+                            Strikingly, despite those months having daily temperatures around or closer to the reference, 2024 
+                            remains on track to be one of the warmest years of the last five decades.
+                        </p>
+                    </div>
+                    <div class="paragraph-table-layout-table">
+                        <figure class="entry-figure">
+                            <img class="entry-graph-img" src="ace_weather_img/table02.png" 
+                            alt="Table with the 10 warmest years on record (January to September)."
+                            style="max-width: 60%;">
+                            <figcaption class="figure-caption" style="text-align: left;">
+                                <b>Table 2.</b> Ten warmest years in the first nine months.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <details>
+                    <summary class="R-code-button">Code for table 2.</summary>
+                    <img src="ace_weather_img/table02_code.png" alt="R code for table 2" class="R-code">
+                </details>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig12_daily mean temp 2024.png" alt="Daily mean temperatures for the year 2024 and the reference period.">
+                    <figcaption class="figure-caption"><b>Figure 12.</b> Daily mean temperature for the year 2024 and the reference period.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig12_code.png" alt="R code for figure 12" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    While 2024 has been very warm during the last 9 months of the year, it is also being exceptionally dry 
+                    (figure 13). The first nine months has seen very little rainfall (18.5 mm), even less than for the same period 
+                    in 2023 (30.8 mm). This exacerbates the precipitation deficit already observed in the last years, and is 
+                    further aggravated by the rising temperatures.
+                </p>
+                <figure class="entry-figure">
+                    <img class="entry-graph-img" src="ace_weather_img/fig13_total precipitation 2024.png" alt="Total precipitation for the years 2023, 2024 and the reference period">
+                    <figcaption class="figure-caption"><b>Figure 13.</b> Total precipitation for the first nine months of the years 2023, 2024 and the reference period.</figcaption>
+                </figure>
+                <details>
+                    <summary class="R-code-button">Code.</summary>
+                    <img src="ace_weather_img/fig13_code.png" alt="R code for figure 13" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    The lack of rainfall in 2024 has been evident since the beginning of the year, with January seeing no rain, 
+                    and February and April recording very little rain compared to the reference (figure 14). This continues to 
+                    deepen the precipitation deficit as stated above, and above-average rainfall should occur in the autumn months 
+                    to prevent 2024 from ranking amongst the driest years of the last five decades.
+                </p>
+                <div class="graph-table-layout">
+                    <div class="graph-table-layout-graph">
+                        <figure class="entry-figure">
+                            <img class="entry-graph-img" src="ace_weather_img/fig14_montly precipitation 2024.png" 
+                            alt="Monthly precipitation in 2024 compared with the reference period"
+                            style="max-width: 100%";>
+                            <figcaption class="figure-caption"><b>Figure 14.</b> Monthly precipitation in 2024 compared with the reference period.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="graph-table-layout-table">
+                        <figure class="entry-figure">
+                            <img class="entry-graph-img" src="ace_weather_img/table03.png" 
+                            alt="List of the 10 driest years on record (January to September)"
+                            style="max-width: 60%;">
+                            <figcaption class="figure-caption" style="text-align: left;">
+                                <b>Table 3.</b> List of the 10 driest years considering the first 9 months of the year.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <details>
+                    <summary class="R-code-button">Code for figure 14.</summary>
+                    <img src="ace_weather_img/fig14_code.png" alt="R code for figure 14" class="R-code">
+                </details>
+                <details>
+                    <summary class="R-code-button">Code for table 3.</summary>
+                    <img src="ace_weather_img/table03_code.png" alt="R code for table 3" class="R-code">
+                </details>
+                <p class="entry-paragraph">
+                    In fact, looking at the first nine months of the last 50 years, 2024 already ranks as the 7<sup>th</sup> driest 
+                    in the last five decades (table 3). Even considering the very irregular rain patterns in Lanzarote, it looks 
+                    likely that the year 2024 could being one of the driest years on record.
+                </p>
+                <h3 id="conclusions">Concluding remarks.</h3>
+                <p class="entry-paragraph">
+                    Like the rest of the world, Lanzarote is facing significant climate challenges, with clear evidences of a 
+                    significant warming over the last decades (+3°C in 50 years). Combined with an irregular and scarce 
+                    precipitation pattern, this trend poses significant challenges for the island, particularly regarding water 
+                    resources and the local economy, which mainly relies on tourism.
+                </p>
+                <p class="entry-paragraph">
+                    One of the main attractions of Lanzarote is its stable and mild temperatures throughout the year, which makes 
+                    the island a perfect destination for those escaping extreme heat or cold elsewhere (mainly in Europe). The 
+                    current warming trend threatens this appeal, and could have a profound impact on the island's traditional 
+                    touristic seasons: winter months and July-August. With increasingly hotter summers, July and August could 
+                    become less attractive for tourists, potentially turning what is now a high season into a low season. This 
+                    could have deep implications in the island's economy, where tourism is by far the main driver.
+                </p>
+                <p class="entry-paragraph">
+                    More critically, this warming trend poses a great risk for the welfare of the island's inhabitants, and not 
+                    only due to an economy affected by a potential shifts in the touristic sector. Rising temperatures, combined 
+                    with low and irregular rainfall, could add more pressure on and already highly pressured water supply system, 
+                    which relies heavily on energy-demanding desalinisation. This has multiple implications on daily life, one of 
+                    them being the local agriculture, with increasing cost of living for residents.
+                </p>
+                <p class="entry-paragraph">
+                    This warming trend adds to the challenges the island is already facing, and will continue to face, in regards 
+                    to living conditions, economy and environmental sustainability. With very limited resources, immediate action 
+                    should be taken by the authorities to ensure adaptation to this new and challenging reality.
+                </p>
+            </article>
+        </main>
+        <footer class="go-to-footer">
+            <img src="posts_img/GitHub_logo.png">
+            <span>
+                <a href="https://github.com/qroliver/ace_weather" target="_blank">Go to repository</a>
+            </span>
+        </footer>
+        <footer class="main-footer">
+            <p>© <span id="current-year"></span> Oliver Q.R. | Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a></p>
+        </footer>
+        <script src="footer_year_update.js"></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f4ab677f2e4d462b86f72e7458757d20"}'></script>
+    </body>
+</html>

@@ -30,7 +30,7 @@ a{
     max-width: 20%;
     height: auto;
     margin-left: 20px;
-    padding: 15px;
+    border-radius: 2px;
 }
 
 .logo{
@@ -63,64 +63,64 @@ a{
 }
 
 .header-nav-list a{
+    font-family: 'Poppins';
     color: white;
     font-size: 2.25rem;
     font-weight: bold;
 }
 
-.main-body{
-    margin-top: 45px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 45px;
+main{
+    margin: 45px 70px;
 }
 
-.main-section{
+section{
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: white;
     margin-bottom: 50px;
 }
 
-.main-left-column{
+.section-title{
+    font-family: 'Poppins';
     color: rgb(12, 102, 117);
     font-size: 2.25rem;
     font-weight: bolder;
 }
 
-.main-left-column a{
+.section-title a{
     text-decoration: none;
     color: rgb(12, 102, 117);
 }
 
-.main-left-column h2{
+.section-title h2{
     margin: 0;
     margin-left: 20px;
 }
 
-.main-right-column{
+.section-content{
     text-align: justify;
 }
 
-.main-right-column a{
+.section-content a{
     text-decoration: none;
-    color: rgb(6, 71, 82);
+    color: rgb(12, 102, 117);
 }
 
-.main-right-title{
+.section-content-title{
+    font-family: 'Poppins';
     color: rgb(6, 71, 82);
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-.main-right-subtitle{
+.section-content-subtitle{
     color: grey;
     font-size: 1rem;
 }
 
-.main-right-paragraph{
+.section-content-paragraph{
     font-size: 1.25rem;
     line-height: 1.5;
     text-align: justify;
@@ -135,6 +135,14 @@ a{
     height: 2px; 
     background-color: rgba(12, 102, 117, 0.1); 
     margin: 35px 0;
+}
+
+h3{
+    font-family: 'Poppins';
+    font-size: 1.75rem;
+    color: rgb(6, 71, 81);
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .graph-slideshow{
@@ -181,9 +189,19 @@ a{
     border-radius: 2%;
 }
 
+.about-me-title{
+    font-family: 'Poppins';
+    color: rgb(12, 102, 117);
+    font-size: 2.25rem;
+    font-weight: bolder;
+}
+
 .me-pic{
     display: block;
-    margin: 20px auto;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     max-width: 50%;
     border-radius: 50%;
     border: 1px solid rgb(12, 102, 117);
@@ -245,6 +263,7 @@ a{
 
 .contact-form label{
     margin-top: 20px;
+    font-family: 'Poppins';
     color: rgb(6, 71, 82);
     font-size: 1.5rem;
     font-weight: bold;
@@ -254,6 +273,7 @@ a{
 .contact-form textarea{
     border: 1px solid rgb(6, 71, 82);
     border-radius: 5px;
+    font-family: 'Roboto';
     font-size: 16px;
 }
 
@@ -270,11 +290,15 @@ a{
     margin-top: 20px;
 }
 
-h3{
-    font-size: 1.75rem;
-    color: rgb(6, 71, 81);
-    margin-top: 25px;
-    margin-bottom: 20px;
+.main-footer{
+    margin: 35px 90px;
+    font-size: 0.75rem;
+    color: rgba(12, 102, 117, 0.6);
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: rgba(12, 102, 117, 0.6);
 }
 
 
@@ -325,27 +349,27 @@ h3{
     }
 
     .header-nav-list a{
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
-    .main-body{
+    main{
         margin: 20px;
     }
 
-    .main-section{
+    section{
         display: flex;
         flex-direction: column;
     }
 
-    .main-left-column{
+    .section-title{
         font-size: 2rem;
     }
 
-    .main-left-column h2{
-        margin: 0;
+    .section-title h2{
+        margin-left: 0;
     }
 
-    .main-right-column h2{
+    .section-content-title{
         font-size: 1.75rem;
     }
 
@@ -361,12 +385,68 @@ h3{
     .intered-list li{
         text-align: left;
     }
+
+    .main-footer{
+        margin: 20px 20px;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+
+@media (min-width: 768px) and (max-width: 899px) {
+    main{
+        margin: 35px 30px;
+    }
+
     .logo-img{
         padding: 0;
+        max-width: 30%;
         border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 55%;
+    }
+
+    .header-main-name{
+        font-size: 2.75rem;
+    }
+
+    .header-nav{
+        margin-right: 25px;
+    }
+
+    .header-nav-list a{
+        font-size: 1.5rem;
+    }
+
+    .main-body{
+        margin: 40px;
+    }
+
+    .section-title h2{
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .main-footer{
+        margin-left: 30px;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    main{
+        margin: 35px;
+    }
+
+    .logo-img{
+        padding: 0;
+        max-width: 30%;
+        border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 60%;
     }
 
     .header-main-name{
@@ -384,5 +464,8 @@ h3{
     .main-body{
         margin: 40px;
     }
-}
 
+    .main-footer{
+        margin-left: 45px;
+    }
+}
