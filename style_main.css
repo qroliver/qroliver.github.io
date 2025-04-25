@@ -137,6 +137,18 @@ section{
     margin: 35px 0;
 }
 
+.more-posts{
+    text-align: right;
+    margin: 0;
+}
+
+.more-posts a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+    text-align: right;
+}
+
 h3{
     font-family: 'Poppins';
     font-size: 1.75rem;
