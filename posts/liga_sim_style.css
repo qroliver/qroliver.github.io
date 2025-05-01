@@ -261,9 +261,17 @@ footer{
 }
 
 .main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin: 35px 90px;
+    margin-right: 200px;
     font-size: 0.75rem;
     color: rgba(12, 102, 117, 0.6);
+}
+
+.main-footer-left p{
+    margin-bottom: 0;
 }
 
 .main-footer a{
