@@ -69,15 +69,64 @@ a{
     font-weight: bold;
 }
 
-main{
+.main-body{
     margin: 45px 70px;
+    margin-right: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+main{
+    flex: 1;
+}
+
+.toc{
+    width: 220px;
+    margin-top: 50px;
+}
+
+.toc details{
+    margin: 10px auto;
+    padding: 2px;
+    color: rgb(6, 71, 82);
+    border-radius: 5px;
+}
+
+.toc summary{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.toc span{
+    font-family: 'Poppins';
+    color: rgb(6, 71, 82);
+    font-weight: bold;
+}
+
+.toc ul{
+    list-style: none;
+    padding-left: 25px;
+}
+
+.toc li{
+    margin: 10px auto;
+    padding: 2px;
+}
+
+.toc li a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
+.toc li a:hover{
+    text-decoration: underline;
 }
 
 article{
     margin-top: 50px;
     text-align: justify;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 20px;
+    margin-right: 100px;
     padding: 40px;
     border: 2px solid rgb(6, 71, 82);
     border-radius: 5px;
@@ -124,14 +173,22 @@ h3{
 .main-footer{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin: 35px 220px;
+    align-items: stretch;
+    margin: 35px 150px;
+    margin-left: 70px;
     font-size: 0.75rem;
     color: rgba(12, 102, 117, 0.6);
 }
 
-.main-footer-left p{
-    margin-bottom: 0;
+.main-footer-left,
+.main-footer-right{
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-footer-left p,
+.main-footer-right p{
+    margin: 0;
 }
 
 .main-footer a{
@@ -190,8 +247,12 @@ h3{
         font-size: 1.15rem;
     }
 
-    main{
+    .main-body{
         margin: 10px;
+    }
+
+    .toc{
+        display: none;
     }
 
     article{
@@ -207,6 +268,19 @@ h3{
 
     .main-footer{
         margin: 20px 20px;
+        margin-left: 10px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main-footer-left{
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .main-footer-right{
+        order: 1;
+        margin-bottom: 10px;
     }
 }
 
@@ -238,13 +312,33 @@ h3{
         font-size: 1.5rem;
     }
 
+    .toc{
+        display: none;
+    }
+
+    .main-body{
+        margin: 15px 50px
+    }
+
     article{
-        margin: 20px 15px;
+        margin: 20px 0;
         padding: 20px;
     }
 
     .main-footer{
-        margin-left: 20px;
+        margin: auto 50px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main-footer-left{
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .main-footer-right{
+        order: 1;
+        margin-bottom: 10px;
     }
 }
 
@@ -276,12 +370,18 @@ h3{
         font-size: 2rem;
     }
 
+    .main-body{
+        margin: 25px 50px;
+        margin-right: 30px;
+    }
+
     article{
-        margin: 25px 35px;
+        margin: 25px auto;
         padding: 20px;
     }
 
     .main-footer{
-        margin-left: 40px;
+        margin-left: 50px;
+        margin-right: 30px;
     }
 }
