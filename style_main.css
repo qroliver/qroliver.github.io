@@ -120,6 +120,18 @@ section{
     font-size: 1rem;
 }
 
+.section-content-entry-note{
+    font-size: 0.95rem; 
+    font-style: italic; 
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+.section-content-entry-note a{
+    text-decoration: none; 
+    color: rgb(12, 102, 117);
+}
+
 .section-content-paragraph{
     font-size: 1.25rem;
     line-height: 1.5;
