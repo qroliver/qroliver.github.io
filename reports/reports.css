@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+header{
+    display: grid;
+    grid-template-areas: "logo-name header-nav";
+    background-color: rgb(12, 102, 117);
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo-img{
+    max-width: 8%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 2px;
+}
+
+.logo{
+    max-width: 12.5%;
+    height: auto;
+    margin-left: 25px;
+    padding: 0;
+}
+
+.header-name{
+    margin-left: 15px;
+}
+
+.header-main-name{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header-nav{
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-nav-list{
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav-list a{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+main{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+article{
+    justify-content: center;
+}
+
+.entry-title{
+    color: rgb(6, 71, 82);
+    font-family: 'Poppins';
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.entry-title a{
+    color: rgb(6, 71, 82);
+}
+
+.entry-date{
+    color: grey;
+    font-size: 1rem;
+}
+
+.entry-paragraph{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pdf-container{
+    margin-top: 25px;
+}
+
+object{
+    width: 100%;
+    height: 800px;
+    border: 2px solid rgb(12, 102, 117);
+    border-radius: 8px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 35px 250px;
+    font-size: 0.75rem;
+    color: rgba(12, 102, 117, 0.6);
+}
+
+.main-footer-left,
+.main-footer-right{
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-footer-left p,
+.main-footer-right p{
+    margin: 0;
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: rgba(12, 102, 117, 0.6);
+}
+
+
+@media (max-width: 767px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 5px;
+        margin-top: 15px;
+    }
+
+    .logo-img{
+        padding: 0;
+        max-width: 25%;
+        border-radius: 2px;
+    }
+
+    .logo{
+        max-width: 50%;
+        margin: auto 20%;
+    }
+
+    .header-name{
+        margin: 0;
+    }
+
+    .header-main-name{
+        font-size: 2.5rem;
+    }
+
+    .header-nav{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .header-nav-list{
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        gap: 15px;
+    }
+
+    .header-nav-list a{
+        font-size: 1rem;
+    }
+
+    main{
+        margin: 20px;
+    }
+
+    .entry-title{
+        text-align: left;
+    }
+
+    .main-footer{
+        margin: 20px 20px;
+        margin-left: 10px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main-footer-left{
+        order: 2;
+        margin-top: 10px;
+    }
+
+    .main-footer-right{
+        order: 1;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    main{
+        margin: 35px 30px;
+        gap: 60px;
+    }
+
+    .logo-img{
+        padding: 0;
+        max-width: 30%;
+        border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 55%;
+    }
+
+    .header-main-name{
+        font-size: 2.75rem;
+    }
+
+    .header-nav{
+        margin-right: 25px;
+    }
+
+    .header-nav-list a{
+        font-size: 1.5rem;
+    }
+
+    .main-body{
+        margin: 40px;
+    }
+
+    .section-title h2{
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .main-footer{
+        margin: auto 30px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .logo-img{
+        padding: 0;
+        max-width: 30%;
+        border-radius: 3px;
+    }
+
+    .logo{
+        max-width: 60%;
+    }
+
+    .header-main-name{
+        font-size: 2.75rem;
+    }
+
+    .header-nav{
+        margin-right: 25px;
+    }
+
+    .header-nav-list a{
+        font-size: 2rem;
+    }
+
+    main{
+        margin: 40px;
+        gap: 75px;
+    }
+
+    .main-footer{
+        margin: auto 40px;
+    }
+}

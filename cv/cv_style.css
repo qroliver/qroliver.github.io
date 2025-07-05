@@ -28,14 +28,14 @@ a{
 }
 
 .logo-img{
-    max-width: 20%;
+    max-width: 8%;
     height: auto;
     margin-left: 20px;
     border-radius: 2px;
 }
 
 .logo{
-    max-width: 25%;
+    max-width: 12.5%;
     height: auto;
     margin-left: 25px;
     padding: 0;
@@ -53,7 +53,7 @@ a{
 
 .header-nav{
     display: flex;
-    margin-right: 70px;
+    margin-right: 50px;
 }
 
 .header-nav-list{
@@ -66,7 +66,7 @@ a{
 .header-nav-list a{
     font-family: 'Poppins';
     color: white;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -393,7 +393,7 @@ section{
     }
 
     .header-nav-list a{
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     .dropdown{

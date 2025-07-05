@@ -18,6 +18,7 @@ header{
 
 a{
     text-decoration: none;
+    color: rgb(12, 102, 117);
 }
 
 .logo-name{
@@ -27,14 +28,14 @@ a{
 }
 
 .logo-img{
-    max-width: 20%;
+    max-width: 8%;
     height: auto;
     margin-left: 20px;
     border-radius: 2px;
 }
 
 .logo{
-    max-width: 25%;
+    max-width: 12.5%;
     height: auto;
     margin-left: 25px;
     padding: 0;
@@ -52,7 +53,7 @@ a{
 
 .header-nav{
     display: flex;
-    margin-right: 70px;
+    margin-right: 50px;
 }
 
 .header-nav-list{
@@ -65,34 +66,31 @@ a{
 .header-nav-list a{
     font-family: 'Poppins';
     color: white;
-    font-size: 2.25rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 600;
 }
 
 main{
     margin: 45px 70px;
+    margin-bottom: 10px;
 }
 
-section{
+.intro-section{
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .section-title{
     font-family: 'Poppins';
     color: rgb(12, 102, 117);
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
-.section-title a{
-    text-decoration: none;
-    color: rgb(12, 102, 117);
-}
-
 .section-title h2{
+    font-size: 2rem;
     margin: 0;
     margin-left: 20px;
 }
@@ -101,93 +99,108 @@ section{
     text-align: justify;
 }
 
-.section-content a{
-    text-decoration: none;
-    color: rgb(12, 102, 117);
-}
-
-.section-content-title{
-    font-family: 'Poppins';
-    color: rgb(6, 71, 82);
-    font-size: 2.1rem;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.section-content-subtitle{
-    color: grey;
-    font-size: 1rem;
-}
-
-.section-content-entry-note{
-    font-size: 0.95rem; 
-    font-style: italic; 
-    color: #555; 
-    margin-bottom: 20px;
-}
-
-.section-content-entry-note a{
-    text-decoration: none; 
-    color: rgb(12, 102, 117);
-}
-
 .section-content-paragraph{
     font-size: 1.25rem;
     line-height: 1.5;
     text-align: justify;
 }
 
-.continue-reading a{
-    text-decoration: none;
-    color: rgb(12, 102, 117);
+.media-icons{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+    margin-top: 20px;
+}
+
+.logo-link{
+    display: inline-block;
+}
+
+.media-icons img{
+    height: 20px;
+    width: auto;
 }
 
 .separator{
     height: 2px; 
     background-color: rgba(12, 102, 117, 0.1); 
-    margin: 35px 0;
+    margin: 25px 0;
+    margin-top: 15px;
 }
 
-.more-posts{
-    text-align: right;
-    margin: 0;
+.other-section{
+    background-color: white;
+    margin-bottom: 50px;
 }
 
-.more-posts a{
-    font-size: 1rem;
-    text-decoration: none;
-    color: rgb(12, 102, 117);
-    text-align: right;
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-left: 30px;
+    margin-right: 0;
 }
 
-h3{
+.card-title{
     font-family: 'Poppins';
-    font-size: 1.75rem;
-    color: rgb(6, 71, 82);
+    font-size: 1.65rem;
+    color: rgb(12, 102, 117);
+    font-weight: 600;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
 }
 
-.graph-slideshow{
-    padding: 20px;
-    padding-left: 0;
-    padding-right: 0;
+.card-content{
+    padding: 15px;
+    border: 2px solid rgba(12, 102, 117, 0.05);
+    border-radius: 10px;
+    text-align: justify;
 }
 
-.slideshow-pic{
+.card-content-title{
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    color: rgb(12, 102, 117);
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-content-date{
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.card-content-paragraph{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-content img{
     max-width: 100%;
     height: auto;
-    border: 1px solid rgb(12, 102, 117);
-    border-radius: 1%;
+    cursor: pointer;
 }
 
-.slideshow-button{
-    color: white;
-    background-color: rgb(12, 102, 117);
-    border: white;
-    border-radius: 2px;
-    cursor: pointer;
+.card-content-paragraph a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+}
+
+.continue-reading a{
+    text-decoration: none;
+    color: rgb(12, 102, 117);
+    font-size: 0.85rem;
+}
+
+.see-all{
+    color: rgb(12, 102, 117);
+    font-size: 0.85rem;
+    text-align: right;
+    margin-top: 10px;
 }
 
 .full-screen-container{
@@ -198,7 +211,7 @@ h3{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(12, 102, 117, 0.8);
+    background-color: rgba(12, 102, 117, 0.7);
     justify-content: center;
     align-items: center;
 }
@@ -218,108 +231,7 @@ h3{
     max-height: 95vh;
     object-fit: contain;
     border: 2px rgb(12, 102, 117);
-    border-radius: 2%;
-}
-
-.about-me-title{
-    font-family: 'Poppins';
-    color: rgb(12, 102, 117);
-    font-size: 2.25rem;
-    font-weight: bolder;
-}
-
-.me-pic{
-    display: block;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    max-width: 50%;
-    border-radius: 50%;
-    border: 1px solid rgb(12, 102, 117);
-}
-
-.media-icons{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    width: auto;
-    margin-top: 20px;
-}
-
-.logo-link{
-    display: inline-block;
-}
-
-.media-icons img{
-    height: 30px;
-    width: auto;
-}
-
-.interests-education{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.inted-header{
-    margin-bottom: 7px;
-    color:rgb(6, 71, 82)
-}
-
-.intered-list{
-    font-size: 1.25rem;
-    line-height: 1.3;
-    margin-top: 0;
-}
-
-.intered-list li{
-    margin-top: 5px;
-}
-
-.education-list-subtitle{
-    font-size: 1rem;
-    color: grey;
-    margin-left: 1px;
-}
-
-.contact-form{
-    max-width: 600px;
-    border-radius: 10px;
-}
-
-.contact-form form{
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label{
-    margin-top: 20px;
-    font-family: 'Poppins';
-    color: rgb(6, 71, 82);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea{
-    border: 1px solid rgb(6, 71, 82);
-    border-radius: 5px;
-    font-family: 'Roboto';
-    font-size: 16px;
-}
-
-.contact-form button{
-    background-color: rgb(12, 102, 117);
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    max-width: 150px;
-    cursor: pointer;
-}
-
-.h-captcha{
-    margin-top: 20px;
+    border-radius: 1%;
 }
 
 .main-footer{
@@ -327,6 +239,7 @@ h3{
     justify-content: space-between;
     align-items: stretch;
     margin: 35px 90px;
+    margin-top: 10px;
     font-size: 0.75rem;
     color: rgba(12, 102, 117, 0.6);
 }
@@ -395,14 +308,14 @@ h3{
     }
 
     .header-nav-list a{
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     main{
         margin: 20px;
     }
 
-    section{
+    .intro-section{
         display: flex;
         flex-direction: column;
     }
@@ -419,17 +332,10 @@ h3{
         font-size: 1.75rem;
     }
 
-    .interests-education{
-        gap: 15px;
-    }
-
-    .intered-list{
-        padding-left: 10px;
-        font-size: 1.1rem;
-    }
-
-    .intered-list li{
-        text-align: left;
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
     }
 
     .main-footer{
@@ -482,9 +388,18 @@ h3{
         margin: 40px;
     }
 
+    .intro-section{
+        gap: 10px;
+    }
+
     .section-title h2{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-left: 0;
+    }
+
+    .cards{
+        margin-left: 0;
+        gap: 20px;
     }
 
     .main-footer{
@@ -524,7 +439,14 @@ h3{
         margin: 40px;
     }
 
+    .cards{
+        gap: 30px;
+    }
+
     .main-footer{
         margin: auto 35px;
     }
 }
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Oliver Q.R.">
+        <title>Oliver Q.R.</title>
+        <link rel="icon" type="image/x-icon" href="/img/small_icon.ico">
+        <link rel="stylesheet" href="/about/about.css">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=poppins:400,500,600,700|roboto:400,700" rel="stylesheet" />
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-name">
+                <img src="/img/Icon_1b.jpg" class="logo-img">
+                <a href="https://www.oliverqr.com"><img src="/img/logo_white.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li><a href="https://www.oliverqr.com">Home</a></li>
+                    <li><a href="https://www.oliverqr.com/blog">Blog</a></li>
+                    <li><a href="https://www.oliverqr.com/reports">Reports</a></li>
+                    <li><a href="https://www.oliverqr.com/dataviz">DataViz</a></li>
+                    <li><a href="https://www.oliverqr.com/about">About</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="about-me-section">
+                <div>
+                    <div>
+                        <h2>About me</h2>
+                    </div>
+                    <div class="pic-container">
+                        <img src="/img/Yo.png" class="me-pic" alt="author picture">
+                    </div>
+                    <div>
+                        <div class="media-icons">
+                            <a href="www.linkedin.com/in/oliverqr/" target="_blank" class="logo-link">
+                                <img src="/img/LinkedIn_logo.png" alt="LinkedIn logo">
+                            </a>
+                            <a href="https://www.github.com/qroliver" target="_blank", class="logo-link">
+                                <img src="/img/GitHub_logo.png" alt="GitHub logo">
+                            </a>
+                            <a href="https://bsky.app/profile/qvdoli.bsky.social" target="_blank" class="logo-link">
+                                <img src="/img/BlueSky_logo.png" alt="Bluesky logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <p class="about-me-paragraph">
+                        Hello! <em>¡Hola! Hej! Ciao!</em>
+                    </p>
+                    <p class="about-me-paragraph">
+                        Welcome, and thanks for visiting my website. My name is Oliver, and I am a molecular biologist 
+                        (Ph.D.) and data analyst with nearly 20 years of experience in biotech and biopharma research. 
+                        Over the years, I have acquired solid expertise in data analysis and experimental work, and a 
+                        passion for using data to uncover insights and make better decisions.
+                    </p>
+                    <p class="about-me-paragraph">
+                        My work has always required critical thinking, project planning, experiment design, methodology 
+                        documentation, complex dataset analysis, and communicating findings to diverse audiences, skills 
+                        that I believe are transferrable to different sectors and problems.
+                    </p>
+                    <p class="about-me-paragraph">
+                        I am naturally curious, and I enjoy learning new things, solving problems and exploring new 
+                        challenges, especially when they involve using data to understand complex systems or address 
+                        real-world issues.
+                    </p>
+                    <p class="about-me-paragraph">
+                        If you'd like to know more about me, feel free to check out my <a href="https://www.oliverqr.com/cv">CV</a>, 
+                        or just drop me a message using the <a href="https://www.oliverqr.com/about#contact">form</a> below.
+                    </p>
+                    <div class="skills-interests">
+                        <div>
+                            <h3 class="skills-interests-header"><u>Skills.</u></h3>
+                            <ul class="skills-interests-list">
+                                <li>Data analysis (R & Python).</li>
+                                <li>Experimental design.</li>
+                                <li>Data visualisation & storytelling.</li>
+                                <li>Project planning.</li>
+                                <li>Problem solving.</li>
+                                <li>Scientific writing & documentation.</li>
+                                <li>Communication.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="skills-interests-header"><u>Interests.</u></h3>
+                            <ul class="skills-interests-list">
+                                <li>Machine learning.</li>
+                                <li>Green energy.</li>
+                                <li>Sustainability.</li>
+                                <li>Biotechnology.</li>
+                                <li>Life sciences.</li>
+                                <li>Data-driven decision making.</li>
+                                <li>Innovation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="full-cv">
+                        <a href="https://www.oliverqr.com/cv">☞<em>Full CV</em></a>
+                    </span>
+                </div>
+            </section>
+            <div class="separator"></div>
+            <section class="about-me-section" id="contact">
+                <div class="section-title">
+                    <h2>Get in touch</h2>
+                </div>
+                <div class="section-content">
+                    <div class="contact-form">
+                        <form action="https://usebasin.com/f/453537d35ae1" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                            <button type="submit">Send message</button>
+    
+                            <input type="text" name="honeypot" style="display: none;">
+                            <div class="h-captcha" data-sitekey="7fe715a1-151f-4c63-b497-bd971974df05"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="main-footer-left">
+                <p>
+                    © <span id="current-year"></span> Oliver Q.R. | 
+                    Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. 
+                </p>
+            </div>
+            <div class="main-footer-right">
+                <p>
+                    Contact form by <a href="https://usebasin.com/" target="_blank">Basin</a>.
+                </p>
+            </div>
+        </footer>
+        <script src="/js/slideshow_script.js"></script>
+        <script src="/js/footer_year_update.js"></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
+    </body>
+</html>
