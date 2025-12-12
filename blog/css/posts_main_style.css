@@ -107,10 +107,11 @@ main{
 .toc ul{
     list-style: none;
     padding-left: 25px;
+    margin-top: 0;
 }
 
 .toc li{
-    margin: 10px auto;
+    margin: 18px auto;
     padding: 2px;
 }
 
