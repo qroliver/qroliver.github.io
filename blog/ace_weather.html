@@ -2,31 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Oliver Q.R.">
-        <title>Oliver Q.R.</title>
-        <link rel="icon" type="image/x-icon" href="/img/small_icon.ico">
-        <link rel="stylesheet" href="/blog/css/posts_entry_style.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <meta name="author" content="Oliver Quevedo Rodríguez">
+        <meta name="description" content="Oliver Quevedo Rodríguez — PhD Biomedical Sciences & Data analyst">
+        <meta name="keywords" content="Oliver Quevedo, PhD, Scientist, Data Analyst, Data analytics, Biotech, Biopharma, Data Visualisation, Machine Learning">
+        <title>Oliver Quevedo Rodríguez — PhD Biomedical Sciences | Data Analytics | Biotech & Biopharma</title>
+        <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/post_style_a.css">
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=poppins:400,600|roboto:400,700" rel="stylesheet" />
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        <link href="https://fonts.bunny.net/css?family=poppins:400,500,600,700|roboto:400,500,600,700" rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <div class="logo-name">
-                <img src="/img/Icon_1b.jpg" class="logo-img">
-                <a href="https://www.oliverqr.com"><img src="/img/logo_white.png" alt="logo" class="logo"></a>
-            </div>
-            <div class="header-nav">
-                <ul class="header-nav-list">
-                    <li><a href="https://www.oliverqr.com">Home</a></li>
-                    <li><a href="https://www.oliverqr.com/blog">Blog</a></li>
-                    <li><a href="https://www.oliverqr.com/reports">Reports</a></li>
-                    <li><a href="https://www.oliverqr.com/dataviz">DataViz</a></li>
-                    <li><a href="https://www.oliverqr.com/about">About</a></li>
-                </ul>
-            </div>
-        </header>
+        <div id="navigation-header">
+            <p>⚠️ JavaScript is disabled. Please enable it to see the navigation header.</p>
+        </div>
         <main>
             <div class="outline">
                 <ul>
@@ -35,18 +25,18 @@
                     <li><a href="#precipitation">Precipitation.</a></li>
                     <li><a href="#year2023">2023.</a></li>
                     <li><a href="#year2024">2024.</a></li>
-                    <li><a href="#conclusions">Concluding remarks.</a></li>
+                    <li><a href="#conclusions">Wrap-up.</a></li>
                 </ul>
             </div>
             <article>
                 <h2 class="entry-title" id="intro">A look at the last 50 years of temperature and precipitation data in Lanzarote.</h2>
                 <span class="entry-date">
-                    <i>Posted on <time datetime="2024-10-24">24 October 2024.</time></i>
+                    <em>Posted on <time datetime="2024-10-24">24 October 2024.</time></em>
                 </span>
                 <p class="entry-paragraph">
                     Lanzarote is the northernmost and easternmost of the Canary Islands. Located 125 km off the coast of 
                     continental Africa (figure 1), its subtropical climate is characterised by mild temperatures all year-round and 
-                    little precipitation. Sometimes referred to as the <i>island of eternal Spring</i>, Lanzarote's climate 
+                    little precipitation. Sometimes referred to as the <em>island of eternal Spring</em>, Lanzarote's climate 
                     is classified as hot dessert climate according to the Köppen climate classification.
                 </p>
                 <p class="entry-paragraph">
@@ -55,18 +45,17 @@
                     at the station located at Lanzarote airport, with the aim of analysing possible trends over this period.
                 </p>
                 <figure class="entry-figure" id="figure01">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig01_Geographic_location_Lanzarote.png" alt="Geographic location of Lanzarote">
-                    <figcaption class="figure_1-caption">
-                        <b>Figure 1.</b> Geographic location of Lanzarote and its airport.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig01_Geographic_location_Lanzarote.png" alt="Geographic location of Lanzarote">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <strong>Figure 1.</strong> Geographic location of Lanzarote and its airport.
+                        </figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Figure R code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig01_code.png" alt="R code for figure 1" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     Before continuing, I would like to point out that Lanzarote, like other Canary islands, is characterised by 
                     having more than one microclimate. For example, the northern and north-western areas are more exposed to the 
-                    chilly oceanic <i>alisios</i> (trade winds) that blow from the northeast, making these parts of the island a 
+                    chilly oceanic <em>alisios</em> (trade winds) that blow from the northeast, making these parts of the island a 
                     bit cooler and slightly more humid than areas to the south and southeast. However, due to the relatively low 
                     altitude of Lanzarote, the differences between the microclimates on this island are not as pronounced as on 
                     other islands with higher mountains (like Tenerife or La Palma).
@@ -78,13 +67,11 @@
                     has increased above 2°C in the last 50 years, with 2023 marking the warmest year on record (22.71°C).
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig02_annual mean temperature.png" alt="Annual mean temperature">
-                    <figcaption class="figure-caption"><b>Figure 2.</b> Annual mean temperature over the last 50 years.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig02_annual mean temperature.png" alt="Annual mean temperature">
+                        <figcaption class="figure-caption"><strong>Figure 2.</strong> Annual mean temperature over the last 50 years.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig02_code.png" alt="R code for figure 2" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     To find the coldest year within this period, we have to go back to 1974, which had a mean temperature of 
                     19.65°C. This year, together with 1973 and 1975 are the only years in the last five decades with a mean 
@@ -98,13 +85,11 @@
                     occurred in the 1970s, 1980s and early 1990s.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig03_temp anomalies.png" alt="Yearly temperature anomalies">
-                    <figcaption class="figure-caption"><b>Figure 3.</b> Annual mean temperature anomalies.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig03_temp anomalies.png" alt="Yearly temperature anomalies">
+                        <figcaption class="figure-caption"><strong>Figure 3.</strong> Annual mean temperature anomalies.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig03_code.png" alt="R code for figure 3" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     In the last 20 years, only 2005 and 2018 had very mild negative temperature anomalies (-0.04 and -0.26°C, 
                     respectively, which are almost negligible). The other 18 years within this period had positive temperature 
@@ -116,13 +101,11 @@
                     period, with an average temperature of 20°C, whereas the 2020s are the warmest period so far, averaging 22.1°C.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig04_mean temperature by decade.png" alt="Mean temperature by decade">
-                    <figcaption class="figure-caption"><b>Figure 4.</b> Mean temperature by decade.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig04_mean temperature by decade.png" alt="Mean temperature by decade">
+                        <figcaption class="figure-caption"><strong>Figure 4.</strong> Mean temperature by decade.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig04_code.png" alt="R code for figure 4" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     An interesting observation is that the mean temperature of the period 2020-2023 is already 0.4°C higher than 
                     that of the 2010s. If we look at the trend of annual mean temperatures, it wouldn't be surprising if this 
@@ -130,13 +113,11 @@
                     rise observed between the 1970s and 1980s).
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig05_monthly mean temp by decade.png" alt="Monthly mean temperature by decade">
-                    <figcaption class="figure-caption"><b>Figure 5.</b> Monthly mean temperature by decade.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig05_monthly mean temp by decade.png" alt="Monthly mean temperature by decade">
+                        <figcaption class="figure-caption"><strong>Figure 5.</strong> Monthly mean temperature by decade.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig05_code.png" alt="R code for figure 5" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     If we break this down even further, looking at monthly mean temperature by decade, we can see that every month 
                     of the year has experienced an increase in the last five decades (figure 5 and table 1). The spring and summer 
@@ -144,13 +125,11 @@
                     higher in the 2020s than in the 1970s.
                 </p>
                 <figure class="entry-figure" id="montly_temp_by_decade">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/table01.png" alt="Table with monthly mean temperatures by decade">
-                    <figcaption class="figure-caption"><b>Table 1.</b> Monthly mean temperatures (°C) by decade.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_table01.png" alt="Table with monthly mean temperatures by decade">
+                        <figcaption class="figure-caption"><strong>Table 1.</strong> Monthly mean temperatures (°C) by decade.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/table01_code.png" alt="R code for table 1" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     June is the month that has experienced the highest average temperature rise, with 2.91°C in the last 50 years, 
                     followed by May (2.76°C). Another month that stands out is October, experiencing a 2.64°C increase in the last 
@@ -169,13 +148,11 @@
                     variability is something we can clearly see in the last 50 years (figure 6).
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig06_annual precipitation.png" alt="Annual precipitation">
-                    <figcaption class="figure-caption"><b>Figure 6.</b> Total precipitation recorded by year.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig06_annual precipitation.png" alt="Annual precipitation">
+                        <figcaption class="figure-caption"><strong>Figure 6.</strong> Total precipitation recorded by year.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig06_code.png" alt="R code for figure 6" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     With such an irregular pattern, it is hard to establish a clear trend. However, we can clearly observe the 
                     high variability in figure 6, which shows the total rainfall per year in the last five decades. As mentioned 
@@ -190,13 +167,11 @@
                     positive anomaly (+169.55%), marking the highest positive deviation in the last 50 years.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig07_prec anomalies.png" alt="Annual precipitation anomalies">
-                    <figcaption class="figure-caption"><b>Figure 7.</b> Annual total precipitation anomalies.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig07_prec anomalies.png" alt="Annual precipitation anomalies">
+                        <figcaption class="figure-caption"><strong>Figure 7.</strong> Annual total precipitation anomalies.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig07_code.png" alt="R code for figure 7" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     In contrast, recent years have tended to be drier. Four out of the last five years had a negative anomaly, 
                     with 2023 standing out as the driest year in the series (-64.3%). It looks like the current is a dry period, 
@@ -211,29 +186,25 @@
                     for both temperature and precipitation stand apart from other years in the series.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig08_prec temp anomalies.png" alt="Temperature and precipitation anomalies">
-                    <figcaption class="figure-caption"><b>Figure 8.</b> Annual mean temperature and total precipitation anomalies.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig08_prec temp anomalies.png" alt="Temperature and precipitation anomalies">
+                        <figcaption class="figure-caption"><strong>Figure 8.</strong> Annual mean temperature and total precipitation anomalies.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig08_code.png" alt="R code for figure 8" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     Most of 2023's daily mean temperatures were well above those of the reference period 1981-2010 (figure 9), with 
                     some periods showing significant deviations. The maximum deviation occurred on March 30, with a mean temperature 
                     for that day 10.6°C higher than the reference.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig09_daily mean temp 2023.png" alt="Daily mean temperatures in 2023 compared with the reference.">
-                    <figcaption class="figure-caption"><b>Figure 9.</b> Daily mean temperatures in 2023 compared with those of the reference period.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig09_daily mean temp 2023.png" alt="Daily mean temperatures in 2023 compared with the reference.">
+                        <figcaption class="figure-caption"><strong>Figure 9.</strong> Daily mean temperatures in 2023 compared with those of the reference period.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig09_code.png" alt="R code for figure 9" class="R-code">
-                </details>
                 <p class="entry-paragraph" style="margin-bottom: 5px;">
                     Summarising key deviation statistics, 2023 had:
-                    <ul style="font-size: 1.25rem; line-height: 1.5; margin-bottom: 20px; margin-top: 0;">
+                    <ul class="entry-paragraph-list">
                         <li>29 days had positive temperature anomalies larger than the reference mean + 3σ,</li>
                         <li>40 days had a positive temperature anomaly between 2σ and 3σ,</li>
                         <li>100 days had an anomaly larger than the reference plus 1σ.</li>
@@ -244,13 +215,11 @@
                     ±1σ of the reference. These observations highlight the extreme warmth of the year 2023.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig10_monthly precipitation 2023.png" alt="Monthly precipitation in 2023 compared with the reference.">
-                    <figcaption class="figure-caption"><b>Figure 10.</b> Monthly precipitation in 2023 compared to the reference period.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig10_monthly precipitation 2023.png" alt="Monthly precipitation in 2023 compared with the reference.">
+                        <figcaption class="figure-caption"><strong>Figure 10.</strong> Monthly precipitation in 2023 compared to the reference period.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig10_code.png" alt="R code for figure 10" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     In regards to precipitation, 2023 experienced less rainfall than the reference period 1981-2010 in most months 
                     of the year (figure 10). For example, January and March were very dry compared to the reference, like autumn 
@@ -267,13 +236,11 @@
                     the same period in 2023 (figure 11), and 1.23°C warmer than the reference period (1981-2010).
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig11_annual mean temp 2024.png" alt="Annual mean temperature comparison for 2023, 2024 and the reference period.">
-                    <figcaption class="figure-caption"><b>Figure 11.</b> Comparison of the 2023, 2024 and the reference period annual mean temperatures.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig11_annual mean temp 2024.png" alt="Annual mean temperature comparison for 2023, 2024 and the reference period.">
+                        <figcaption class="figure-caption"><strong>Figure 11.</strong> Comparison of the 2023, 2024 and the reference period annual mean temperatures.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig11_code.png" alt="R code for figure 11" class="R-code">
-                </details>
                 <div class="paragraph-table-layout">
                     <div class="paragraph-table-layout-paragraph">
                         <p class="entry-paragraph">
@@ -298,27 +265,23 @@
                     </div>
                     <div class="paragraph-table-layout-table">
                         <figure class="entry-figure">
-                            <img class="entry-graph-img" src="/blog/img/ace_weather_img/table02.png" 
-                            alt="Table with the 10 warmest years on record (January to September)."
-                            style="max-width: 60%;">
-                            <figcaption class="figure-caption" style="text-align: left;">
-                                <b>Table 2.</b> Ten warmest years in the first nine months.
-                            </figcaption>
+                            <div class="figure-container">
+                                <img class="entry-graph-img" src="/assets/dataviz/241024_table02.png" 
+                                alt="Table with the 10 warmest years on record (January to September)."
+                                style="max-width: 60%;">
+                                <figcaption class="figure-caption" style="text-align: left;">
+                                    <strong>Table 2.</strong> Ten warmest years in the first nine months.
+                                </figcaption>
+                            </div>
                         </figure>
                     </div>
                 </div>
-                <details>
-                    <summary class="R-code-button">Code for table 2.</summary>
-                    <img src="/blog/img/ace_weather_img/table02_code.png" alt="R code for table 2" class="R-code">
-                </details>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig12_daily mean temp 2024.png" alt="Daily mean temperatures for the year 2024 and the reference period.">
-                    <figcaption class="figure-caption"><b>Figure 12.</b> Daily mean temperature for the year 2024 and the reference period.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig12_daily mean temp 2024.png" alt="Daily mean temperatures for the year 2024 and the reference period.">
+                        <figcaption class="figure-caption"><strong>Figure 12.</strong> Daily mean temperature for the year 2024 and the reference period.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig12_code.png" alt="R code for figure 12" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     While 2024 has been very warm during the last 9 months of the year, it is also being exceptionally dry 
                     (figure 13). The first nine months has seen very little rainfall (18.5 mm), even less than for the same period 
@@ -326,13 +289,11 @@
                     further aggravated by the rising temperatures.
                 </p>
                 <figure class="entry-figure">
-                    <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig13_total precipitation 2024.png" alt="Total precipitation for the years 2023, 2024 and the reference period">
-                    <figcaption class="figure-caption"><b>Figure 13.</b> Total precipitation for the first nine months of the years 2023, 2024 and the reference period.</figcaption>
+                    <div class="figure-container">
+                        <img class="entry-graph-img" src="/assets/dataviz/241024_fig13_total precipitation 2024.png" alt="Total precipitation for the years 2023, 2024 and the reference period">
+                        <figcaption class="figure-caption"><strong>Figure 13.</strong> Total precipitation for the first nine months of the years 2023, 2024 and the reference period.</figcaption>
+                    </div>
                 </figure>
-                <details>
-                    <summary class="R-code-button">Code.</summary>
-                    <img src="/blog/img/ace_weather_img/fig13_code.png" alt="R code for figure 13" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     The lack of rainfall in 2024 has been evident since the beginning of the year, with January seeing no rain, 
                     and February and April recording very little rain compared to the reference (figure 14). This continues to 
@@ -342,31 +303,27 @@
                 <div class="graph-table-layout">
                     <div class="graph-table-layout-graph">
                         <figure class="entry-figure">
-                            <img class="entry-graph-img" src="/blog/img/ace_weather_img/fig14_montly precipitation 2024.png" 
-                            alt="Monthly precipitation in 2024 compared with the reference period"
-                            style="max-width: 100%";>
-                            <figcaption class="figure-caption"><b>Figure 14.</b> Monthly precipitation in 2024 compared with the reference period.</figcaption>
+                            <div class="figure-container">
+                                <img class="entry-graph-img" src="/assets/dataviz/241024_fig14_montly precipitation 2024.png" 
+                                alt="Monthly precipitation in 2024 compared with the reference period"
+                                style="max-width: 100%";>
+                                <figcaption class="figure-caption"><strong>Figure 14.</strong> Monthly precipitation in 2024 compared with the reference period.</figcaption>
+                            </div>
                         </figure>
                     </div>
                     <div class="graph-table-layout-table">
                         <figure class="entry-figure">
-                            <img class="entry-graph-img" src="/blog/img/ace_weather_img/table03.png" 
-                            alt="List of the 10 driest years on record (January to September)"
-                            style="max-width: 60%;">
-                            <figcaption class="figure-caption" style="text-align: left;">
-                                <b>Table 3.</b> List of the 10 driest years considering the first 9 months of the year.
-                            </figcaption>
+                            <div class="figure-container">
+                                <img class="entry-graph-img" src="/assets/dataviz/241024_table03.png" 
+                                alt="List of the 10 driest years on record (January to September)"
+                                style="max-width: 60%;">
+                                <figcaption class="figure-caption" style="text-align: left;">
+                                    <strong>Table 3.</strong> List of the 10 driest years considering the first 9 months of the year.
+                                </figcaption>
+                            </div>
                         </figure>
                     </div>
                 </div>
-                <details>
-                    <summary class="R-code-button">Code for figure 14.</summary>
-                    <img src="/blog/img/ace_weather_img/fig14_code.png" alt="R code for figure 14" class="R-code">
-                </details>
-                <details>
-                    <summary class="R-code-button">Code for table 3.</summary>
-                    <img src="/blog/img/ace_weather_img/table03_code.png" alt="R code for table 3" class="R-code">
-                </details>
                 <p class="entry-paragraph">
                     In fact, looking at the first nine months of the last 50 years, 2024 already ranks as the 7<sup>th</sup> driest 
                     in the last five decades (table 3). Even considering the very irregular rain patterns in Lanzarote, it looks 
@@ -401,31 +358,14 @@
                 </p>
             </article>
         </main>
-        <footer class="go-to-footer">
-            <img src="/blog/img/posts_img/GitHub_logo.png">
+        <div class="go-to-container">
+            <img src="/assets/icons/GitHub.png">
             <span>
                 <a href="https://github.com/qroliver/ace_weather" target="_blank">Go to repository</a>
             </span>
-        </footer>
-        <footer class="main-footer">
-            <div class="main-footer-left">
-                <p>
-                    © <span id="current-year"></span> Oliver Q.R. | 
-                    Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. 
-                </p>
-            </div>
-            <div class="main-footer-right">
-                <p xmlns:cc="http://creativecommons.org/ns#" >
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0 
-                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
-                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
-                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
-                        <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
-                    </a>
-                </p>
-            </div>
-        </footer>
-        <script src="/js/footer_year_update.js"></script>
+        </div>
+        <div id="cc-footer"></div>
+        <script src="/js/load_components.js"></script>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
     </body>
 </html>

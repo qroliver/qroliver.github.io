@@ -1,0 +1,23 @@
+.parallax-img1{
+    background-image: url('/assets/img/01euros.jpg');
+}
+
+.parallax-img2{
+    background-image: url('/assets/img/02job.jpg');
+}
+
+.parallax-img3{
+    background-image: url('/assets/img/03salary.jpg');
+}
+
+.parallax-img4{
+    background-image: url('/assets/img/04unemployment.jpg');
+}
+
+.parallax-img5{
+    background-image: url('/assets/img/05livingstandards.jpg');
+}
+
+.parallax-img6{
+    background-image: url('/assets/img/06wrap-up.jpg');
+}

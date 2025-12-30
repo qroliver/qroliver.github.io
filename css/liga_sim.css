@@ -1,0 +1,38 @@
+.table-figure {
+    margin: 0;
+    padding: 0;
+}
+
+.figure-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.table02-container {
+    display: block;
+    margin: 0;
+    justify-content: center;
+}
+
+.table02-img {
+    max-width: 50%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .figure-row {
+        flex-direction: column;
+    }
+
+    .table02-img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .table02-img {
+        max-width: 100%;
+    }
+}
