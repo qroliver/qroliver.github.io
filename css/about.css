@@ -63,6 +63,20 @@ main {
     color: var(--secondary);
 }
 
+.about-me-paragraph-list {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-me-paragraph-list li::marker {
+    content: "👉";
+}
+
+.about-me-paragraph-list li {
+    padding-left: 0.5rem;
+}
+
 .skills-interests {
     display: grid;
     grid-template-columns: 1fr 1fr;
