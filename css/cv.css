@@ -1,3 +1,9 @@
+/* === GENERAL STYLING === */
+strong {
+    color: rgb(6, 71, 82);
+}
+
+
 /* === HERO SECTION === */
 .hero {
     position: relative;
