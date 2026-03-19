@@ -2,6 +2,10 @@ main {
     margin: 3rem 6rem;
 }
 
+strong {
+    color: rgb(6, 71, 82)
+}
+
 .about-me-section {
     display: grid;
     grid-template-columns: 0.3fr 0.7fr;
