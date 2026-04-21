@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Oliver Quevedo Rodríguez">
         <meta name="description" content="Oliver Quevedo Rodríguez — PhD Biomedical Sciences & Data analyst">
-        <meta name="keywords" content="Oliver Quevedo, PhD, Scientist, Data Analyst, Data analytics, Biotech, Biopharma, Data Visualisation, Machine Learning">
+        <meta name="keywords" content="Oliver Quevedo, PhD, Scientist, Genetic engineering, Data Analyst, Data Science, High-throughput screening, Biotech, Biopharma, Data Visualisation, Machine Learning">
         <title>Oliver Quevedo Rodríguez — PhD Biomedical Sciences | Data Analytics | Biotech & Biopharma</title>
         <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
         <link rel="stylesheet" href="/css/style.css">
@@ -19,78 +19,61 @@
         </div>
         <main>
             <section class="intro-section">
-                <div class="greeting">
-                    <h2>Hello! <br class="greeting-break">¡Hola! <br class="greeting-break">Hej!</h2>
-                </div>
-                <div class="section-content">
-                    <p class="section-content-paragraph">
-                        Welcome to my website!
-                    </p>
-                    <p class="section-content-paragraph">
-                        I’m Oliver, a molecular biologist passionate about data science and nearly two decades of experience 
-                        in biotech and biopharma.
-                    </p>
-                    <p class="section-content-paragraph">
-                        Here, you'll find independent projects and visualisations exploring areas I'm passionate about: 
-                        climate data, life sciences, the green transition, sustainability, sports, and beyond.
-                    </p>
-                    <p class="section-content-paragraph">
-                        Feel free to explore the site, and if you'd like to know more about me, don't hesitate to:
-                    </p>
-                    <ul class="about-me-paragraph-list">
-                        <li>Check out my <a href="https://www.oliverqr.com/cv">CV</a>.</li>
-                        <li><a href="https://www.oliverqr.com/about#contact">Get in touch</a>.</li>
-                    </ul>
-                    <div class="media-icons">
-                        <a href="https://www.linkedin.com/in/oliverqr/" target="_blank" class="logo-link">
-                            <img src="/assets/icons/LinkedIn.png" alt="LinkedIn logo">
-                        </a>
-                        <a href="https://www.github.com/qroliver" target="_blank", class="logo-link">
-                            <img src="/assets/icons/GitHub.png" alt="GitHub logo">
-                        </a>
-                        <a href="https://bsky.app/profile/oqr.eurosky.social" target="_blank" class="logo-link">
-                            <img src="/assets/icons/Bluesky.png" alt="Bluesky logo">
-                        </a>
-                        <a href="https://www.oliverqr.com/about#contact" target="_blank" class="logo-link">
-                            <img src="/assets/icons/email.png" alt="Email icon">
-                        </a>
+                <div id="left-column">
+                    <div class="intro-text">
+                        <h2 class="greeting">HELLO! ¡HOLA! HEJ!</h2>
+                        <p class="intro-title">
+                            Molecular Biologist (PhD),<br>
+                            Computational Scientist
+                        </p>
+                        <p class="intro-paragraph">
+                            My name is Oliver, a <strong>molecular biologist</strong> (<strong>PhD</strong>) with nearly two 
+                            decades of experience in <strong>biotech</strong> and <strong>biopharma</strong>, bridging 
+                            <strong>wet-lab expertise</strong> with <strong>data science</strong>.
+                        </p>
+                        <p class="intro-paragraph">
+                            Here, you'll find independent projects and visualisations exploring some of my interests: 
+                            climate data, life sciences, the green transition, sustainability, sports, and beyond.
+                        </p>
+                        <p class="intro-paragraph">
+                            Feel free to explore the site and, if you’d like to know more, please 
+                            <a href="https://www.oliverqr.com/about/#contact">get in touch</a> or take a look at my 
+                            <a href="https://www.oliverqr.com/cv/">CV</a>.
+                        </p>
                     </div>
+                    <div class="cta-cards-container">
+                        <div class="cta-card">
+                            <a href="https://www.oliverqr.com/cv/">
+                                <span class="cta-text">View my CV</span>
+                            </a>
+                        </div>
+                        <div class="cta-card">
+                            <a href="https://www.oliverqr.com/about/#contact">
+                                <span class="cta-text">Get in touch</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="top-skills-cards-container">
+                        <span class="top-skill-card">Genetic Engineering</span>
+                        <span class="top-skill-card">High-Throughput Screening</span>
+                        <span class="top-skill-card">Strain Development</span>
+                        <span class="top-skill-card">R</span>
+                        <span class="top-skill-card">Python</span>
+                        <span class="top-skill-card">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="intro-logo-container">
+                    <img class="intro-logo" src="assets/img/logo_teal_v2.png">
                 </div>
             </section>
             <div class="separator"></div>
-            <section class="cards-section">
-                <div class="section-title">
-                    <h2>What's new</h2>
-                </div>
-                <div></div>
-                <div class="cards-container">
-                    <div class="card-dataviz">
-                        <h3 class="card-title">
-                            <a href="https://www.oliverqr.com/dataviz">DataViz</a>
-                        </h3>
-                        <div class="card-content">
-                            <img src="/assets/dataviz/260114_monroe_doctrine.png" onclick="expandImage(this)">
-                            <p class="card-content-paragraph">
-                                Two centuries of the Monroe Doctrine.
-                            </p>
-                        </div>
-                        <p class="see-all">
-                            <a href="https://www.oliverqr.com/dataviz"><em>See all 👈</em></a>
-                        </p>
-                        <!--Full screen image upon clicking-->
-                        <div class="full-screen-container" id="full-screen-image-container" onclick="closeExpandedImage()">
-                            <span class="close-button">&times;</span>
-                            <img class="full-screen-image" id="full-screen-image">
-                        </div>
-                    </div>
-                    <div class="card-blog">
-                        <h3 class="card-title">
-                            <a href="https://www.oliverqr.com/blog">
-                                Blog
-                            </a>
-                        </h3>
-                        <div class="card-content">
-                            <h4 class="card-content-title">
+            <section class="whats-new">
+                <h2 class="whats-new-title">Latest</h2>
+                <div class="whats-new-cards-container">
+                    <div class="whats-new-left">
+                        <div class="left-card" id="blog-card">
+                            <h3 class="card-title"><a href="https://www.oliverqr.com/blog">BLOG</a></h3>
+                            <h4 class="entry-title">
                                 <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">
                                     Tourism in the Canary Islands - Part II: Are locals really benefiting?
                                 </a>
@@ -105,21 +88,12 @@
                                 is generating more revenue year after year. And it seems that 2025 will be another record-breaking year.
                             </p>
                             <span class="continue-reading">
-                                <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2"><em>Continue reading...</em></a>
+                                <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">👉 <em>Read post</em></a>
                             </span>
                         </div>
-                        <p class="see-all">
-                            <a href="https://www.oliverqr.com/blog"><em>More posts 👈</em></a>
-                        </p>
-                    </div>
-                    <div class="card-report">
-                        <h3 class="card-title">
-                            <a href="https://www.oliverqr.com/reports/lzt_net_zero">
-                                Reports
-                            </a>
-                        </h3>
-                        <div class="card-content">
-                            <h4 class="card-content-title">
+                        <div class="left-card" id="case-study-card">
+                            <h3 class="card-title"><a href="https://www.oliverqr.com/reports/lzt_net_zero">CASE STUDY</a></h3>
+                            <h4 class="entry-title">
                                 <a href="https://www.oliverqr.com/reports/lzt_net_zero">
                                     Towards a net-zero electric system for Lanzarote: Solar and hydrogen at the core.
                                 </a>
@@ -133,15 +107,61 @@
                                 land use and help preserve the island's distinctive landscape.
                             </p>
                             <span class="continue-reading">
-                                <a href="https://www.oliverqr.com/reports/lzt_net_zero"><em>View report.</em></a>
+                                <a href="https://www.oliverqr.com/reports/lzt_net_zero">👉 <em>Read report</em></a>
                             </span>
                         </div>
-                        <p class="see-all" style="display: none;">
-                            <a href="https://www.oliverqr.com/reports"><em>More reports 👈</em></a>
-                        </p>
+                    </div>
+                    <div class="whats-new-right">
+                        <div class="right-card" id="dataviz-card">
+                            <h3 class="card-title"><a href="https://www.oliverqr.com/dataviz">DATAVIZ</a></h3>
+                            <img src="/assets/dataviz/260114_monroe_doctrine.png" onclick="expandImage(this)">
+                            <div class="dataviz-buttons-container">
+                                <span class="read-more-button" onclick="expandImage(document.querySelector('.right-card img'))">
+                                    <em>Full screen</em>
+                                </span>
+                                <span class="read-more-button" onclick="openPopUp()">👉 <em>Read more</em></span>
+                            </div>
+                        </div>
+                        <!--Full screen image upon clicking-->
+                        <div class="full-screen-container" id="full-screen-image-container" onclick="closeExpandedImage()">
+                            <span class="close-button">&times;</span>
+                            <img class="full-screen-image" id="full-screen-image">
+                        </div>
+                        <!--Pop-up text upon clicking-->
+                        <div class="full-screen-container" id="pop-up-container" onclick="closePopUp()">
+                            <div class="pop-up-content" onclick="event.stopPropagation()">
+                                <span class="close-button" onclick="closePopUp()">&times;</span>
+                                <h3 class="pop-up-title">🌎 Greenland: nothing new in the US backyard – The Monroe Doctrine at play.</h3>
+                                <p>
+                                    In 1823, James Monroe – the fifth president of the USA – articulated what years later 
+                                    would be known as the Monroe Doctrine. At a time when the independence of Spanish 
+                                    colonies across the Americas was unfolding – by that year, nearly all were independent or 
+                                    close to it – the doctrine declared the Western Hemisphere to be the US sphere of influence, 
+                                    warning that any intervention by European states in the continent would be viewed as a threat 
+                                    to the American security.
+                                </p>
+                                <p>
+                                    Since then, the United States has treated the Americas as its backyard, carrying out over 
+                                    120 interventions across the continent. From political manipulation and repression to 
+                                    full-scale invasions – such as those in Dominican Republic, Haiti, Grenada, Panama – to 
+                                    backing of military coups and subsequent dictatorships – like Pinochet’s in Chile, overthrowing 
+                                    the democratically elected government of Salvador Allende – or the infamous Operation Condor, 
+                                    in which the US backed right-wing dictatorships across South America to repress political dissidents.
+                                </p>
+                                <p>
+                                    The recent abduction of Nicolás Maduro in Venezuela – an event echoing the capture of Manuel Noriega 
+                                    in 1989 – marks the latest in a long line of interventions. With Greenland, Cuba, and Mexico – where 
+                                    the last major US operation resulted in Mexico losing 55% of its territory – as potential future targets 
+                                    in the near future, where will we see the next US move in the continent? A look at history teaches us that 
+                                    the United States’ interventionism knows no bounds – and they don’t hesitate to apply the Machiavellian 
+                                    principle that their end justifies the means.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+            
         </main>
         <div id="cc-footer">
             <p>⚠️ JavaScript is disabled. Please enable it to see the footer.</p>

@@ -54,7 +54,7 @@ header {
 .logo-name {
     display: flex;
     align-items: center;
-    margin: 15px;
+    margin: 10px 15px;
 }
 
 .logo-img {
@@ -65,7 +65,7 @@ header {
 }
 
 .logo {
-    max-width: 8%;
+    max-width: 12%;
     height: auto;
     margin-left: 25px;
     padding: 5px;
@@ -86,7 +86,7 @@ header {
 .header-nav-list a {
     font-family: var(--font-headers);
     color: white;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -148,6 +148,46 @@ header {
     box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     border-radius: 16px;
     padding: 2rem;
+}
+
+.pop-up-content {
+    background: #ffffff;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem 2.5rem;
+    position: relative;
+}
+
+.pop-up-content .close-button {
+    font-size: 25px;
+    color: var(--primary-light);
+    top: 10px;
+    right: 20px;
+}
+
+.pop-up-title {
+    font-family: var(--font-headers);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    padding-right: 1.5rem;
+}
+
+.pop-up-content p {
+    font-size: 1rem;
+    color: var(--text);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.pop-up-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* === BACK TO TOP BUTTON === */
@@ -217,7 +257,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin: 1.5rem 135px;
+    margin: 1.5rem 3rem;
     padding: 0;
     font-size: 0.75rem;
     color: var(--primary);
@@ -261,6 +301,30 @@ header {
     vertical-align:text-bottom;
 }
 
+/* == MEDIA ICONS == */
+
+.media-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: auto;
+}
+
+.logo-link{
+    display: inline-block;
+}
+
+.media-icons img{
+    height: 15px;
+    width: auto;
+}
+
+.media-icons img:hover {
+    transform: scale(1.1);
+}
+
+
 
 /* === MEDIA QUERIES === */
 @media (max-width: 767px) {
@@ -284,7 +348,7 @@ header {
     }
 
     .logo {
-        max-width: 30%;
+        max-width: 40%;
         height: auto;
         margin: 0;
     }
@@ -294,7 +358,7 @@ header {
     }
 
     .header-nav-list {
-        gap: 1.1rem;
+        justify-content: stretch;
         padding: 0;
         margin: 0.5rem 0;
     }
@@ -303,16 +367,40 @@ header {
         font-size: 1rem;
     }
 
+    #pop-up-container {
+        padding: 5px;
+    }
+
+    .pop-up-content {
+        padding: 20px;
+    }
+
     .main-footer {
         margin: 0.5rem 0.75rem;
     }
 
     .cc-footer {
-        flex-direction: column-reverse;
-        align-items: flex-start;
+        flex-direction: column;
         gap: 0.75rem;
         margin: 0.5rem 0.75rem;
         padding: 0;
+    }
+
+    .media-icons {
+        order: 1;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+
+    .cc-footer-right {
+        order: 2;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cc-footer-left {
+        order: 3;
     }
 
     .back-to-top {
@@ -363,6 +451,7 @@ header {
 
     .cc-footer {
         margin: 1rem 1.5rem;
+        font-size: 0.65rem;
     }
 
     .back-to-top {
@@ -388,7 +477,7 @@ header {
     }
 
     .logo {
-        max-width: 15%;
+        max-width: 20%;
         margin: 0;
         padding: 0;
     }
