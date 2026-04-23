@@ -69,13 +69,23 @@ strong {
     color: #ffffff;
     background: var(--primary);
     border: 0.5px solid var(--secondary);
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 0.75rem 1.25rem;
 }
 
 .cta-card a .cta-text:hover {
     font-weight: 700;
     background: var(--secondary);
+}
+
+#get-in-touch {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+#get-in-touch:hover {
+    color: #ffffff;
+    background-color: var(--secondary);
 }
 
 .top-skills-cards-container {
@@ -90,7 +100,7 @@ strong {
     font-family: var(--font-text);
     font-weight: 600;
     color: var(--primary);
-    background: var(--card-bg);
+    background: rgba(12, 102, 117, 0.025);
     border: 0.5px solid rgba(12, 102, 117, 0.25);
     border-radius: 20px;
     padding: 8px 16px;
@@ -283,6 +293,13 @@ strong {
     user-select: none;
     padding: 5px 12px;
     cursor: pointer;
+}
+
+.read-more-button img {
+    height: 0.7rem;
+    width: auto;
+    margin: 0;
+    border-radius: 0;
 }
 
 

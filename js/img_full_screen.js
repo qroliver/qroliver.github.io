@@ -11,10 +11,10 @@ function closeExpandedImage() {
     fullscreenContainer.style.display = "none";
 }
 
-function openPopUp() {
-    document.getElementById("pop-up-container").style.display = "flex";
+function openPopUp(id) {
+    document.getElementById(id).style.display = "flex";
 }
 
-function closePopUp() {
-    document.getElementById("pop-up-container").style.display = "none";
+function closePopUp(id) {
+    document.getElementById(id).style.display = "none";
 }

@@ -49,7 +49,7 @@
                         </div>
                         <div class="cta-card">
                             <a href="https://www.oliverqr.com/about/#contact">
-                                <span class="cta-text">Get in touch</span>
+                                <span class="cta-text" id="get-in-touch">Get in touch</span>
                             </a>
                         </div>
                     </div>
@@ -116,10 +116,10 @@
                             <h3 class="card-title"><a href="https://www.oliverqr.com/dataviz">DATAVIZ</a></h3>
                             <img src="/assets/dataviz/260114_monroe_doctrine.png" onclick="expandImage(this)">
                             <div class="dataviz-buttons-container">
-                                <span class="read-more-button" onclick="expandImage(document.querySelector('.right-card img'))">
-                                    <em>Full screen</em>
+                                <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('.right-card img'))">
+                                    <img src="/assets/icons/full_screen.png"><em>Full screen</em>
                                 </span>
-                                <span class="read-more-button" onclick="openPopUp()">👉 <em>Read more</em></span>
+                                <span class="read-more-button" onclick="openPopUp('pop-up-container')">👉 <em>Read more</em></span>
                             </div>
                         </div>
                         <!--Full screen image upon clicking-->
@@ -128,9 +128,9 @@
                             <img class="full-screen-image" id="full-screen-image">
                         </div>
                         <!--Pop-up text upon clicking-->
-                        <div class="full-screen-container" id="pop-up-container" onclick="closePopUp()">
+                        <div class="full-screen-container" id="pop-up-container" onclick="closePopUp('pop-up-container')">
                             <div class="pop-up-content" onclick="event.stopPropagation()">
-                                <span class="close-button" onclick="closePopUp()">&times;</span>
+                                <span class="close-button" onclick="closePopUp('pop-up-container')">&times;</span>
                                 <h3 class="pop-up-title">🌎 Greenland: nothing new in the US backyard – The Monroe Doctrine at play.</h3>
                                 <span class="card-content-date">
                                     <em>Posted on <time datetime="2026-01-14">14 January 2026</time>.</em>

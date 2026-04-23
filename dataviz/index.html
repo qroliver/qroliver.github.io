@@ -18,109 +18,417 @@
             <p>⚠️ JavaScript is disabled. Please enable it to see the navigation header.</p>
         </div>
         <main id="#top">
-            <div class="card">
-                <img src="/assets/dataviz/260114_monroe_doctrine.png" class="card-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
-                <p class="card-text">Two centuries of the Monroe Doctrine.</p>
+            <div class="dv-filter-container">
+                <button class="dv-filter__button is-active" data-filter="all">All</button>
+                <button class="dv-filter__button" data-filter="canarias">Canary Islands</button>
+                <button class="dv-filter__button" data-filter="climate-environment">Climate & Environment</button>
+                <button class="dv-filter__button" data-filter="energy">Energy</button>
+                <button class="dv-filter__button" data-filter="geopolitics">Geopolitics</button>
+                <button class="dv-filter__button" data-filter="maps">Maps</button>
+                <button class="dv-filter__button" data-filter="society-economy">Society & Economy</button>
+                <button class="dv-filter__button" data-filter="tourism">Tourism</button>
             </div>
-            <div class="card">
-                <img src="/assets/dataviz/251212_fig08.png" class="card-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
-                <p class="card-text">S80/S20 income quintile share ratio per region in Spain. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/251212_fig07.png" class="card-img" alt="Comparison between different living standard indicators per region in Spain. Data for 2024" onclick="expandImage(this)">
-                <p class="card-text">Living conditions statistics per region in Spain. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/251212_fig05.png" class="card-img" alt="Unemployment rate per region in Spain. Data for Q3 2025" onclick="expandImage(this)">
-                <p class="card-text">Unemployment rate per region in Spain. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/251212_fig04.png" class="card-img" alt="Average salary per region in Spain. Quarterly data. The Canary Islands, Spain and the Balearic Islands are highlighted" onclick="expandImage(this)">
-                <p class="card-text">Canary Islands' average salary over time. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250711_ghg emissions vs. eu target.png" class="card-img" alt="Greenhouse gas emissions vs. EU target by country" onclick="expandImage(this)">
-                <p class="card-text">Greenhouse gas emissions vs. EU's 2040 climate target. Read more <a href="https://www.linkedin.com/posts/oliverqr_last-week-the-eu-unveiled-its-2040-climate-activity-7349418000153808896-cpUY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAgFSkkBp9niG-XLkERtW5SjX4bsu7RCcVk">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250701_dk_gov_exp_fig1.png" class="card-img" alt="Denmark's government expenditure vs. extra defence spending to meet NATO's 5% GDP requirement" onclick="expandImage(this)">
-                <p class="card-text">Denmark's government expenditure vs. extra defence spending to meet NATO's 5% GDP requirement. Read more <a href="https://www.linkedin.com/posts/oliverqr_what-would-it-take-for-denmark-to-meet-nato-activity-7345785149017489408-Ks9D?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAgFSkkBp9niG-XLkERtW5SjX4bsu7RCcVk">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250701_dk_gov_exp_fig2.png" class="card-img" alt="What 76 billion DKK means for the welfare state" onclick="expandImage(this)">
-                <p class="card-text">What 76 billion DKK means for the welfare state. Read more <a href="https://www.linkedin.com/posts/oliverqr_what-would-it-take-for-denmark-to-meet-nato-activity-7345785149017489408-Ks9D?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAgFSkkBp9niG-XLkERtW5SjX4bsu7RCcVk">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250627_fig02_montly_potential.png" class="card-img" alt="Potential solar generation in Lanzarote with 40% rooftop coverage" onclick="expandImage(this)">
-                <p class="card-text">Potential solar generation in Lanzarote with 40% rooftop coverage. Read more <a href="https://www.oliverqr.com/blog/lzt_net_zero">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250627_fig01_electric-mix.png" class="card-img" alt="Lanzarote's electric mix in 2023" onclick="expandImage(this)">
-                <p class="card-text">Lanzarote's electric mix in 2023. Read more <a href="https://www.oliverqr.com/blog/lzt_net_zero">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250627_fig01_renewable_over_time.png" class="card-img" alt="Lanzarote's electric mix in 2023" onclick="expandImage(this)">
-                <p class="card-text">Evolution of Lanzarote's electric mix over time. Read more <a href="https://www.oliverqr.com/blog/lzt_net_zero">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250512_fig01.png" class="card-img" alt="Annual temperature recorded at Lanzarote's airport" onclick="expandImage(this)">
-                <p class="card-text">Annual temperature recorded at Lanzarote's airport. Read more <a href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250512_fig02.png" class="card-img" alt="verage daily temperature recorded at Lanzarote's airport: 1973-77 vs. 2020-24" onclick="expandImage(this)">
-                <p class="card-text">Average daily temperature recorded at Lanzarote's airport: 1973-77 vs. 2020-24. Read more <a href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250512_fig04.png" class="card-img" alt="Near-surface (2 m) temperature anomaly for the Canary Islands in 2024 relative to the 1991-2020 average" onclick="expandImage(this)">
-                <p class="card-text">Near-surface (2 m) temperature anomaly for the Canary Islands in 2024 relative to the 1991-2020 average. Read more <a href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250512_fig05.png" class="card-img" alt="Near-surface (2 m) temperature anomalies in the Lanzarote area relative to the 1991-2020 average" onclick="expandImage(this)">
-                <p class="card-text">Near-surface (2 m) temperature anomalies in the Lanzarote area relative to the 1991-2020 average. Read more <a href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250425_fig01.png" class="card-img" alt="Top 15 EU regions with the most tourist nights in 2023" onclick="expandImage(this)">
-                <p class="card-text">Top 15 EU regions with the most tourist nights in 2023. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250425_fig02.png" class="card-img" alt="Yearly tourist arrivals to the Canary Islands" onclick="expandImage(this)">
-                <p class="card-text">Yearly tourist arrivals to the Canary Islands. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250425_fig05.png" class="card-img" alt="Country of origin of the tourists that visited the Canary Islands in 2010 and 2024" onclick="expandImage(this)">
-                <p class="card-text">Country of origin of the tourists that visited the Canary Islands in 2010 and 2024. Read more <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250315_Fig02_Global primary energy consumption per capita.png" class="card-img" alt="Global primary energy consumption per capita over time" onclick="expandImage(this)">
-                <p class="card-text">Global primary energy consumption per capita over time. Read more <a href="https://www.oliverqr.com/blog/global_energy_trends">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250315_Fig09_Renewables share in Europe in 2023.png" class="card-img" alt="Renewable energy share in European countries in 2023" onclick="expandImage(this)">
-                <p class="card-text">Renewable energy share in European countries in 2023. Read more <a href="https://www.oliverqr.com/blog/global_energy_trends">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250315_Fig13_Top CO2 emitters per capita in 2023.png" class="card-img" alt="Top 20 countries with more CO2 emissions per capita in 2023" onclick="expandImage(this)">
-                <p class="card-text">Top 20 countries with more CO<sub>2</sub> emissions per capita in 2023. Read more <a href="https://www.oliverqr.com/blog/global_energy_trends">here</a>.👈</p>
-            </div>
-            <div class="card">
-                <img src="/assets/dataviz/250315_Fig14_CO2 emissions vs. Primary energy cons in 2023.png" class="card-img" alt="CO2 emissions vs. primary energy consumption per capita & renewables share by country in 2023" onclick="expandImage(this)">
-                <p class="card-text">CO<sub>2</sub> emissions vs. primary energy consumption per capita & renewables share by country in 2023. Read more <a href="https://www.oliverqr.com/blog/global_energy_trends">here</a>.👈</p>
-            </div>
-            <!--Full screen image upon clicking-->
-            <div class="full-screen-container" id="full-screen-image-container" onclick="closeExpandedImage()">
-                <span class="close-button">&times;</span>
-                <img class="full-screen-image" id="full-screen-image">
+            <div class="dataviz-gallery">
+                <div class="card-wide" id="monroe_doctrine" data-tags="geopolitics maps">
+                    <img src="/assets/dataviz/260114_monroe_doctrine.png" class="card-wide-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
+                    <div class="card-wide-body">
+                        <h3>Two centuries of the Monroe Doctrine.</h3>
+                        <p class="card-wide-text">
+                            In 1823, James Monroe – the fifth president of the USA – articulated what years later 
+                            would be known as the Monroe Doctrine. At a time when the independence of Spanish 
+                            colonies across the Americas was unfolding – by that year, nearly all were independent or 
+                            close to it – the doctrine declared the Western Hemisphere to be the US sphere of influence, 
+                            warning that any intervention by European states in the continent would be viewed as a threat 
+                            to the American security.
+                        </p>
+                        <p class="card-wide-text">
+                            Since then, the United States has treated the Americas as its backyard, carrying out over 
+                            120 interventions across the continent. From political manipulation and repression to 
+                            full-scale invasions – such as those in Dominican Republic, Haiti, Grenada, Panama – to 
+                            backing of military coups and subsequent dictatorships – like Pinochet’s in Chile, overthrowing 
+                            the democratically elected government of Salvador Allende – or the infamous Operation Condor, 
+                            in which the US backed right-wing dictatorships across South America to repress political dissidents.
+                        </p>
+                        <div class="dataviz-buttons-container">
+                            <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#monroe_doctrine img'))">
+                                <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                            </span>
+                            <span class="read-more-button" onclick="openPopUp('popup-monroe')">
+                                👉 <em>Read more</em>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="income_quintile_ratio" data-tags="canarias society-economy">
+                    <img src="/assets/dataviz/251212_fig08.png" class="card-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
+                    <p class="card-text">S80/S20 income quintile share ratio per region in Spain.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#income_quintile_ratio img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="living_conditions" data-tags="canarias society-economy">
+                    <img src="/assets/dataviz/251212_fig07.png" class="card-img" alt="Comparison between different living standard indicators per region in Spain. Data for 2024" onclick="expandImage(this)">
+                    <p class="card-text">Living conditions statistics per region in Spain.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#living_conditions img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="unempl_region" data-tags="canarias society-economy">
+                    <img src="/assets/dataviz/251212_fig05.png" class="card-img" alt="Unemployment rate per region in Spain. Data for Q3 2025" onclick="expandImage(this)">
+                    <p class="card-text">Unemployment rate per region in Spain.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#unempl_region img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="can_salary" data-tags="canarias society-economy">
+                    <img src="/assets/dataviz/251212_fig04.png" class="card-img" alt="Average salary per region in Spain. Quarterly data. The Canary Islands, Spain and the Balearic Islands are highlighted" onclick="expandImage(this)">
+                    <p class="card-text">Canary Islands' average salary over time.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#can_salary img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card-tall" id="ghg_vs_eu_targets" data-tags="climate-environment">
+                    <img src="/assets/dataviz/250711_ghg emissions vs. eu target.png" class="card-img" alt="Greenhouse gas emissions vs. EU target by country" onclick="expandImage(this)">
+                    <h3>Greenhouse gas emissions vs. EU's 2040 climate target.</h3>
+                    <span class="card-date">
+                        <em><time datetime="2025-07-11">11 July 2025</time>.</em>
+                    </span>
+                    <p class="card-tall-text">
+                        Last week the EU unveiled its 2040 climate target: a 90% reduction in greenhouse gas emissions (GHG) 
+                        by 2040 relative to 1990 levels. Are EU countries on track to meet this ambitious goal? Some are, 
+                        others still have a long way to go.
+                    </p>
+                    <p class="card-tall-text">
+                        🇪🇪 🇱🇹 🇱🇻 Estonia, Latvia, and Lithuania lead the way.
+                    </p>
+                    <p>
+                        🇩🇪 Germany, the largest emitter, has nearly halved emissions — the frontrunner among the EU largest 
+                        economies.
+                    </p>
+                    <p>
+                        🇪🇸 🇵🇹 🇮🇪 Spain, Portugal, and Ireland are trailing, but their significant renewable potential puts 
+                        them in a good position to meet the target.
+                    </p>
+                    <p>
+                        🇨🇾 Cyprus, with higher emission levels than in 1990, faces the largest cut in relative terms.
+                    </p>
+                    <p>
+                        To meet the target, most countries must reduce GHG emissions by 80-90% compared to today’s levels in 
+                        just 15 years. That’s a huge challenge, and accelerating the green transition, scaling renewables, 
+                        and changing habits will be key to achieving it. 
+                    </p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#ghg_vs_eu_targets img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                    </div>
+                </div>
+                <div class="card" id="dk_gov_exp_fig1" data-tags="geopolitics society-economy">
+                    <img src="/assets/dataviz/250701_dk_gov_exp_fig1.png" class="card-img" alt="Denmark's government expenditure vs. extra defence spending to meet NATO's 5% GDP requirement" onclick="expandImage(this)">
+                    <p class="card-text">Denmark's government expenditure vs. extra defence spending to meet NATO's 5% GDP requirement.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#dk_gov_exp_fig1 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <span class="read-more-button" onclick="openPopUp('dk_defence_exp_welfare')">👉 <em>Read more</em></span>
+                        <!-- POP-UP TEXT -->
+                    </div>
+                </div>
+                <div class="card" id="dk_gov_exp_fig2" data-tags="geopolitics society-economy">
+                    <img src="/assets/dataviz/250701_dk_gov_exp_fig2.png" class="card-img" alt="What 76 billion DKK means for the welfare state" onclick="expandImage(this)">
+                    <p class="card-text">What 76 billion DKK means for the welfare state.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#dk_gov_exp_fig2 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <span class="read-more-button" onclick="openPopUp('dk_defence_exp_welfare')">👉 <em>Read more</em></span>
+                        <!-- POP-UP TEXT -->
+                    </div>
+                </div>
+                <div class="card" id="lzt_monthly_solar_potential" data-tags="canarias energy">
+                    <img src="/assets/dataviz/250627_fig02_montly_potential.png" class="card-img" alt="Potential solar generation in Lanzarote with 40% rooftop coverage" onclick="expandImage(this)">
+                    <p class="card-text">Potential solar generation in Lanzarote with 40% rooftop coverage.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#lzt_monthly_solar_potential img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_net_zero">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="lzt_electric_mix23" data-tags="canarias energy">
+                    <img src="/assets/dataviz/250627_fig01_electric-mix.png" class="card-img" alt="Lanzarote's electric mix in 2023" onclick="expandImage(this)">
+                    <p class="card-text">Lanzarote's electric mix in 2023.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#lzt_electric_mix23 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_net_zero">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="lzt_electric_mix_evo" data-tags="canarias energy">
+                    <img src="/assets/dataviz/250627_fig01_renewable_over_time.png" class="card-img" alt="Lanzarote's electric mix in 2023" onclick="expandImage(this)">
+                    <p class="card-text">Evolution of Lanzarote's electric mix over time.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#lzt_electric_mix_evo img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_net_zero">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="annual_temp_lzt_airport" data-tags="canarias climate-environment">
+                    <img src="/assets/dataviz/250512_fig01.png" class="card-img" alt="Annual temperature recorded at Lanzarote's airport" onclick="expandImage(this)">
+                    <p class="card-text">Annual temperature recorded at Lanzarote's airport.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#annual_temp_lzt_airport img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card-wide" id="lzt_avg_daily_temp" data-tags="canarias climate-environment">
+                    <img src="/assets/dataviz/250512_fig02.png" class="card-wide-img" alt="Average daily temperature recorded at Lanzarote's airport: 1973-77 vs. 2020-24" onclick="expandImage(this)">
+                    <div class="card-wide-body">
+                        <h3>Hot days ahead: Adaptation policies in Lanzarote can't wait.</h3>
+                        <span class="card-date">
+                            <em><time datetime="2025-05-12">12 May 2025</time>.</em>
+                        </span>
+                        <p class="card-wide-text">
+                            Lanzarote is no exception to global climate change, and data from Aemet recorded at Lanzarote Airport 
+                            confirms this. Record-breaking years like 2023 and 2010 were the hottest on record, closely 
+                            followed by 2024, which had a mean annual temperature of 22.3°C. This is almost 1°C higher than 
+                            the 1991-2020 reference period, and around 2°C higher than the 1970s average. 
+                        </p>
+                        <p class="card-wide-text">
+                            Daily mean temperatures registered at Lanzarote Airport during the period 2020-2024 (last five years) 
+                            were considerably higher than in the period 1973-1977 (the first five years of the dataset). This 
+                            trend can be seen for all months of the year, with spring months such as April, May, and June standing out.
+                        </p>
+                        <div class="dataviz-buttons-container">
+                            <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#lzt_avg_daily_temp img'))">
+                                <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                            </span>
+                            <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">👉 <em>Read more</em></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="map_temp_anom_can24" data-tags="canarias climate-environment maps">
+                    <img src="/assets/dataviz/250512_fig04.png" class="card-img" alt="Near-surface (2 m) temperature anomaly for the Canary Islands in 2024 relative to the 1991-2020 average" onclick="expandImage(this)">
+                    <p class="card-text">Near-surface (2 m) temperature anomaly for the Canary Islands in 2024 relative to the 1991-2020 average.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#map_temp_anom_can24 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="temp_anom_can24" data-tags="canarias climate-environment">
+                    <img src="/assets/dataviz/250512_fig05.png" class="card-img" alt="Near-surface (2 m) temperature anomalies in the Lanzarote area relative to the 1991-2020 average" onclick="expandImage(this)">
+                    <p class="card-text">Near-surface (2 m) temperature anomalies in the Lanzarote area relative to the 1991-2020 average.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#temp_anom_can24 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="regions_most_tour_nights_23" data-tags="canarias tourism">
+                    <img src="/assets/dataviz/250425_fig01.png" class="card-img" alt="Top 15 EU regions with the most tourist nights in 2023" onclick="expandImage(this)">
+                    <p class="card-text">Top 15 EU regions with the most tourist nights in 2023.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#regions_most_tour_nights_23 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="yearly_tour_arrivals_can" data-tags="canarias tourism">
+                    <img src="/assets/dataviz/250425_fig02.png" class="card-img" alt="Yearly tourist arrivals to the Canary Islands" onclick="expandImage(this)">
+                    <p class="card-text">Yearly tourist arrivals to the Canary Islands.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#yearly_tour_arrivals_can img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card-tall" id="can_tour_nat" data-tags="canarias tourism">
+                    <img src="/assets/dataviz/250425_fig05.png" class="card-img" alt="Country of origin of the tourists that visited the Canary Islands in 2010 and 2024" onclick="expandImage(this)">
+                    <h3>Brits are the largest nationality group among tourists visiting the Canary Islands.</h3>
+                    <span class="card-date">
+                        <em><time datetime="2025-04-11">25 April 2025</time>.</em>
+                    </span>
+                    <p class="card-tall-text">
+                        Historically, the UK has been the largest source of tourists to the Canary Islands. This is something 
+                        we could see in 2010 as well as in 2024. The UK is also the country that has experienced the largest 
+                        increase in tourist numbers in absolute terms over the past 15 years (3.11 million, which is 101% more 
+                        in 2024 compared to 2010). 
+                    </p>
+                    <p class="card-tall-text">
+                        Germany, historically the second largest market, has seen a more modest increase since 2010, rising 
+                        from 2.26 millions in 2010 to 2.82 in 2024 (a 24.9% rise). A similar trend can be see in tourists 
+                        coming from mainland Spain, going from 1.71 million visitors in 2010 to 1.98 in 2024 (+16.1%). 
+                    </p>
+                    <p class="card-tall-text">
+                        Among the 14 top source countries, France and Italy had the largest increase in relative terms 
+                        (+348% and +264%, respectively) over the last 15 years. On the other hand, the number of tourists 
+                        from Nordic countries has remained relatively stable over this period. 
+                    </p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#can_tour_nat img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="primary_energy_pc_evol" data-tags="energy">
+                    <img src="/assets/dataviz/250315_Fig02_Global primary energy consumption per capita.png" class="card-img" alt="Global primary energy consumption per capita over time" onclick="expandImage(this)">
+                    <p class="card-text">Global primary energy consumption per capita over time.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#primary_energy_pc_evol img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/global_energy_trends">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="europe_ren_share23" data-tags="energy maps">
+                    <img src="/assets/dataviz/250315_Fig09_Renewables share in Europe in 2023.png" class="card-img" alt="Renewable energy share in European countries in 2023" onclick="expandImage(this)">
+                    <p class="card-text">Renewable energy share in European countries in 2023.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#europe_ren_share23 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/global_energy_trends">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="top_co2_em_pc23" data-tags="climate-environment">
+                    <img src="/assets/dataviz/250315_Fig13_Top CO2 emitters per capita in 2023.png" class="card-img" alt="Top 20 countries with more CO2 emissions per capita in 2023" onclick="expandImage(this)">
+                    <p class="card-text">Top 20 countries with more CO<sub>2</sub> emissions per capita in 2023.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#top_co2_em_pc23 img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/global_energy_trends">👉 <em>Read more</em></a>
+                    </div>
+                </div>
+                <div class="card" id="co2_em_prim_en_pc_ren_share" data-tags="energy climate-environment">
+                    <img src="/assets/dataviz/250315_Fig14_CO2 emissions vs. Primary energy cons in 2023.png" class="card-img" alt="CO2 emissions vs. primary energy consumption per capita & renewables share by country in 2023" onclick="expandImage(this)">
+                    <p class="card-text">CO<sub>2</sub> emissions vs. primary energy consumption per capita & renewables share by country in 2023.</p>
+                    <div class="dataviz-buttons-container">
+                        <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#co2_em_prim_en_pc_ren_share img'))">
+                            <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                        </span>
+                        <a class="read-more-button" href="https://www.oliverqr.com/blog/global_energy_trends">👉 <em>Read more</em></a>
+                    </div>
+                </div>
             </div>
             <a href="#top" class="back-to-top" aria-label="Back to top">
                 <img src="/assets/icons/arrow_up.png" class="arrow-up">
                 <span>Top</span>
             </a>
+
+            <!--Full screen image upon clicking-->
+            <div class="full-screen-container" id="full-screen-image-container" onclick="closeExpandedImage()">
+                <span class="close-button">&times;</span>
+                <img class="full-screen-image" id="full-screen-image">
+            </div>
+            
+            <!-- Pop-up Monroe -->
+            <div class="full-screen-container" id="popup-monroe" onclick="closePopUp('popup-monroe')">
+                <div class="pop-up-content" onclick="event.stopPropagation()">
+                    <span class="close-button" onclick="closePopUp('popup-monroe')">&times;</span>
+                    <h3 class="pop-up-title">🌎 Greenland: nothing new in the US backyard – The Monroe Doctrine at play.</h3>
+                    <span class="card-content-date">
+                        <em>Posted on <time datetime="2026-01-14">14 January 2026</time>.</em>
+                    </span>
+                        <p>
+                            In 1823, James Monroe – the fifth president of the USA – articulated what years later 
+                            would be known as the Monroe Doctrine. At a time when the independence of Spanish 
+                            colonies across the Americas was unfolding – by that year, nearly all were independent or 
+                            close to it – the doctrine declared the Western Hemisphere to be the US sphere of influence, 
+                            warning that any intervention by European states in the continent would be viewed as a threat 
+                            to the American security.
+                        </p>
+                        <p>
+                            Since then, the United States has treated the Americas as its backyard, carrying out over 
+                            120 interventions across the continent. From political manipulation and repression to 
+                            full-scale invasions – such as those in Dominican Republic, Haiti, Grenada, Panama – to 
+                            backing of military coups and subsequent dictatorships – like Pinochet’s in Chile, overthrowing 
+                            the democratically elected government of Salvador Allende – or the infamous Operation Condor, 
+                            in which the US backed right-wing dictatorships across South America to repress political dissidents.
+                        </p>
+                        <p>
+                            The recent abduction of Nicolás Maduro in Venezuela – an event echoing the capture of Manuel Noriega 
+                            in 1989 – marks the latest in a long line of interventions. With Greenland, Cuba, and Mexico – where 
+                            the last major US operation resulted in Mexico losing 55% of its territory – as potential future targets 
+                            in the near future, where will we see the next US move in the continent? A look at history teaches us that 
+                            the United States’ interventionism knows no bounds – and they don’t hesitate to apply the Machiavellian 
+                            principle that their end justifies the means.
+                        </p>
+                </div>
+            </div>
+
+            <!-- Pop-up Denmark defence expenditure -->
+             <div class="full-screen-container" id="dk_defence_exp_welfare" onclick="closePopUp('dk_defence_exp_welfare')">
+                <div class="pop-up-content" onclick="event.stopPropagation()">
+                    <span class="close-button" onclick="closePopUp('dk_defence_exp_welfare')">&times;</span>
+                    <h3 class="pop-up-title">What would it take for Denmark to meet NATO's 5% GDP defence target?</h3>
+                    <span class="card-content-date">
+                        <em>Posted on <time datetime="2027-07-01">1 July 2025</time>.</em>
+                    </span>
+                    <p>
+                        Last week, all NATO countries except Spain agreed to spend 5% of their GDP on defence by 2035. But 
+                        how much is that in absolute terms?
+                    </p>
+                    <p>
+                        In the case of Denmark, which currently spends 2.4% of its GDP on defence (2024, NATO estimate), 
+                        reaching 5% would require an additional 76 billion DKK every year. To put this into perspective, 
+                        here is how much the Danish government spent in key areas in 2024:
+                    </p>
+                    <ul>
+                        <li>Social protection: 574.7 billion DKK.</li>
+                        <li>Healthcare: 243.1 billion DKK.</li>
+                        <li>Education: 162.5 billion DKK.</li>
+                        <li>Defence: 54 billion DKK.</li>
+                        <li>Environmental protection: 11.7 billion DKK.</li>
+                    </ul>
+                    <p>
+                        Thus, the extra 76 billion DKK annually would be:
+                    </p>
+                    <ul>
+                        <li>Over 6.5 times the current environmental protection expenditure.</li>
+                        <li>Nearly half of the education spending.</li>
+                        <li>Almost a third of the health budget.</li>
+                        <li>140% more than current government spending on defence.</li>
+                    </ul>
+                    <p>
+                        Spain’s PM was the only one who rejected this target, arguing that spending 5% of GDP on defence is 
+                        not only unreasonable, but would also severely undermine Europe’s welfare state model.
+                    </p>
+                    <p>
+                        Numbers shape the narrative, and context helps us understand the consequences. Can Denmark and other 
+                        allies meet NATO’s goal without compromising core welfare priorities?
+                    </p>
+                </div>
+             </div>
         </main>
         <div id="cc-footer">
             <p>⚠️ JavaScript is disabled. Please enable it to see the footer.</p>
         </div>
         <script src="/js/load_components.js"></script>
         <script src="/js/img_full_screen.js"></script>
+        <script src="/js/dv-filter.js"></script>
         <script src="/js/back_to_top.js"></script>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
     </body>
