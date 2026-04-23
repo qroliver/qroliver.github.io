@@ -34,38 +34,40 @@ strong {
 
 .hero-name {
     font-family: var(--font-headers);
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: var(--secondary);
-    font-weight: 700;
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
     margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 .hero-titles {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--text-light);
-    font-weight: 500;
-    text-align: center;
+    font-weight: 400;
+    text-align: left;
     margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 .paragraph {
     font-size: 1.15rem;
     color: var(--text);
     line-height: 1.7;
-    text-align: justify;
+    text-align: left;
     margin: 1rem 0;
 }
 
 .socials-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1.5rem;
     margin-top: 0.5rem;
 }
 
 .socials-icon {
-    height: 30px;
+    height: 20px;
     width: auto;
 }
 
@@ -100,7 +102,7 @@ strong {
 .skills-card-title {
     font-family: var(--font-headers);
     font-size: 1.5rem;
-    color: var(--secondary);
+    color: var(--primary);
     font-weight: 500;
     margin: 0;
     padding: 0.5rem 0;
@@ -183,7 +185,7 @@ strong {
   color: var(--secondary);
   font-family: var(--font-headers);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   border: 1px solid var(--primary);
@@ -200,14 +202,14 @@ strong {
 .experience-title {
     font-family: var(--font-headers);
     font-weight: 600;
-    font-size: 1.75rem;
-    color: var(--secondary);
+    font-size: 1.5rem;
+    color: var(--primary);
     margin: 0;
     padding: 0;
 }
 
 .company {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--text-light);
     font-style: italic;
     margin: 0.5rem 0 1rem 0;
@@ -218,7 +220,7 @@ strong {
     margin-top: 0.75rem;
     padding: 0 0.9rem 0 1.5rem;
     margin-top: 0.5;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -303,7 +305,7 @@ strong {
 .degree-year {
     font-family: var(--font-text);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--secondary);
     background: var(--primary-light);
     border-radius: 10px;
@@ -315,9 +317,9 @@ strong {
     font-family: var(--font-headers);
     font-weight: 600;
     font-size: 1.3rem;
-    color: var(--secondary);
+    color: var(--primary);
     margin: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     padding: 0;
     line-height: 1.3;
     text-align: center;
@@ -461,7 +463,7 @@ strong {
 /* === PUBLICATIONS & TEACHING SECTION */
 .publications-teaching {
     position: relative;
-    margin: 75px 130px;
+    margin: 50px 80px;
     padding: 25px 5px;
 }
 
@@ -503,7 +505,7 @@ strong {
     font-family: var(--font-text);
     font-weight: 500;
     font-size: 2.5rem;
-    color: var(--secondary);
+    color: var(--primary);
     margin: 0;
     line-height: 1;
 }
@@ -547,7 +549,7 @@ strong {
     font-family: var(--font-text);
     font-weight: 600;
     font-size: 1.35rem;
-    color: var(--secondary);
+    color: var(--primary);
     text-align: center;
 }
 
@@ -586,7 +588,7 @@ strong {
 .about-me-paragraph {
     font-size: 1.1rem;
     color: var(--text);
-    text-align: justify;
+    text-align: left;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -697,6 +699,11 @@ strong {
 
     .paragraph {
         font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .socials-container {
+        justify-content: center;
     }
 
     .section-header-title {
@@ -735,6 +742,11 @@ strong {
         display: flex;
         flex-direction: column;
         padding: 1rem;
+    }
+
+    .experience-date {
+        justify-content: left;
+        margin: 0;
     }
 
     .experience-content {
@@ -815,6 +827,10 @@ strong {
         right: 0.5rem;
         bottom: -1.75rem;
         margin-bottom: 1rem;
+    }
+
+    .media-icons {
+        display: none;
     }
 }
 

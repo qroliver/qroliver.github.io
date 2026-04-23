@@ -106,7 +106,7 @@ header {
 .section-header-title {
     color: var(--secondary);
     font-family: var(--font-headers);
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
     margin-left: 30px;
