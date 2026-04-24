@@ -31,39 +31,49 @@
             </div>
             <div class="dataviz-gallery">
                 <div class="card-wide" id="monroe_doctrine" data-tags="geopolitics maps">
-                    <img src="/assets/dataviz/260114_monroe_doctrine.png" class="card-wide-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
-                    <div class="card-wide-body">
-                        <h3>Two centuries of the Monroe Doctrine.</h3>
-                        <span class="card-date">
-                            <em><time datetime="2026-01-14">14 January 2026</time>.</em>
-                        </span>
-                        <p class="card-wide-text">
-                            In 1823, James Monroe – the fifth president of the USA – articulated what years later 
-                            would be known as the Monroe Doctrine. At a time when the independence of Spanish 
-                            colonies across the Americas was unfolding – by that year, nearly all were independent or 
-                            close to it – the doctrine declared the Western Hemisphere to be the US sphere of influence, 
-                            warning that any intervention by European states in the continent would be viewed as a threat 
-                            to the American security.
-                        </p>
-                        <p class="card-wide-text">
-                            Since then, the United States has treated the Americas as its backyard, carrying out over 
-                            120 interventions across the continent. From political manipulation and repression to 
-                            full-scale invasions – such as those in Dominican Republic, Haiti, Grenada, Panama – to 
-                            backing of military coups and subsequent dictatorships – like Pinochet’s in Chile, overthrowing 
-                            the democratically elected government of Salvador Allende – or the infamous Operation Condor, 
-                            in which the US backed right-wing dictatorships across South America to repress political dissidents.
-                        </p>
-                        <div class="dataviz-buttons-container">
-                            <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#monroe_doctrine img'))">
-                                <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                    <div class="tag-container">
+                        <span class="tag-white">Geopolitics</span>
+                        <span class="tag-white">Maps</span>
+                    </div>
+                    <div class="card-wide-content">
+                        <img src="/assets/dataviz/260114_monroe_doctrine.png" class="card-wide-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
+                        <div class="card-wide-body">
+                            <h3>Two centuries of the Monroe Doctrine.</h3>
+                            <span class="card-date">
+                                <em><time datetime="2026-01-14">14 January 2026</time>.</em>
                             </span>
-                            <span class="read-more-button" onclick="openPopUp('popup-monroe')">
-                                👉 <em>Read more</em>
-                            </span>
+                            <p class="card-wide-text">
+                                In 1823, James Monroe – the fifth president of the USA – articulated what years later 
+                                would be known as the Monroe Doctrine. At a time when the independence of Spanish 
+                                colonies across the Americas was unfolding – by that year, nearly all were independent or 
+                                close to it – the doctrine declared the Western Hemisphere to be the US sphere of influence, 
+                                warning that any intervention by European states in the continent would be viewed as a threat 
+                                to the American security.
+                            </p>
+                            <p class="card-wide-text">
+                                Since then, the United States has treated the Americas as its backyard, carrying out over 
+                                120 interventions across the continent. From political manipulation and repression to 
+                                full-scale invasions – such as those in Dominican Republic, Haiti, Grenada, Panama – to 
+                                backing of military coups and subsequent dictatorships – like Pinochet’s in Chile, overthrowing 
+                                the democratically elected government of Salvador Allende – or the infamous Operation Condor, 
+                                in which the US backed right-wing dictatorships across South America to repress political dissidents.
+                            </p>
+                            <div class="dataviz-buttons-container">
+                                <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#monroe_doctrine img'))">
+                                    <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                                </span>
+                                <span class="read-more-button" onclick="openPopUp('popup-monroe')">
+                                    👉 <em>Read more</em>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card" id="income_quintile_ratio" data-tags="canarias society-economy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Society & Economy</span>
+                    </div>
                     <img src="/assets/dataviz/251212_fig08.png" class="card-img" alt="Comparison of the S80/S20 income quintile share ratio across regions in Spain" onclick="expandImage(this)">
                     <p class="card-text">S80/S20 income quintile share ratio per region in Spain.</p>
                     <div class="dataviz-buttons-container">
@@ -74,6 +84,10 @@
                     </div>
                 </div>
                 <div class="card" id="living_conditions" data-tags="canarias society-economy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Society & Economy</span>
+                    </div>
                     <img src="/assets/dataviz/251212_fig07.png" class="card-img" alt="Comparison between different living standard indicators per region in Spain. Data for 2024" onclick="expandImage(this)">
                     <p class="card-text">Living conditions statistics per region in Spain.</p>
                     <div class="dataviz-buttons-container">
@@ -84,6 +98,10 @@
                     </div>
                 </div>
                 <div class="card" id="unempl_region" data-tags="canarias society-economy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Society & Economy</span>
+                    </div>
                     <img src="/assets/dataviz/251212_fig05.png" class="card-img" alt="Unemployment rate per region in Spain. Data for Q3 2025" onclick="expandImage(this)">
                     <p class="card-text">Unemployment rate per region in Spain.</p>
                     <div class="dataviz-buttons-container">
@@ -94,6 +112,10 @@
                     </div>
                 </div>
                 <div class="card" id="can_salary" data-tags="canarias society-economy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Society & Economy</span>
+                    </div>
                     <img src="/assets/dataviz/251212_fig04.png" class="card-img" alt="Average salary per region in Spain. Quarterly data. The Canary Islands, Spain and the Balearic Islands are highlighted" onclick="expandImage(this)">
                     <p class="card-text">Canary Islands' average salary over time.</p>
                     <div class="dataviz-buttons-container">
@@ -104,6 +126,9 @@
                     </div>
                 </div>
                 <div class="card-tall" id="ghg_vs_eu_targets" data-tags="climate-environment">
+                    <div class="tag-container">
+                        <span class="tag-white">Climate & Environment</span>
+                    </div>
                     <img src="/assets/dataviz/250711_ghg emissions vs. eu target.png" class="card-img" alt="Greenhouse gas emissions vs. EU target by country" onclick="expandImage(this)">
                     <h3>Greenhouse gas emissions vs. EU's 2040 climate target.</h3>
                     <span class="card-date">
@@ -140,6 +165,10 @@
                     </div>
                 </div>
                 <div class="card" id="dk_gov_exp_fig1" data-tags="geopolitics society-economy">
+                    <div class="tag-container">
+                        <span class="tag">Geopolitics</span>
+                        <span class="tag">Society & Economy</span>
+                    </div>
                     <img src="/assets/dataviz/250701_dk_gov_exp_fig1.png" class="card-img" alt="Denmark's government expenditure vs. extra defence spending to meet NATO's 5% GDP requirement" onclick="expandImage(this)">
                     <p class="card-text">Denmark's government expenditure vs. extra defence spending to meet NATO's 5% GDP requirement.</p>
                     <div class="dataviz-buttons-container">
@@ -147,10 +176,13 @@
                             <img src="/assets/icons/full_screen.png"><em>Full screen</em>
                         </span>
                         <span class="read-more-button" onclick="openPopUp('dk_defence_exp_welfare')">👉 <em>Read more</em></span>
-                        <!-- POP-UP TEXT -->
                     </div>
                 </div>
                 <div class="card" id="dk_gov_exp_fig2" data-tags="geopolitics society-economy">
+                    <div class="tag-container">
+                        <span class="tag">Geopolitics</span>
+                        <span class="tag">Society & Economy</span>
+                    </div>
                     <img src="/assets/dataviz/250701_dk_gov_exp_fig2.png" class="card-img" alt="What 76 billion DKK means for the welfare state" onclick="expandImage(this)">
                     <p class="card-text">What 76 billion DKK means for the welfare state.</p>
                     <div class="dataviz-buttons-container">
@@ -158,10 +190,13 @@
                             <img src="/assets/icons/full_screen.png"><em>Full screen</em>
                         </span>
                         <span class="read-more-button" onclick="openPopUp('dk_defence_exp_welfare')">👉 <em>Read more</em></span>
-                        <!-- POP-UP TEXT -->
                     </div>
                 </div>
                 <div class="card" id="lzt_monthly_solar_potential" data-tags="canarias energy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Energy</span>
+                    </div>
                     <img src="/assets/dataviz/250627_fig02_montly_potential.png" class="card-img" alt="Potential solar generation in Lanzarote with 40% rooftop coverage" onclick="expandImage(this)">
                     <p class="card-text">Potential solar generation in Lanzarote with 40% rooftop coverage.</p>
                     <div class="dataviz-buttons-container">
@@ -172,6 +207,10 @@
                     </div>
                 </div>
                 <div class="card" id="lzt_electric_mix23" data-tags="canarias energy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Energy</span>
+                    </div>
                     <img src="/assets/dataviz/250627_fig01_electric-mix.png" class="card-img" alt="Lanzarote's electric mix in 2023" onclick="expandImage(this)">
                     <p class="card-text">Lanzarote's electric mix in 2023.</p>
                     <div class="dataviz-buttons-container">
@@ -182,6 +221,10 @@
                     </div>
                 </div>
                 <div class="card" id="lzt_electric_mix_evo" data-tags="canarias energy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Energy</span>
+                    </div>
                     <img src="/assets/dataviz/250627_fig01_renewable_over_time.png" class="card-img" alt="Lanzarote's electric mix in 2023" onclick="expandImage(this)">
                     <p class="card-text">Evolution of Lanzarote's electric mix over time.</p>
                     <div class="dataviz-buttons-container">
@@ -192,6 +235,10 @@
                     </div>
                 </div>
                 <div class="card" id="annual_temp_lzt_airport" data-tags="canarias climate-environment">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Climate & Environment</span>
+                    </div>
                     <img src="/assets/dataviz/250512_fig01.png" class="card-img" alt="Annual temperature recorded at Lanzarote's airport" onclick="expandImage(this)">
                     <p class="card-text">Annual temperature recorded at Lanzarote's airport.</p>
                     <div class="dataviz-buttons-container">
@@ -202,32 +249,43 @@
                     </div>
                 </div>
                 <div class="card-wide" id="lzt_avg_daily_temp" data-tags="canarias climate-environment">
-                    <img src="/assets/dataviz/250512_fig02.png" class="card-wide-img" alt="Average daily temperature recorded at Lanzarote's airport: 1973-77 vs. 2020-24" onclick="expandImage(this)">
-                    <div class="card-wide-body">
-                        <h3>Hot days ahead: Adaptation policies in Lanzarote can't wait.</h3>
-                        <span class="card-date">
-                            <em><time datetime="2025-05-12">12 May 2025</time>.</em>
-                        </span>
-                        <p class="card-wide-text">
-                            Lanzarote is no exception to global climate change, and data from Aemet recorded at Lanzarote Airport 
-                            confirms this. Record-breaking years like 2023 and 2010 were the hottest on record, closely 
-                            followed by 2024, which had a mean annual temperature of 22.3°C. This is almost 1°C higher than 
-                            the 1991-2020 reference period, and around 2°C higher than the 1970s average. 
-                        </p>
-                        <p class="card-wide-text">
-                            Daily mean temperatures registered at Lanzarote Airport during the period 2020-2024 (last five years) 
-                            were considerably higher than in the period 1973-1977 (the first five years of the dataset). This 
-                            trend can be seen for all months of the year, with spring months such as April, May, and June standing out.
-                        </p>
-                        <div class="dataviz-buttons-container">
-                            <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#lzt_avg_daily_temp img'))">
-                                <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                    <div class="tag-container">
+                        <span class="tag-white">Geopolitics</span>
+                        <span class="tag-white">Maps</span>
+                    </div>
+                    <div class="card-wide-content">
+                        <img src="/assets/dataviz/250512_fig02.png" class="card-wide-img" alt="Average daily temperature recorded at Lanzarote's airport: 1973-77 vs. 2020-24" onclick="expandImage(this)">
+                        <div class="card-wide-body">
+                            <h3>Hot days ahead: Adaptation policies in Lanzarote can't wait.</h3>
+                            <span class="card-date">
+                                <em><time datetime="2025-05-12">12 May 2025</time>.</em>
                             </span>
-                            <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">👉 <em>Read more</em></a>
+                            <p class="card-wide-text">
+                                Lanzarote is no exception to global climate change, and data from Aemet recorded at Lanzarote Airport 
+                                confirms this. Record-breaking years like 2023 and 2010 were the hottest on record, closely 
+                                followed by 2024, which had a mean annual temperature of 22.3°C. This is almost 1°C higher than 
+                                the 1991-2020 reference period, and around 2°C higher than the 1970s average. 
+                            </p>
+                            <p class="card-wide-text">
+                                Daily mean temperatures registered at Lanzarote Airport during the period 2020-2024 (last five years) 
+                                were considerably higher than in the period 1973-1977 (the first five years of the dataset). This 
+                                trend can be seen for all months of the year, with spring months such as April, May, and June standing out.
+                            </p>
+                            <div class="dataviz-buttons-container">
+                                <span class="read-more-button" id="full-screen-button" onclick="expandImage(document.querySelector('#lzt_avg_daily_temp img'))">
+                                    <img src="/assets/icons/full_screen.png"><em>Full screen</em>
+                                </span>
+                                <a class="read-more-button" href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">👉 <em>Read more</em></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card" id="map_temp_anom_can24" data-tags="canarias climate-environment maps">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Climate & Environment</span>
+                        <span class="tag">Maps</span>
+                    </div>
                     <img src="/assets/dataviz/250512_fig04.png" class="card-img" alt="Near-surface (2 m) temperature anomaly for the Canary Islands in 2024 relative to the 1991-2020 average" onclick="expandImage(this)">
                     <p class="card-text">Near-surface (2 m) temperature anomaly for the Canary Islands in 2024 relative to the 1991-2020 average.</p>
                     <div class="dataviz-buttons-container">
@@ -238,6 +296,10 @@
                     </div>
                 </div>
                 <div class="card" id="temp_anom_can24" data-tags="canarias climate-environment">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Climate & Environment</span>
+                    </div>
                     <img src="/assets/dataviz/250512_fig05.png" class="card-img" alt="Near-surface (2 m) temperature anomalies in the Lanzarote area relative to the 1991-2020 average" onclick="expandImage(this)">
                     <p class="card-text">Near-surface (2 m) temperature anomalies in the Lanzarote area relative to the 1991-2020 average.</p>
                     <div class="dataviz-buttons-container">
@@ -248,6 +310,10 @@
                     </div>
                 </div>
                 <div class="card" id="regions_most_tour_nights_23" data-tags="canarias tourism">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Tourism</span>
+                    </div>
                     <img src="/assets/dataviz/250425_fig01.png" class="card-img" alt="Top 15 EU regions with the most tourist nights in 2023" onclick="expandImage(this)">
                     <p class="card-text">Top 15 EU regions with the most tourist nights in 2023.</p>
                     <div class="dataviz-buttons-container">
@@ -258,6 +324,10 @@
                     </div>
                 </div>
                 <div class="card" id="yearly_tour_arrivals_can" data-tags="canarias tourism">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Tourism</span>
+                    </div>
                     <img src="/assets/dataviz/250425_fig02.png" class="card-img" alt="Yearly tourist arrivals to the Canary Islands" onclick="expandImage(this)">
                     <p class="card-text">Yearly tourist arrivals to the Canary Islands.</p>
                     <div class="dataviz-buttons-container">
@@ -268,6 +338,10 @@
                     </div>
                 </div>
                 <div class="card-tall" id="can_tour_nat" data-tags="canarias tourism">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Tourism</span>
+                    </div>
                     <img src="/assets/dataviz/250425_fig05.png" class="card-img" alt="Country of origin of the tourists that visited the Canary Islands in 2010 and 2024" onclick="expandImage(this)">
                     <h3>Brits are the largest nationality group among tourists visiting the Canary Islands.</h3>
                     <span class="card-date">
@@ -297,6 +371,9 @@
                     </div>
                 </div>
                 <div class="card" id="primary_energy_pc_evol" data-tags="energy">
+                    <div class="tag-container">
+                        <span class="tag">Energy</span>
+                    </div>
                     <img src="/assets/dataviz/250315_Fig02_Global primary energy consumption per capita.png" class="card-img" alt="Global primary energy consumption per capita over time" onclick="expandImage(this)">
                     <p class="card-text">Global primary energy consumption per capita over time.</p>
                     <div class="dataviz-buttons-container">
@@ -307,6 +384,10 @@
                     </div>
                 </div>
                 <div class="card" id="europe_ren_share23" data-tags="energy maps">
+                    <div class="tag-container">
+                        <span class="tag">Energy</span>
+                        <span class="tag">Maps</span>
+                    </div>
                     <img src="/assets/dataviz/250315_Fig09_Renewables share in Europe in 2023.png" class="card-img" alt="Renewable energy share in European countries in 2023" onclick="expandImage(this)">
                     <p class="card-text">Renewable energy share in European countries in 2023.</p>
                     <div class="dataviz-buttons-container">
@@ -317,6 +398,9 @@
                     </div>
                 </div>
                 <div class="card" id="top_co2_em_pc23" data-tags="climate-environment">
+                    <div class="tag-container">
+                        <span class="tag">Climate & Environment</span>
+                    </div>
                     <img src="/assets/dataviz/250315_Fig13_Top CO2 emitters per capita in 2023.png" class="card-img" alt="Top 20 countries with more CO2 emissions per capita in 2023" onclick="expandImage(this)">
                     <p class="card-text">Top 20 countries with more CO<sub>2</sub> emissions per capita in 2023.</p>
                     <div class="dataviz-buttons-container">
@@ -327,6 +411,10 @@
                     </div>
                 </div>
                 <div class="card" id="co2_em_prim_en_pc_ren_share" data-tags="energy climate-environment">
+                    <div class="tag-container">
+                        <span class="tag">Energy</span>
+                        <span class="tag">Climate & Environment</span>
+                    </div>
                     <img src="/assets/dataviz/250315_Fig14_CO2 emissions vs. Primary energy cons in 2023.png" class="card-img" alt="CO2 emissions vs. primary energy consumption per capita & renewables share by country in 2023" onclick="expandImage(this)">
                     <p class="card-text">CO<sub>2</sub> emissions vs. primary energy consumption per capita & renewables share by country in 2023.</p>
                     <div class="dataviz-buttons-container">
