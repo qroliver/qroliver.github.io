@@ -71,7 +71,22 @@
                 </details>
             </aside>
             <main>
-                <article>
+                <div class="filter-container">
+                    <span class="filter__label">Filter:</span>
+                    <button class="filter__button is-active" data-filter="all">All</button>
+                    <button class="filter__button" data-filter="canarias">Canary Islands</button>
+                    <button class="filter__button" data-filter="climate-environment">Climate & Environment</button>
+                    <button class="filter__button" data-filter="energy">Energy</button>
+                    <button class="filter__button" data-filter="sports">Sports</button>
+                    <button class="filter__button" data-filter="society-economy">Society & Economy</button>
+                    <button class="filter__button" data-filter="tourism">Tourism</button>
+                </div>
+                <article data-tags="canarias society-economy tourism">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Society & Economy</span>
+                        <span class="tag">Tourism</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-2">
                             <h2 class="blog-entry-title">Tourism in the Canary Islands - Part II: Are locals really benefiting?</h2>
                         </a>
@@ -90,8 +105,11 @@
                             </a>
                         </span>
                 </article>
-                <div class="separator"></div>
-                <article>
+                <article data-tags="canarias energy">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Energy</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/lzt_net_zero">
                         <h2 class="blog-entry-title">Exploring an alternative electric system for Lanzarote centred on solar and hydrogen.</h2>
                     </a>
@@ -113,8 +131,11 @@
                         </a>
                     </span>
                 </article>
-                <div class="separator"></div>
-                <article>
+                <article data-tags="canarias climate-environment">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Climate & Environment</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/lzt_hot_days_ahead">
                         <h2 class="blog-entry-title">Hot days ahead: Adaptation policies in Lanzarote can't wait.</h2>
                     </a>
@@ -137,8 +158,12 @@
                         </a>
                     </span>
                 </article>
-                <div class="separator"></div>
-                <article>
+                <article data-tags="canarias society-economy tourism">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Society & Economy</span>
+                        <span class="tag">Tourism</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/tourism_canary_islands_part-1">
                         <h2 class="blog-entry-title">Tourism in the Canary Islands - Part I: A booming industry.</h2>
                     </a>
@@ -159,8 +184,11 @@
                         </a>
                     </span>
                 </article>
-                <div class="separator"></div>
-                <article>
+                <article data-tags="climate-environment energy">
+                    <div class="tag-container">
+                        <span class="tag">Climate & Environment</span>
+                        <span class="tag">Energy</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/global_energy_trends">
                         <h2 class="blog-entry-title">Energy trends and a peek at CO<sub>2</sub> emissions: a global snapshot.</h2>
                     </a>
@@ -181,24 +209,20 @@
                         </a>
                     </span>
                 </article>
-                <div class="separator"></div>
-                <article>
+                <article data-tags="sports">
+                    <div class="tag-container">
+                        <span class="tag">Sports</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/liga_sim">
                         <h2 class="blog-entry-title">A (very) simple simulation of the Spanish La Liga.</h2>
                     </a>
                     <span class="entry-date">
                         <em>Posted on <time datetime="2025-02-19">19 February 2025.</time></em>
                     </span>
-                    <h3>Introduction</h3>
                     <p class="blog-paragraph">
                         The beautiful game, the most popular sport in the world. Football. Drama, joy, tension, passion, 
                         unpredictability... A roller coaster of emotions played out over 90 minutes (or 120!), 
                         for 9 months a year, shaping the fate of each club in every league / cup competition across the globe.
-                    </p>
-                    <p class="blog-paragraph">
-                        Will my club win the league? Qualify for a European competition? Avoid relegation? 
-                        Or is it finally the year we go up? Many questions, no certain answers. Unpredictability... 
-                        but is there a way to get a hint of what's to come, to predict the future?
                     </p>
                     <span class="continue-reading">
                         <a href="https://www.oliverqr.com/blog/liga_sim#keep-reading">
@@ -206,8 +230,11 @@
                         </a>
                     </span>
                 </article>
-                <div class="separator"></div>
-                <article>
+                <article data-tags="canarias climate-environment">
+                    <div class="tag-container">
+                        <span class="tag">Canary Islands</span>
+                        <span class="tag">Climate & Environment</span>
+                    </div>
                     <a href="https://www.oliverqr.com/blog/ace_weather">
                         <h2 class="blog-entry-title">A look at the last 50 years of temperature and precipitation data in Lanzarote.</h2>
                     </a>
@@ -219,12 +246,6 @@
                         continental Africa (figure 1), its subtropical climate is characterised by mild temperatures all year-round and 
                         little precipitation. Sometimes referred to as the <i>island of eternal Spring</i>, Lanzarote's climate 
                         is classified as hot dessert climate according to the Köppen climate classification.
-                    </p>
-                    <p class="blog-paragraph">
-                        Using <a href="https://opendata.aemet.es/centrodedescargas/inicio" target="_blank">Aemet's Open Data</a>, 
-                        I downloaded temperature and precipitation data from the last 50 
-                        years recorded at the station located at Lanzarote airport, with the aim of analysing 
-                        possible trends over this period.
                     </p>
                     <span class="continue-reading">
                         <a href="https://www.oliverqr.com/blog/ace_weather#figure01">
@@ -238,6 +259,7 @@
             <p>⚠️ JavaScript is disabled. Please enable it to see the footer.</p>
         </div>
         <script src="/js/load_components.js"></script>
+        <script src="/js/tag-filter.js"></script>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40889d6d42aa4df991d5a24861dc68fa"}'></script>
     </body>
 </html>
