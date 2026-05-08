@@ -1,7 +1,8 @@
 /* === ROOT VARIABLES === */
 :root {
     --primary: #0c6675; /* rgb(12, 102, 117) */
-    --primary-light: #e0f0f2;
+    --primary-light: #e0f0f2; /* rgb(224, 240, 242) */
+    --primary-lighter:#f8fcfc; /* rgb(248, 252, 252) */
     --secondary: #064752; /* rgb(6, 71, 82) */
     --text: #2c3e50;
     --text-light: #6c757d;
@@ -38,6 +39,62 @@ a {
     text-decoration: none;
     color: var(--primary);
     font-weight: 600;
+}
+
+/* === TAGS === */
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tag {
+    font-size: 0.6rem;
+    font-family: var(--font-headers);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary);
+    background: #f8fcfc;
+    border: 1px solid var(--primary-light);
+    border-radius: 20px;
+    padding: 3px 9px;
+}
+
+.tag-canarias {
+    background: rgba(24, 95, 165, 0.1);
+    color: #185fa5;
+    border-color: rgba(24, 95, 165, 0.2);
+}
+
+.tag-climate-environment {
+    background: rgba(59, 109, 17, 0.1);
+    color: #3b6d11;
+    border-color: rgba(59, 109, 17, 0.2);
+}
+
+.tag-tourism {
+    background: rgba(186, 117, 23, 0.12);
+    color: #845000;
+    border-color: rgba(186, 117, 23, 0.2);
+}
+
+.tag-society-economy {
+    background: rgba(12, 102, 117, 0.1);
+    color: #0c6675;
+    border-color: rgba(12, 102, 117, 0.2);
+}
+
+.tag-energy {
+    background: rgba(101, 117, 12, 0.1);
+    color: #65750c;
+    border-color: rgba(101, 117, 12, 0.2);
+}
+
+.tag-sport {
+    background: rgba(80, 12, 117, 0.1);
+    color: #500c75;
+    border-color: rgba(80, 12, 117, 0.2);
 }
 
 /* === HEADER === */
@@ -416,6 +473,12 @@ header {
     .back-to-top {
         right: 1rem;
         bottom: 1rem;
+    }
+
+    .tag {
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 }
 
