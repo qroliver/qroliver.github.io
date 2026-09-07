@@ -143,8 +143,7 @@ main {
 
 .skills-card {
     background-color: var(--primary-lighter);
-    border: 1px solid var(--border);
-    border-top: 2.5px solid var(--primary);
+    border: 1.5px solid var(--border);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
     box-shadow: var(--card-shadow);
